@@ -25,12 +25,12 @@ import {
 /**
  * 定义起始数字常量
  */
-const START_NUM = 1
+const START_NUM = 101
 
 /**
  * 定义结束数字常量
  */
-const END_NUM = 10
+const END_NUM = 200
 
 for (let id = START_NUM; id <= END_NUM; id++) {
   const dirName = `${id.toString().padStart(4, '0')}. xxx`
