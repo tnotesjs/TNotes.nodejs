@@ -16,19 +16,25 @@
   - [11. I/O 流模块](#11-io-流模块)
   - [12. 核心原理](#12-核心原理)
   - [13. 最佳实践](#13-最佳实践)
-  - [14. 进程管理](#14-进程管理)
-  - [15. 异步编程](#15-异步编程)
-  - [16. 加密与安全](#16-加密与安全)
-  - [17. 性能优化](#17-性能优化)
-  - [18. 测试与调试](#18-测试与调试)
-  - [19. 数据库操作](#19-数据库操作)
-  - [20. Web 框架](#20-web-框架)
-  - [21. 实时通信](#21-实时通信)
-  - [22. 微服务架构](#22-微服务架构)
-  - [23. DevOps 与部署](#23-devops-与部署)
-  - [24. TypeScript 集成](#24-typescript-集成)
-  - [25. ⏰ 其它](#25--其它)
-  - [26. ⏰ pending](#26--pending)
+  - [14. 命令行工具开发](#14-命令行工具开发)
+  - [15. 进程管理](#15-进程管理)
+  - [16. 异步编程](#16-异步编程)
+  - [17. 错误处理](#17-错误处理)
+  - [18. 加密与安全](#18-加密与安全)
+  - [19. 性能优化](#19-性能优化)
+  - [20. 日志与监控](#20-日志与监控)
+  - [21. 测试与调试](#21-测试与调试)
+  - [22. 缓存策略](#22-缓存策略)
+  - [23. 定时任务](#23-定时任务)
+  - [24. 数据库操作](#24-数据库操作)
+  - [25. Web 框架](#25-web-框架)
+  - [26. 实时通信](#26-实时通信)
+  - [27. 微服务架构](#27-微服务架构)
+  - [28. 国际化与本地化](#28-国际化与本地化)
+  - [29. DevOps 与部署](#29-devops-与部署)
+  - [30. Serverless](#30-serverless)
+  - [31. TypeScript 集成](#31-typescript-集成)
+  - [32. ⏰ 其它](#32--其它)
 
 <!-- endregion:toc -->
 
@@ -141,6 +147,11 @@
 - [ ] [0113. fs.promises API](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0113.%20fs.promises%20API/README.md)
 - [ ] [0114. 文件监听 fs.watch 和 fs.watchFile](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0114.%20%E6%96%87%E4%BB%B6%E7%9B%91%E5%90%AC%20fs.watch%20%E5%92%8C%20fs.watchFile/README.md)
 - [ ] [0115. 文件流操作](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0115.%20%E6%96%87%E4%BB%B6%E6%B5%81%E6%93%8D%E4%BD%9C/README.md)
+- [ ] [0217. 大文件处理策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0217.%20%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5/README.md)
+- [ ] [0218. 文件上传处理（multer）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0218.%20%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%A4%84%E7%90%86%EF%BC%88multer%EF%BC%89/README.md)
+- [ ] [0219. 文件压缩解压（zlib）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0219.%20%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%EF%BC%88zlib%EF%BC%89/README.md)
+- [ ] [0220. Excel 和 CSV 文件处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0220.%20Excel%20%E5%92%8C%20CSV%20%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/README.md)
+- [ ] [0221. PDF 生成与处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0221.%20PDF%20%E7%94%9F%E6%88%90%E4%B8%8E%E5%A4%84%E7%90%86/README.md)
 
 ## 8. 路径处理模块
 
@@ -169,6 +180,11 @@
 - [ ] [0121. WebSocket 实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0121.%20WebSocket%20%E5%AE%9E%E7%8E%B0/README.md)
 - [ ] [0122. TCP 和 UDP 编程](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0122.%20TCP%20%E5%92%8C%20UDP%20%E7%BC%96%E7%A8%8B/README.md)
 - [ ] [0123. DNS 模块使用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0123.%20DNS%20%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8/README.md)
+- [ ] [0222. 代理服务器实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0222.%20%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0/README.md)
+- [ ] [0223. 请求重试机制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0223.%20%E8%AF%B7%E6%B1%82%E9%87%8D%E8%AF%95%E6%9C%BA%E5%88%B6/README.md)
+- [ ] [0224. API 限流实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0224.%20API%20%E9%99%90%E6%B5%81%E5%AE%9E%E7%8E%B0/README.md)
+- [ ] [0225. CORS 跨域处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0225.%20CORS%20%E8%B7%A8%E5%9F%9F%E5%A4%84%E7%90%86/README.md)
+- [ ] [0226. 文件下载优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0226.%20%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E4%BC%98%E5%8C%96/README.md)
 
 ## 11. I/O 流模块
 
@@ -198,7 +214,16 @@
 - [ ] [0138. 日志管理策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0138.%20%E6%97%A5%E5%BF%97%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5/README.md)
 - [ ] [0139. 配置文件管理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0139.%20%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/README.md)
 
-## 14. 进程管理
+## 14. 命令行工具开发
+
+- [ ] [0201. Commander.js 命令行框架](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0201.%20Commander.js%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A1%86%E6%9E%B6/README.md)
+- [ ] [0202. Inquirer.js 交互式命令行](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0202.%20Inquirer.js%20%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%91%BD%E4%BB%A4%E8%A1%8C/README.md)
+- [ ] [0203. Chalk 终端样式美化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0203.%20Chalk%20%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F%E7%BE%8E%E5%8C%96/README.md)
+- [ ] [0204. Ora 加载动画](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0204.%20Ora%20%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB/README.md)
+- [ ] [0205. 命令行参数解析](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0205.%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/README.md)
+- [ ] [0206. 发布全局 CLI 工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0206.%20%E5%8F%91%E5%B8%83%E5%85%A8%E5%B1%80%20CLI%20%E5%B7%A5%E5%85%B7/README.md)
+
+## 15. 进程管理
 
 - [ ] [0140. child_process 模块详解](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0140.%20child_process%20%E6%A8%A1%E5%9D%97%E8%AF%A6%E8%A7%A3/README.md)
 - [ ] [0076. exec vs. spawn](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0076.%20exec%20vs.%20spawn/README.md)
@@ -207,15 +232,27 @@
 - [ ] [0143. 进程间通信（IPC）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0143.%20%E8%BF%9B%E7%A8%8B%E9%97%B4%E9%80%9A%E4%BF%A1%EF%BC%88IPC%EF%BC%89/README.md)
 - [ ] [0144. PM2 进程管理器](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0144.%20PM2%20%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86%E5%99%A8/README.md)
 
-## 15. 异步编程
+## 16. 异步编程
 
 - [ ] [0145. 回调函数模式](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0145.%20%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0%E6%A8%A1%E5%BC%8F/README.md)
 - [ ] [0146. Promise 使用详解](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0146.%20Promise%20%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3/README.md)
 - [ ] [0147. async 和 await 最佳实践](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0147.%20async%20%E5%92%8C%20await%20%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/README.md)
 - [ ] [0148. 异步迭代器](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0148.%20%E5%BC%82%E6%AD%A5%E8%BF%AD%E4%BB%A3%E5%99%A8/README.md)
 - [ ] [0149. 异步错误处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0149.%20%E5%BC%82%E6%AD%A5%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/README.md)
+- [ ] [0227. EventEmitter vs Promise vs Observable](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0227.%20EventEmitter%20vs%20Promise%20vs%20Observable/README.md)
+- [ ] [0228. 并发控制（p-limit 和 p-queue）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0228.%20%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6%EF%BC%88p-limit%20%E5%92%8C%20p-queue%EF%BC%89/README.md)
+- [ ] [0229. 异步流程控制库（async.js）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0229.%20%E5%BC%82%E6%AD%A5%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%BA%93%EF%BC%88async.js%EF%BC%89/README.md)
+- [ ] [0230. AbortController 取消请求](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0230.%20AbortController%20%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82/README.md)
 
-## 16. 加密与安全
+## 17. 错误处理
+
+- [ ] [0259. 全局错误处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0259.%20%E5%85%A8%E5%B1%80%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/README.md)
+- [ ] [0260. 未捕获异常处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0260.%20%E6%9C%AA%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/README.md)
+- [ ] [0261. Promise rejection 处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0261.%20Promise%20rejection%20%E5%A4%84%E7%90%86/README.md)
+- [ ] [0262. 错误上报机制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0262.%20%E9%94%99%E8%AF%AF%E4%B8%8A%E6%8A%A5%E6%9C%BA%E5%88%B6/README.md)
+- [ ] [0263. 优雅关闭策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0263.%20%E4%BC%98%E9%9B%85%E5%85%B3%E9%97%AD%E7%AD%96%E7%95%A5/README.md)
+
+## 18. 加密与安全
 
 - [ ] [0002. crypto 模块中的 hash 工具方法 createHash](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0002.%20crypto%20%E6%A8%A1%E5%9D%97%E4%B8%AD%E7%9A%84%20hash%20%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95%20createHash/README.md)
 - [ ] [0007. crypto 模块](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0007.%20crypto%20%E6%A8%A1%E5%9D%97/README.md)
@@ -226,8 +263,14 @@
 - [ ] [0154. 数字签名与验证](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0154.%20%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D%E4%B8%8E%E9%AA%8C%E8%AF%81/README.md)
 - [ ] [0155. TLS 和 SSL 配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0155.%20TLS%20%E5%92%8C%20SSL%20%E9%85%8D%E7%BD%AE/README.md)
 - [ ] [0156. 安全最佳实践](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0156.%20%E5%AE%89%E5%85%A8%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/README.md)
+- [ ] [0264. XSS 防护](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0264.%20XSS%20%E9%98%B2%E6%8A%A4/README.md)
+- [ ] [0265. CSRF 防护](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0265.%20CSRF%20%E9%98%B2%E6%8A%A4/README.md)
+- [ ] [0266. SQL 注入防护](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0266.%20SQL%20%E6%B3%A8%E5%85%A5%E9%98%B2%E6%8A%A4/README.md)
+- [ ] [0267. 速率限制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0267.%20%E9%80%9F%E7%8E%87%E9%99%90%E5%88%B6/README.md)
+- [ ] [0268. Helmet.js 安全中间件](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0268.%20Helmet.js%20%E5%AE%89%E5%85%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/README.md)
+- [ ] [0269. 依赖安全扫描](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0269.%20%E4%BE%9D%E8%B5%96%E5%AE%89%E5%85%A8%E6%89%AB%E6%8F%8F/README.md)
 
-## 17. 性能优化
+## 19. 性能优化
 
 - [ ] [0157. 性能分析工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0157.%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7/README.md)
 - [ ] [0158. 内存管理与优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0158.%20%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E4%B8%8E%E4%BC%98%E5%8C%96/README.md)
@@ -235,8 +278,22 @@
 - [ ] [0160. 垃圾回收机制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0160.%20%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/README.md)
 - [ ] [0161. 内存泄漏排查](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0161.%20%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E6%8E%92%E6%9F%A5/README.md)
 - [ ] [0162. 性能监控方案](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0162.%20%E6%80%A7%E8%83%BD%E7%9B%91%E6%8E%A7%E6%96%B9%E6%A1%88/README.md)
+- [ ] [0231. V8 内存快照分析](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0231.%20V8%20%E5%86%85%E5%AD%98%E5%BF%AB%E7%85%A7%E5%88%86%E6%9E%90/README.md)
+- [ ] [0232. Flame Graph 火焰图](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0232.%20Flame%20Graph%20%E7%81%AB%E7%84%B0%E5%9B%BE/README.md)
+- [ ] [0233. 0x 性能分析工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0233.%200x%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7/README.md)
+- [ ] [0234. clinic.js 诊断工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0234.%20clinic.js%20%E8%AF%8A%E6%96%AD%E5%B7%A5%E5%85%B7/README.md)
+- [ ] [0235. 懒加载与预加载策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0235.%20%E6%87%92%E5%8A%A0%E8%BD%BD%E4%B8%8E%E9%A2%84%E5%8A%A0%E8%BD%BD%E7%AD%96%E7%95%A5/README.md)
 
-## 18. 测试与调试
+## 20. 日志与监控
+
+- [ ] [0253. Winston 日志框架](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0253.%20Winston%20%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/README.md)
+- [ ] [0254. Pino 高性能日志](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0254.%20Pino%20%E9%AB%98%E6%80%A7%E8%83%BD%E6%97%A5%E5%BF%97/README.md)
+- [ ] [0255. Morgan HTTP 日志](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0255.%20Morgan%20HTTP%20%E6%97%A5%E5%BF%97/README.md)
+- [ ] [0256. ELK Stack 集成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0256.%20ELK%20Stack%20%E9%9B%86%E6%88%90/README.md)
+- [ ] [0257. APM 工具集成（New Relic 和 DataDog）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0257.%20APM%20%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90%EF%BC%88New%20Relic%20%E5%92%8C%20DataDog%EF%BC%89/README.md)
+- [ ] [0258. 自定义指标收集](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0258.%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E6%A0%87%E6%94%B6%E9%9B%86/README.md)
+
+## 21. 测试与调试
 
 - [ ] [0163. 单元测试框架（Jest 和 Mocha）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0163.%20%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Jest%20%E5%92%8C%20Mocha%EF%BC%89/README.md)
 - [ ] [0164. 集成测试策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0164.%20%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E7%AD%96%E7%95%A5/README.md)
@@ -244,8 +301,29 @@
 - [ ] [0166. 调试技巧与工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0166.%20%E8%B0%83%E8%AF%95%E6%8A%80%E5%B7%A7%E4%B8%8E%E5%B7%A5%E5%85%B7/README.md)
 - [ ] [0167. Chrome DevTools 调试](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0167.%20Chrome%20DevTools%20%E8%B0%83%E8%AF%95/README.md)
 - [ ] [0168. 断言模块 assert](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0168.%20%E6%96%AD%E8%A8%80%E6%A8%A1%E5%9D%97%20assert/README.md)
+- [ ] [0236. E2E 测试（Puppeteer 和 Playwright）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0236.%20E2E%20%E6%B5%8B%E8%AF%95%EF%BC%88Puppeteer%20%E5%92%8C%20Playwright%EF%BC%89/README.md)
+- [ ] [0237. API 测试（Supertest）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0237.%20API%20%E6%B5%8B%E8%AF%95%EF%BC%88Supertest%EF%BC%89/README.md)
+- [ ] [0238. Mock 数据生成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0238.%20Mock%20%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90/README.md)
+- [ ] [0239. 压力测试工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0239.%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/README.md)
+- [ ] [0240. 契约测试](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0240.%20%E5%A5%91%E7%BA%A6%E6%B5%8B%E8%AF%95/README.md)
 
-## 19. 数据库操作
+## 22. 缓存策略
+
+- [ ] [0207. 内存缓存实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0207.%20%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98%E5%AE%9E%E7%8E%B0/README.md)
+- [ ] [0208. LRU 缓存算法](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0208.%20LRU%20%E7%BC%93%E5%AD%98%E7%AE%97%E6%B3%95/README.md)
+- [ ] [0209. 分布式缓存](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0209.%20%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/README.md)
+- [ ] [0210. HTTP 缓存策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0210.%20HTTP%20%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/README.md)
+- [ ] [0211. CDN 缓存配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0211.%20CDN%20%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE/README.md)
+
+## 23. 定时任务
+
+- [ ] [0212. node-cron 定时任务](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0212.%20node-cron%20%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/README.md)
+- [ ] [0213. node-schedule 任务调度](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0213.%20node-schedule%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/README.md)
+- [ ] [0214. Bull 队列系统](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0214.%20Bull%20%E9%98%9F%E5%88%97%E7%B3%BB%E7%BB%9F/README.md)
+- [ ] [0215. Agenda 任务管理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0215.%20Agenda%20%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86/README.md)
+- [ ] [0216. 分布式任务调度](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0216.%20%E5%88%86%E5%B8%83%E5%BC%8F%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/README.md)
+
+## 24. 数据库操作
 
 - [ ] [0169. MongoDB 与 Mongoose](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0169.%20MongoDB%20%E4%B8%8E%20Mongoose/README.md)
 - [ ] [0170. MySQL 连接与操作](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0170.%20MySQL%20%E8%BF%9E%E6%8E%A5%E4%B8%8E%E6%93%8D%E4%BD%9C/README.md)
@@ -253,8 +331,13 @@
 - [ ] [0172. Redis 缓存方案](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0172.%20Redis%20%E7%BC%93%E5%AD%98%E6%96%B9%E6%A1%88/README.md)
 - [ ] [0173. 数据库连接池](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0173.%20%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E6%B1%A0/README.md)
 - [ ] [0174. ORM 和 ODM 框架对比](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0174.%20ORM%20%E5%92%8C%20ODM%20%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94/README.md)
+- [ ] [0248. 数据库迁移工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0248.%20%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/README.md)
+- [ ] [0249. 事务处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0249.%20%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86/README.md)
+- [ ] [0250. 索引优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0250.%20%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/README.md)
+- [ ] [0251. 查询优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0251.%20%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/README.md)
+- [ ] [0252. 数据库备份策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0252.%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E7%AD%96%E7%95%A5/README.md)
 
-## 20. Web 框架
+## 25. Web 框架
 
 - [ ] [0175. Express.js 深入](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0175.%20Express.js%20%E6%B7%B1%E5%85%A5/README.md)
 - [ ] [0176. Koa.js 原理与实践](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0176.%20Koa.js%20%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E8%B7%B5/README.md)
@@ -265,87 +348,6 @@
 - [ ] [0179. 中间件原理与开发](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0179.%20%E4%B8%AD%E9%97%B4%E4%BB%B6%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BC%80%E5%8F%91/README.md)
 - [ ] [0180. RESTful API 设计](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0180.%20RESTful%20API%20%E8%AE%BE%E8%AE%A1/README.md)
 - [ ] [0181. GraphQL 服务搭建](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0181.%20GraphQL%20%E6%9C%8D%E5%8A%A1%E6%90%AD%E5%BB%BA/README.md)
-
-## 21. 实时通信
-
-- [ ] [0182. Socket.IO 实时通信](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0182.%20Socket.IO%20%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1/README.md)
-- [ ] [0183. Server-Sent Events](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0183.%20Server-Sent%20Events/README.md)
-- [ ] [0184. WebRTC 集成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0184.%20WebRTC%20%E9%9B%86%E6%88%90/README.md)
-- [ ] [0185. 消息队列（RabbitMQ 和 Kafka）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0185.%20%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%EF%BC%88RabbitMQ%20%E5%92%8C%20Kafka%EF%BC%89/README.md)
-
-## 22. 微服务架构
-
-- [ ] [0186. 微服务设计原则](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0186.%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/README.md)
-- [ ] [0187. 服务发现与注册](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0187.%20%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E6%B3%A8%E5%86%8C/README.md)
-- [ ] [0188. API 网关实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0188.%20API%20%E7%BD%91%E5%85%B3%E5%AE%9E%E7%8E%B0/README.md)
-- [ ] [0189. gRPC 在 Node.js 中的应用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0189.%20gRPC%20%E5%9C%A8%20Node.js%20%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/README.md)
-- [ ] [0190. 分布式追踪](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0190.%20%E5%88%86%E5%B8%83%E5%BC%8F%E8%BF%BD%E8%B8%AA/README.md)
-
-## 23. DevOps 与部署
-
-- [ ] [0191. Docker 容器化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0191.%20Docker%20%E5%AE%B9%E5%99%A8%E5%8C%96/README.md)
-- [ ] [0192. CI 和 CD 流程搭建](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0192.%20CI%20%E5%92%8C%20CD%20%E6%B5%81%E7%A8%8B%E6%90%AD%E5%BB%BA/README.md)
-- [ ] [0193. Kubernetes 部署](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0193.%20Kubernetes%20%E9%83%A8%E7%BD%B2/README.md)
-- [ ] [0194. 服务器部署策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0194.%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E7%AD%96%E7%95%A5/README.md)
-- [ ] [0195. 负载均衡配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0195.%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE/README.md)
-- [ ] [0196. 日志收集与分析](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0196.%20%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E4%B8%8E%E5%88%86%E6%9E%90/README.md)
-
-## 24. TypeScript 集成
-
-- [ ] [0197. TypeScript 配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0197.%20TypeScript%20%E9%85%8D%E7%BD%AE/README.md)
-- [ ] [0198. 类型定义文件](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0198.%20%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89%E6%96%87%E4%BB%B6/README.md)
-- [ ] [0199. 装饰器使用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0199.%20%E8%A3%85%E9%A5%B0%E5%99%A8%E4%BD%BF%E7%94%A8/README.md)
-- [ ] [0200. ts-node 开发环境](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0200.%20ts-node%20%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/README.md)
-
-## 25. ⏰ 其它
-
-- [ ] [0021. minimist 基本使用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0021.%20minimist%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md)
-- [ ] [0005. 获取 macos 下都安装了哪些应用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0005.%20%E8%8E%B7%E5%8F%96%20macos%20%E4%B8%8B%E9%83%BD%E5%AE%89%E8%A3%85%E4%BA%86%E5%93%AA%E4%BA%9B%E5%BA%94%E7%94%A8/README.md)
-- [ ] [0006. 使用 screencapture 命令实现 macos 系统截图](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0006.%20%E4%BD%BF%E7%94%A8%20screencapture%20%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0%20macos%20%E7%B3%BB%E7%BB%9F%E6%88%AA%E5%9B%BE/README.md)
-- [ ] [0027. 在 Windows 的 power shell 中执行 pnpm i 命令错误问题](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0027.%20%E5%9C%A8%20Windows%20%E7%9A%84%20power%20shell%20%E4%B8%AD%E6%89%A7%E8%A1%8C%20pnpm%20i%20%E5%91%BD%E4%BB%A4%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/README.md)
-
-## 26. ⏰ pending
-
-- [ ] [0201. Commander.js 命令行框架](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0201.%20Commander.js%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%A1%86%E6%9E%B6/README.md)
-- [ ] [0202. Inquirer.js 交互式命令行](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0202.%20Inquirer.js%20%E4%BA%A4%E4%BA%92%E5%BC%8F%E5%91%BD%E4%BB%A4%E8%A1%8C/README.md)
-- [ ] [0203. Chalk 终端样式美化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0203.%20Chalk%20%E7%BB%88%E7%AB%AF%E6%A0%B7%E5%BC%8F%E7%BE%8E%E5%8C%96/README.md)
-- [ ] [0204. Ora 加载动画](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0204.%20Ora%20%E5%8A%A0%E8%BD%BD%E5%8A%A8%E7%94%BB/README.md)
-- [ ] [0205. 命令行参数解析](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0205.%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0%E8%A7%A3%E6%9E%90/README.md)
-- [ ] [0206. 发布全局 CLI 工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0206.%20%E5%8F%91%E5%B8%83%E5%85%A8%E5%B1%80%20CLI%20%E5%B7%A5%E5%85%B7/README.md)
-- [ ] [0207. 内存缓存实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0207.%20%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98%E5%AE%9E%E7%8E%B0/README.md)
-- [ ] [0208. LRU 缓存算法](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0208.%20LRU%20%E7%BC%93%E5%AD%98%E7%AE%97%E6%B3%95/README.md)
-- [ ] [0209. 分布式缓存](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0209.%20%E5%88%86%E5%B8%83%E5%BC%8F%E7%BC%93%E5%AD%98/README.md)
-- [ ] [0210. HTTP 缓存策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0210.%20HTTP%20%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5/README.md)
-- [ ] [0211. CDN 缓存配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0211.%20CDN%20%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE/README.md)
-- [ ] [0212. node-cron 定时任务](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0212.%20node-cron%20%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/README.md)
-- [ ] [0213. node-schedule 任务调度](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0213.%20node-schedule%20%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/README.md)
-- [ ] [0214. Bull 队列系统](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0214.%20Bull%20%E9%98%9F%E5%88%97%E7%B3%BB%E7%BB%9F/README.md)
-- [ ] [0215. Agenda 任务管理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0215.%20Agenda%20%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86/README.md)
-- [ ] [0216. 分布式任务调度](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0216.%20%E5%88%86%E5%B8%83%E5%BC%8F%E4%BB%BB%E5%8A%A1%E8%B0%83%E5%BA%A6/README.md)
-- [ ] [0217. 大文件处理策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0217.%20%E5%A4%A7%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86%E7%AD%96%E7%95%A5/README.md)
-- [ ] [0218. 文件上传处理（multer）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0218.%20%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%A4%84%E7%90%86%EF%BC%88multer%EF%BC%89/README.md)
-- [ ] [0219. 文件压缩解压（zlib）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0219.%20%E6%96%87%E4%BB%B6%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%EF%BC%88zlib%EF%BC%89/README.md)
-- [ ] [0220. Excel 和 CSV 文件处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0220.%20Excel%20%E5%92%8C%20CSV%20%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/README.md)
-- [ ] [0221. PDF 生成与处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0221.%20PDF%20%E7%94%9F%E6%88%90%E4%B8%8E%E5%A4%84%E7%90%86/README.md)
-- [ ] [0222. 代理服务器实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0222.%20%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%9E%E7%8E%B0/README.md)
-- [ ] [0223. 请求重试机制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0223.%20%E8%AF%B7%E6%B1%82%E9%87%8D%E8%AF%95%E6%9C%BA%E5%88%B6/README.md)
-- [ ] [0224. API 限流实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0224.%20API%20%E9%99%90%E6%B5%81%E5%AE%9E%E7%8E%B0/README.md)
-- [ ] [0225. CORS 跨域处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0225.%20CORS%20%E8%B7%A8%E5%9F%9F%E5%A4%84%E7%90%86/README.md)
-- [ ] [0226. 文件下载优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0226.%20%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E4%BC%98%E5%8C%96/README.md)
-- [ ] [0227. EventEmitter vs Promise vs Observable](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0227.%20EventEmitter%20vs%20Promise%20vs%20Observable/README.md)
-- [ ] [0228. 并发控制（p-limit 和 p-queue）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0228.%20%E5%B9%B6%E5%8F%91%E6%8E%A7%E5%88%B6%EF%BC%88p-limit%20%E5%92%8C%20p-queue%EF%BC%89/README.md)
-- [ ] [0229. 异步流程控制库（async.js）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0229.%20%E5%BC%82%E6%AD%A5%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%BA%93%EF%BC%88async.js%EF%BC%89/README.md)
-- [ ] [0230. AbortController 取消请求](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0230.%20AbortController%20%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82/README.md)
-- [ ] [0231. V8 内存快照分析](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0231.%20V8%20%E5%86%85%E5%AD%98%E5%BF%AB%E7%85%A7%E5%88%86%E6%9E%90/README.md)
-- [ ] [0232. Flame Graph 火焰图](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0232.%20Flame%20Graph%20%E7%81%AB%E7%84%B0%E5%9B%BE/README.md)
-- [ ] [0233. 0x 性能分析工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0233.%200x%20%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7/README.md)
-- [ ] [0234. clinic.js 诊断工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0234.%20clinic.js%20%E8%AF%8A%E6%96%AD%E5%B7%A5%E5%85%B7/README.md)
-- [ ] [0235. 懒加载与预加载策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0235.%20%E6%87%92%E5%8A%A0%E8%BD%BD%E4%B8%8E%E9%A2%84%E5%8A%A0%E8%BD%BD%E7%AD%96%E7%95%A5/README.md)
-- [ ] [0236. E2E 测试（Puppeteer 和 Playwright）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0236.%20E2E%20%E6%B5%8B%E8%AF%95%EF%BC%88Puppeteer%20%E5%92%8C%20Playwright%EF%BC%89/README.md)
-- [ ] [0237. API 测试（Supertest）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0237.%20API%20%E6%B5%8B%E8%AF%95%EF%BC%88Supertest%EF%BC%89/README.md)
-- [ ] [0238. Mock 数据生成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0238.%20Mock%20%E6%95%B0%E6%8D%AE%E7%94%9F%E6%88%90/README.md)
-- [ ] [0239. 压力测试工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0239.%20%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/README.md)
-- [ ] [0240. 契约测试](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0240.%20%E5%A5%91%E7%BA%A6%E6%B5%8B%E8%AF%95/README.md)
 - [ ] [0241. 模板引擎（EJS、Pug、Handlebars）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0241.%20%E6%A8%A1%E6%9D%BF%E5%BC%95%E6%93%8E%EF%BC%88EJS%E3%80%81Pug%E3%80%81Handlebars%EF%BC%89/README.md)
 - [ ] [0242. Session 管理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0242.%20Session%20%E7%AE%A1%E7%90%86/README.md)
 - [ ] [0243. Cookie 处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0243.%20Cookie%20%E5%A4%84%E7%90%86/README.md)
@@ -353,44 +355,66 @@
 - [ ] [0245. OAuth 2.0 集成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0245.%20OAuth%202.0%20%E9%9B%86%E6%88%90/README.md)
 - [ ] [0246. 文件上传处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0246.%20%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%A4%84%E7%90%86/README.md)
 - [ ] [0247. 请求验证（Joi 和 express-validator）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0247.%20%E8%AF%B7%E6%B1%82%E9%AA%8C%E8%AF%81%EF%BC%88Joi%20%E5%92%8C%20express-validator%EF%BC%89/README.md)
-- [ ] [0248. 数据库迁移工具](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0248.%20%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%81%E7%A7%BB%E5%B7%A5%E5%85%B7/README.md)
-- [ ] [0249. 事务处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0249.%20%E4%BA%8B%E5%8A%A1%E5%A4%84%E7%90%86/README.md)
-- [ ] [0250. 索引优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0250.%20%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96/README.md)
-- [ ] [0251. 查询优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0251.%20%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96/README.md)
-- [ ] [0252. 数据库备份策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0252.%20%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%87%E4%BB%BD%E7%AD%96%E7%95%A5/README.md)
-- [ ] [0253. Winston 日志框架](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0253.%20Winston%20%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6/README.md)
-- [ ] [0254. Pino 高性能日志](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0254.%20Pino%20%E9%AB%98%E6%80%A7%E8%83%BD%E6%97%A5%E5%BF%97/README.md)
-- [ ] [0255. Morgan HTTP 日志](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0255.%20Morgan%20HTTP%20%E6%97%A5%E5%BF%97/README.md)
-- [ ] [0256. ELK Stack 集成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0256.%20ELK%20Stack%20%E9%9B%86%E6%88%90/README.md)
-- [ ] [0257. APM 工具集成（New Relic 和 DataDog）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0257.%20APM%20%E5%B7%A5%E5%85%B7%E9%9B%86%E6%88%90%EF%BC%88New%20Relic%20%E5%92%8C%20DataDog%EF%BC%89/README.md)
-- [ ] [0258. 自定义指标收集](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0258.%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E6%A0%87%E6%94%B6%E9%9B%86/README.md)
-- [ ] [0259. 全局错误处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0259.%20%E5%85%A8%E5%B1%80%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/README.md)
-- [ ] [0260. 未捕获异常处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0260.%20%E6%9C%AA%E6%8D%95%E8%8E%B7%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/README.md)
-- [ ] [0261. Promise rejection 处理](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0261.%20Promise%20rejection%20%E5%A4%84%E7%90%86/README.md)
-- [ ] [0262. 错误上报机制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0262.%20%E9%94%99%E8%AF%AF%E4%B8%8A%E6%8A%A5%E6%9C%BA%E5%88%B6/README.md)
-- [ ] [0263. 优雅关闭策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0263.%20%E4%BC%98%E9%9B%85%E5%85%B3%E9%97%AD%E7%AD%96%E7%95%A5/README.md)
-- [ ] [0264. XSS 防护](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0264.%20XSS%20%E9%98%B2%E6%8A%A4/README.md)
-- [ ] [0265. CSRF 防护](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0265.%20CSRF%20%E9%98%B2%E6%8A%A4/README.md)
-- [ ] [0266. SQL 注入防护](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0266.%20SQL%20%E6%B3%A8%E5%85%A5%E9%98%B2%E6%8A%A4/README.md)
-- [ ] [0267. 速率限制](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0267.%20%E9%80%9F%E7%8E%87%E9%99%90%E5%88%B6/README.md)
-- [ ] [0268. Helmet.js 安全中间件](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0268.%20Helmet.js%20%E5%AE%89%E5%85%A8%E4%B8%AD%E9%97%B4%E4%BB%B6/README.md)
-- [ ] [0269. 依赖安全扫描](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0269.%20%E4%BE%9D%E8%B5%96%E5%AE%89%E5%85%A8%E6%89%AB%E6%8F%8F/README.md)
+
+## 26. 实时通信
+
+- [ ] [0182. Socket.IO 实时通信](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0182.%20Socket.IO%20%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1/README.md)
+- [ ] [0183. Server-Sent Events](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0183.%20Server-Sent%20Events/README.md)
+- [ ] [0184. WebRTC 集成](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0184.%20WebRTC%20%E9%9B%86%E6%88%90/README.md)
+- [ ] [0185. 消息队列（RabbitMQ 和 Kafka）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0185.%20%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97%EF%BC%88RabbitMQ%20%E5%92%8C%20Kafka%EF%BC%89/README.md)
+
+## 27. 微服务架构
+
+- [ ] [0186. 微服务设计原则](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0186.%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/README.md)
+- [ ] [0187. 服务发现与注册](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0187.%20%E6%9C%8D%E5%8A%A1%E5%8F%91%E7%8E%B0%E4%B8%8E%E6%B3%A8%E5%86%8C/README.md)
+- [ ] [0188. API 网关实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0188.%20API%20%E7%BD%91%E5%85%B3%E5%AE%9E%E7%8E%B0/README.md)
+- [ ] [0189. gRPC 在 Node.js 中的应用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0189.%20gRPC%20%E5%9C%A8%20Node.js%20%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8/README.md)
+- [ ] [0190. 分布式追踪](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0190.%20%E5%88%86%E5%B8%83%E5%BC%8F%E8%BF%BD%E8%B8%AA/README.md)
+
+## 28. 国际化与本地化
+
 - [ ] [0270. i18n 实现](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0270.%20i18n%20%E5%AE%9E%E7%8E%B0/README.md)
 - [ ] [0271. 时区处理（moment-timezone）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0271.%20%E6%97%B6%E5%8C%BA%E5%A4%84%E7%90%86%EF%BC%88moment-timezone%EF%BC%89/README.md)
 - [ ] [0272. 货币格式化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0272.%20%E8%B4%A7%E5%B8%81%E6%A0%BC%E5%BC%8F%E5%8C%96/README.md)
 - [ ] [0273. 多语言路由](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0273.%20%E5%A4%9A%E8%AF%AD%E8%A8%80%E8%B7%AF%E7%94%B1/README.md)
+
+## 29. DevOps 与部署
+
+- [ ] [0191. Docker 容器化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0191.%20Docker%20%E5%AE%B9%E5%99%A8%E5%8C%96/README.md)
+- [ ] [0192. CI 和 CD 流程搭建](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0192.%20CI%20%E5%92%8C%20CD%20%E6%B5%81%E7%A8%8B%E6%90%AD%E5%BB%BA/README.md)
+- [ ] [0193. Kubernetes 部署](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0193.%20Kubernetes%20%E9%83%A8%E7%BD%B2/README.md)
+- [ ] [0194. 服务器部署策略](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0194.%20%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%E7%AD%96%E7%95%A5/README.md)
+- [ ] [0195. 负载均衡配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0195.%20%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E9%85%8D%E7%BD%AE/README.md)
+- [ ] [0196. 日志收集与分析](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0196.%20%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86%E4%B8%8E%E5%88%86%E6%9E%90/README.md)
 - [ ] [0274. 健康检查端点](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0274.%20%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E7%AB%AF%E7%82%B9/README.md)
 - [ ] [0275. 优雅启动与关闭](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0275.%20%E4%BC%98%E9%9B%85%E5%90%AF%E5%8A%A8%E4%B8%8E%E5%85%B3%E9%97%AD/README.md)
 - [ ] [0276. 蓝绿部署](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0276.%20%E8%93%9D%E7%BB%BF%E9%83%A8%E7%BD%B2/README.md)
 - [ ] [0277. 金丝雀发布](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0277.%20%E9%87%91%E4%B8%9D%E9%9B%80%E5%8F%91%E5%B8%83/README.md)
 - [ ] [0278. 环境配置管理（dotenv）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0278.%20%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E7%AE%A1%E7%90%86%EF%BC%88dotenv%EF%BC%89/README.md)
+
+## 30. Serverless
+
 - [ ] [0279. AWS Lambda with Node.js](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0279.%20AWS%20Lambda%20with%20Node.js/README.md)
 - [ ] [0280. Vercel Functions](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0280.%20Vercel%20Functions/README.md)
 - [ ] [0281. Netlify Functions](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0281.%20Netlify%20Functions/README.md)
 - [ ] [0282. 无服务器框架（Serverless Framework）](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0282.%20%E6%97%A0%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A1%86%E6%9E%B6%EF%BC%88Serverless%20Framework%EF%BC%89/README.md)
 - [ ] [0283. 冷启动优化](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0283.%20%E5%86%B7%E5%90%AF%E5%8A%A8%E4%BC%98%E5%8C%96/README.md)
+
+## 31. TypeScript 集成
+
+- [ ] [0197. TypeScript 配置](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0197.%20TypeScript%20%E9%85%8D%E7%BD%AE/README.md)
+- [ ] [0198. 类型定义文件](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0198.%20%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89%E6%96%87%E4%BB%B6/README.md)
+- [ ] [0199. 装饰器使用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0199.%20%E8%A3%85%E9%A5%B0%E5%99%A8%E4%BD%BF%E7%94%A8/README.md)
+- [ ] [0200. ts-node 开发环境](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0200.%20ts-node%20%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/README.md)
 - [ ] [0284. 泛型使用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0284.%20%E6%B3%9B%E5%9E%8B%E4%BD%BF%E7%94%A8/README.md)
 - [ ] [0285. 高级类型](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0285.%20%E9%AB%98%E7%BA%A7%E7%B1%BB%E5%9E%8B/README.md)
 - [ ] [0286. 命名空间与模块](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0286.%20%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E4%B8%8E%E6%A8%A1%E5%9D%97/README.md)
 - [ ] [0287. 声明合并](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0287.%20%E5%A3%B0%E6%98%8E%E5%90%88%E5%B9%B6/README.md)
 - [ ] [0288. 三斜线指令](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0288.%20%E4%B8%89%E6%96%9C%E7%BA%BF%E6%8C%87%E4%BB%A4/README.md)
+
+## 32. ⏰ 其它
+
+- [ ] [0021. minimist 基本使用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0021.%20minimist%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README.md)
+- [ ] [0005. 获取 macos 下都安装了哪些应用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0005.%20%E8%8E%B7%E5%8F%96%20macos%20%E4%B8%8B%E9%83%BD%E5%AE%89%E8%A3%85%E4%BA%86%E5%93%AA%E4%BA%9B%E5%BA%94%E7%94%A8/README.md)
+- [ ] [0006. 使用 screencapture 命令实现 macos 系统截图](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0006.%20%E4%BD%BF%E7%94%A8%20screencapture%20%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0%20macos%20%E7%B3%BB%E7%BB%9F%E6%88%AA%E5%9B%BE/README.md)
+- [ ] [0027. 在 Windows 的 power shell 中执行 pnpm i 命令错误问题](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0027.%20%E5%9C%A8%20Windows%20%E7%9A%84%20power%20shell%20%E4%B8%AD%E6%89%A7%E8%A1%8C%20pnpm%20i%20%E5%91%BD%E4%BB%A4%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/README.md)
