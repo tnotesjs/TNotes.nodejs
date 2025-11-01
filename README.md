@@ -55,7 +55,7 @@
 - [x] [0086. npm 官网](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0086.%20npm%20%E5%AE%98%E7%BD%91/README.md)
 - [x] [0088. github 上的 npm 组织](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0088.%20github%20%E4%B8%8A%E7%9A%84%20npm%20%E7%BB%84%E7%BB%87/README.md)
 - [x] [0087. YouTube 上的 npm 频道](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0087.%20YouTube%20%E4%B8%8A%E7%9A%84%20npm%20%E9%A2%91%E9%81%93/README.md)
-- [x] [0038. 认识 npm](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0038.%20%E8%AE%A4%E8%AF%86%20npm/README.md)
+- [x] [0038. npm 简介](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0038.%20npm%20%E7%AE%80%E4%BB%8B/README.md)
 - [x] [0039. 常见的 npm 包及作用](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0039.%20%E5%B8%B8%E8%A7%81%E7%9A%84%20npm%20%E5%8C%85%E5%8F%8A%E4%BD%9C%E7%94%A8/README.md)
 - [x] [0040. npm 版本](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0040.%20npm%20%E7%89%88%E6%9C%AC/README.md)
 - [x] [0041. 常见的 npm 命令](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0041.%20%E5%B8%B8%E8%A7%81%E7%9A%84%20npm%20%E5%91%BD%E4%BB%A4/README.md)
