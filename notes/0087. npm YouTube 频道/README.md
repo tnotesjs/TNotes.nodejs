@@ -1,4 +1,4 @@
-# [0087. YouTube 上的 npm 频道](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0087.%20YouTube%20%E4%B8%8A%E7%9A%84%20npm%20%E9%A2%91%E9%81%93)
+# [0087. npm YouTube 频道](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0087.%20npm%20YouTube%20%E9%A2%91%E9%81%93)
 
 <!-- region:toc -->
 

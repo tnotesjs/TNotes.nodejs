@@ -1,4 +1,4 @@
-# [0088. Github - npm](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0088.%20Github%20-%20npm)
+# [0088. npm github 仓库](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0088.%20npm%20github%20%E4%BB%93%E5%BA%93)
 
 <!-- region:toc -->
 

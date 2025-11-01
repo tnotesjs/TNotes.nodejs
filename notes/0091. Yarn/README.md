@@ -1,4 +1,4 @@
-# [0091. Yarn](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0091.%20Yarn)
+# [0091. yarn](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0091.%20yarn)
 
 <!-- region:toc -->
 
