@@ -111,28 +111,32 @@
 
 - [x] [0050. Node.js 生命周期](https://tnotesjs.github.io/TNotes.nodejs/notes/0050.%20Node.js%20%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/README)
 
-## 15. ⏰ pending
+## 15. 最佳实践
 
-### 15.1. process
+- [x] [0092. nodebestpractices 项目](https://tnotesjs.github.io/TNotes.nodejs/notes/0092.%20nodebestpractices%20%E9%A1%B9%E7%9B%AE/README)
+
+## 16. ⏰ pending
+
+### 16.1. process
 
 - [ ] [0001. 使用 process 模块来区分不同的操作系统](https://tnotesjs.github.io/TNotes.nodejs/notes/0001.%20%E4%BD%BF%E7%94%A8%20process%20%E6%A8%A1%E5%9D%97%E6%9D%A5%E5%8C%BA%E5%88%86%E4%B8%8D%E5%90%8C%E7%9A%84%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/README)
 - [ ] [0020. 通过 process.argv 获取脚本的命令行参数](https://tnotesjs.github.io/TNotes.nodejs/notes/0020.%20%E9%80%9A%E8%BF%87%20process.argv%20%E8%8E%B7%E5%8F%96%E8%84%9A%E6%9C%AC%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%8F%82%E6%95%B0/README)
 
-### 15.2. crypto
+### 16.2. crypto
 
 - [ ] [0002. crypto 模块中的 hash 工具方法 createHash](https://tnotesjs.github.io/TNotes.nodejs/notes/0002.%20crypto%20%E6%A8%A1%E5%9D%97%E4%B8%AD%E7%9A%84%20hash%20%E5%B7%A5%E5%85%B7%E6%96%B9%E6%B3%95%20createHash/README)
 - [ ] [0007. crypto 模块](https://tnotesjs.github.io/TNotes.nodejs/notes/0007.%20crypto%20%E6%A8%A1%E5%9D%97/README)
 
-### 15.3. 版本管理工具
+### 16.3. 版本管理工具
 
 - [x] [0029. nvm](https://tnotesjs.github.io/TNotes.nodejs/notes/0029.%20nvm/README)
 
-### 15.4. koa
+### 16.4. koa
 
 - [ ] [0008. koa-send](https://tnotesjs.github.io/TNotes.nodejs/notes/0008.%20koa-send/README)
 - [ ] [0009. koa-static](https://tnotesjs.github.io/TNotes.nodejs/notes/0009.%20koa-static/README)
 
-### 15.5. npm 相关
+### 16.5. npm 相关
 
 - [ ] [0012. 使用 nrm 管理 npm 源](https://tnotesjs.github.io/TNotes.nodejs/notes/0012.%20%E4%BD%BF%E7%94%A8%20nrm%20%E7%AE%A1%E7%90%86%20npm%20%E6%BA%90/README)
 - [ ] [0014. 如何使用 nvm 管理 nodejs 版本](https://tnotesjs.github.io/TNotes.nodejs/notes/0014.%20%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20nvm%20%E7%AE%A1%E7%90%86%20nodejs%20%E7%89%88%E6%9C%AC/README)
@@ -141,21 +145,20 @@
 - [ ] [0024. npm link 基本使用](https://tnotesjs.github.io/TNotes.nodejs/notes/0024.%20npm%20link%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README)
 - [ ] [0023. npm 内置命令](https://tnotesjs.github.io/TNotes.nodejs/notes/0023.%20npm%20%E5%86%85%E7%BD%AE%E5%91%BD%E4%BB%A4/README)
 
-### 15.6. nodejs 命令行操作
+### 16.6. nodejs 命令行操作
 
 - [ ] [0003. 使用 npm_lifecycle_script 获取当前运行的 nodejs 命令](https://tnotesjs.github.io/TNotes.nodejs/notes/0003.%20%E4%BD%BF%E7%94%A8%20npm_lifecycle_script%20%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E8%BF%90%E8%A1%8C%E7%9A%84%20nodejs%20%E5%91%BD%E4%BB%A4/README)
 - [ ] [0004. 学会使用 nodejs 运行 .js 文件](https://tnotesjs.github.io/TNotes.nodejs/notes/0004.%20%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8%20nodejs%20%E8%BF%90%E8%A1%8C%20.js%20%E6%96%87%E4%BB%B6/README)
 - [ ] [0013. 安装 nodejs](https://tnotesjs.github.io/TNotes.nodejs/notes/0013.%20%E5%AE%89%E8%A3%85%20nodejs/README)
 - [ ] [0021. minimist 基本使用](https://tnotesjs.github.io/TNotes.nodejs/notes/0021.%20minimist%20%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/README)
 
-### 15.7. others
+### 16.7. others
 
 - [ ] [0005. 获取 macos 下都安装了哪些应用](https://tnotesjs.github.io/TNotes.nodejs/notes/0005.%20%E8%8E%B7%E5%8F%96%20macos%20%E4%B8%8B%E9%83%BD%E5%AE%89%E8%A3%85%E4%BA%86%E5%93%AA%E4%BA%9B%E5%BA%94%E7%94%A8/README)
 - [ ] [0006. 使用 screencapture 命令实现 macos 系统截图](https://tnotesjs.github.io/TNotes.nodejs/notes/0006.%20%E4%BD%BF%E7%94%A8%20screencapture%20%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0%20macos%20%E7%B3%BB%E7%BB%9F%E6%88%AA%E5%9B%BE/README)
 - [ ] [0027. 在 Windows 的 power shell 中执行 pnpm i 命令错误问题](https://tnotesjs.github.io/TNotes.nodejs/notes/0027.%20%E5%9C%A8%20Windows%20%E7%9A%84%20power%20shell%20%E4%B8%AD%E6%89%A7%E8%A1%8C%20pnpm%20i%20%E5%91%BD%E4%BB%A4%E9%94%99%E8%AF%AF%E9%97%AE%E9%A2%98/README)
 - [ ] [0063. Node.js 学习路线](https://tnotesjs.github.io/TNotes.nodejs/notes/0063.%20Node.js%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/README)
 - [ ] [0076. exec vs. spawn](https://tnotesjs.github.io/TNotes.nodejs/notes/0076.%20exec%20vs.%20spawn/README)
-- [ ] [0092. xxx](https://tnotesjs.github.io/TNotes.nodejs/notes/0092.%20xxx/README)
 - [ ] [0093. xxx](https://tnotesjs.github.io/TNotes.nodejs/notes/0093.%20xxx/README)
 - [ ] [0094. xxx](https://tnotesjs.github.io/TNotes.nodejs/notes/0094.%20xxx/README)
 - [ ] [0095. xxx](https://tnotesjs.github.io/TNotes.nodejs/notes/0095.%20xxx/README)
