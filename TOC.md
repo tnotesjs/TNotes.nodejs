@@ -4,6 +4,7 @@
 ## 1. 学习资源
 
 - [x] [0030. 学习资源](https://tnotesjs.github.io/TNotes.nodejs/notes/0030.%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/README)
+- [ ] [0001. nodejs 官方文档](https://tnotesjs.github.io/TNotes.nodejs/notes/0001.%20nodejs%20%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/README)
 - [x] [0032. 《Node.js 从入门到精通》](https://tnotesjs.github.io/TNotes.nodejs/notes/0032.%20%E3%80%8ANode.js%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A%E3%80%8B/README)
 - [x] [0015. 《深入浅出 Node.js》](https://tnotesjs.github.io/TNotes.nodejs/notes/0015.%20%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Node.js%E3%80%8B/README)
 - [x] [0016. 《Node.js 来一打 C++ 扩展》](https://tnotesjs.github.io/TNotes.nodejs/notes/0016.%20%E3%80%8ANode.js%20%E6%9D%A5%E4%B8%80%E6%89%93%20C%2B%2B%20%E6%89%A9%E5%B1%95%E3%80%8B/README)
@@ -12,7 +13,6 @@
 - [x] [0019. 《了不起的 Node js 将 JavaScript 进行到底》](https://tnotesjs.github.io/TNotes.nodejs/notes/0019.%20%E3%80%8A%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%20Node%20js%20%E5%B0%86%20JavaScript%20%E8%BF%9B%E8%A1%8C%E5%88%B0%E5%BA%95%E3%80%8B/README)
 - [x] [0022. 《Node.js 入门教程》（免费掘金小册）](https://tnotesjs.github.io/TNotes.nodejs/notes/0022.%20%E3%80%8ANode.js%20%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B%E3%80%8B%EF%BC%88%E5%85%8D%E8%B4%B9%E6%8E%98%E9%87%91%E5%B0%8F%E5%86%8C%EF%BC%89/README)
 - [x] [0025. 菜鸟教程](https://tnotesjs.github.io/TNotes.nodejs/notes/0025.%20%E8%8F%9C%E9%B8%9F%E6%95%99%E7%A8%8B/README)
-- [ ] [0026. nodejs 官方文档](https://tnotesjs.github.io/TNotes.nodejs/notes/0026.%20nodejs%20%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/README)
 - [ ] [0093. Node.js 设计模式](https://tnotesjs.github.io/TNotes.nodejs/notes/0093.%20Node.js%20%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/README)
 - [ ] [0094. Node.js 最佳实践指南](https://tnotesjs.github.io/TNotes.nodejs/notes/0094.%20Node.js%20%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E6%8C%87%E5%8D%97/README)
 
