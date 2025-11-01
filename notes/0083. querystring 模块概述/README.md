@@ -4,7 +4,7 @@
 
 - [1. 📝 概述](#1--概述)
 - [2. 💻 demos.1 - `querystring` 基本使用 - `parse`、`stringify`](#2--demos1---querystring-基本使用---parsestringify)
-- [3. 🔗 References](#3--references)
+- [3. 🔗 引用](#3--引用)
 
 <!-- endregion:toc -->
 
@@ -42,6 +42,6 @@ console.log(querystring.stringify(parsedQuery)) // 输出：name=John&age=30
 
 :::
 
-## 3. 🔗 References
+## 3. 🔗 引用
 
 - https://nodejs.org/docs/v22.15.0/api/querystring.html

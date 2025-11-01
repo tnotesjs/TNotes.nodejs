@@ -7,7 +7,7 @@
 - [3. 💻 demos.2 - 同步读取 - `fs.readFileSync`](#3--demos2---同步读取---fsreadfilesync)
 - [4. 💻 demos.3 - 流式读取 - `fs.createReadStream`](#4--demos3---流式读取---fscreatereadstream)
 - [5. 💻 demos.4 - 模拟听歌时显示歌词的效果](#5--demos4---模拟听歌时显示歌词的效果)
-- [6. 🔗 References](#6--references)
+- [6. 🔗 引用](#6--引用)
 
 <!-- endregion:toc -->
 
@@ -298,7 +298,7 @@ main()
 
 > demo from：`《Node.js 从入门到精通》 例7.1`
 
-## 6. 🔗 References
+## 6. 🔗 引用
 
 - https://nodejs.org/api/fs.html
   - Node.js 官方文档 - File system

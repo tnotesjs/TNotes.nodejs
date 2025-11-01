@@ -16,7 +16,7 @@
 - [12. 💻 demos.10 - `emit` 一个不存在的事件](#12--demos10---emit-一个不存在的事件)
 - [13. 💻 demos.11 - 特殊的 `error` 事件](#13--demos11---特殊的-error-事件)
 - [14. 💻 demos.12 - `setMaxListeners(limit)` 设置可以监听的最大回调函数数量](#14--demos12---setmaxlistenerslimit-设置可以监听的最大回调函数数量)
-- [15. 🔗 References](#15--references)
+- [15. 🔗 引用](#15--引用)
 
 <!-- endregion:toc -->
 
@@ -187,7 +187,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 15. 🔗 References
+## 15. 🔗 引用
 
 - https://www.runoob.com/nodejs/nodejs-event.html
   - 菜鸟教程 - Node.js EventEmitter

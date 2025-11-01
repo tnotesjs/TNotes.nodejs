@@ -8,7 +8,7 @@
   - [3.1. `POSIX` 标准](#31-posix-标准)
 - [4. 💻 demos.1 - 检查文件（文件夹）是否存在](#4--demos1---检查文件文件夹是否存在)
 - [5. 💻 demos.2 - 同时设置多个 `mode` 参数](#5--demos2---同时设置多个-mode-参数)
-- [6. 🔗 References](#6--references)
+- [6. 🔗 引用](#6--引用)
 
 <!-- endregion:toc -->
 
@@ -256,7 +256,7 @@ console.log((fs.constants.F_OK | fs.constants.W_OK).toString(2)) // 10（相当�
 
 :::
 
-## 6. 🔗 References
+## 6. 🔗 引用
 
 - https://zh.wikipedia.org/zh-hans/%E5%8F%AF%E7%A7%BB%E6%A4%8D%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8F%A3
   - wiki - 可移植操作系统接口 - POSIX - Portable Operating System Interface

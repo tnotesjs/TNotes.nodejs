@@ -5,7 +5,7 @@
 - [1. 📝 概述](#1--概述)
 - [2. 💻 demos.1 - process 常见字段](#2--demos1---process-常见字段)
 - [3. 💻 demos.2 - 根据 `process.platform` 判断当前系统环境](#3--demos2---根据-processplatform-判断当前系统环境)
-- [4. 🔗 References](#4--references)
+- [4. 🔗 引用](#4--引用)
 
 <!-- endregion:toc -->
 
@@ -47,7 +47,7 @@
 
 :::
 
-## 4. 🔗 References
+## 4. 🔗 引用
 
 - https://nodejs.org/api/process.html
   - 🔗 Node.js docs process

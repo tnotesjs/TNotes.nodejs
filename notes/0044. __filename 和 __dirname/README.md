@@ -7,7 +7,7 @@
 - [3. 💻 demos.1 - 在 CMD 环境中获取 `__filename` 和 `__dirname`](#3--demos1---在-cmd-环境中获取-__filename-和-__dirname)
 - [4. 💻 demos.2 - 在 ESM 环境中获取 `__filename` 和 `__dirname`](#4--demos2---在-esm-环境中获取-__filename-和-__dirname)
 - [5. 💻 demos.3 - `__filename` 和 `__dirname` 实际上并非全局变量](#5--demos3---__filename-和-__dirname-实际上并非全局变量)
-- [6. 🔗 References](#6--references)
+- [6. 🔗 引用](#6--引用)
 
 <!-- endregion:toc -->
 
@@ -70,7 +70,7 @@
 - 这也是为什么 `global.__dirname` 和 `global.__filename` 都返回 `undefined` 的原因。
 - 由于写起来感觉像是一个全局变量，直接写 `__dirname` 和 `__filename` 就可以访问了，因此也常将其称作是“全局变量”。
 
-## 6. 🔗 References
+## 6. 🔗 引用
 
 - https://nodejs.org/api/modules.html#the-module-wrapper
   - The module wrapper 模块包装器

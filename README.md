@@ -36,7 +36,7 @@
 
 ## 1. 学习资源
 
-- [x] [0030. nodejs 学习资源概述](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0030.%20nodejs%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%A6%82%E8%BF%B0/README.md)
+- [x] [0030. 学习资源](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0030.%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/README.md)
 - [x] [0032. 《Node.js 从入门到精通》](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0032.%20%E3%80%8ANode.js%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A%E3%80%8B/README.md)
 - [x] [0015. 《深入浅出 Node.js》](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0015.%20%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Node.js%E3%80%8B/README.md)
 - [x] [0016. 《Node.js来一打C++扩展》](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0016.%20%E3%80%8ANode.js%E6%9D%A5%E4%B8%80%E6%89%93C%2B%2B%E6%89%A9%E5%B1%95%E3%80%8B/README.md)
@@ -143,9 +143,9 @@
 ### 11.5. querystring
 
 - [x] [0083. querystring 模块概述](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0083.%20querystring%20%E6%A8%A1%E5%9D%97%E6%A6%82%E8%BF%B0/README.md)
-- [ ] [0089. xxx](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0089.%20xxx/README.md)
-- [ ] [0090. xxx](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0090.%20xxx/README.md)
-- [ ] [0091. xxx](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0091.%20xxx/README.md)
+- [ ] [0089. NPM vs. Yarn vs. PNPM](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0089.%20NPM%20vs.%20Yarn%20vs.%20PNPM/README.md)
+- [ ] [0090. PNPM](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0090.%20PNPM/README.md)
+- [ ] [0091. Yarn](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0091.%20Yarn/README.md)
 - [ ] [0092. xxx](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0092.%20xxx/README.md)
 - [ ] [0093. xxx](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0093.%20xxx/README.md)
 - [ ] [0094. xxx](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0094.%20xxx/README.md)

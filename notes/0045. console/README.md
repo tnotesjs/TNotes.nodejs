@@ -13,7 +13,7 @@
   - [3.6. `console.group()`、`console.groupEnd()`、`console.groupCollapsed()`](#36-consolegroupconsolegroupendconsolegroupcollapsed)
   - [3.7. `console.dir()`](#37-consoledir)
   - [3.8. 占位符 `%d`、`%s`、`%j`](#38-占位符-dsj)
-- [4. 🔗 References](#4--references)
+- [4. 🔗 引用](#4--引用)
 
 <!-- endregion:toc -->
 
@@ -160,6 +160,6 @@
 
 - 占位符还有很多，比如 `%o`、`%O`、`%c` 等等，不过日常开发基本用不到占位符。
 
-## 4. 🔗 References
+## 4. 🔗 引用
 
 - https://developer.mozilla.org/zh-CN/docs/Web/API/console

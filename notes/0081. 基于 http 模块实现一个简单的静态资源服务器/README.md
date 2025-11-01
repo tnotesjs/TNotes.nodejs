@@ -4,7 +4,7 @@
 
 - [1. 📝 概述](#1--概述)
 - [2. 💻 demos.1 - 基于 http 模块实现的一个简单的静态资源服务](#2--demos1---基于-http-模块实现的一个简单的静态资源服务)
-- [3. 🔗 References](#3--references)
+- [3. 🔗 引用](#3--引用)
 
 <!-- endregion:toc -->
 
@@ -120,7 +120,7 @@ server.listen(1012)
 
 :::
 
-## 3. 🔗 References
+## 3. 🔗 引用
 
 - https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener
   - Node.js - `http.createServer([options][, requestListener])`

@@ -7,7 +7,7 @@
 - [3. 💻 demos.1 - 获取当前进程的调度优先级](#3--demos1---获取当前进程的调度优先级)
 - [4. 💻 demos.2 - 修改进程的调度优先级](#4--demos2---修改进程的调度优先级)
 - [5. 💻 demos.3 - 查看电脑的优先级常量](#5--demos3---查看电脑的优先级常量)
-- [6. 🔗 References](#6--references)
+- [6. 🔗 引用](#6--引用)
 
 <!-- endregion:toc -->
 
@@ -242,7 +242,7 @@ console.log(os.constants.priority)
 
 - 在使用 `os` 模块的 `setPriority()` 方法设置进程优先级时，我们可以直接将其 `priority` 参数设置为以上 6 个值之一。
 
-## 6. 🔗 References
+## 6. 🔗 引用
 
 - [priority](https://github.com/Tdahuyou/TNotes.en-words/blob/main/priority.md)
   - 优先级

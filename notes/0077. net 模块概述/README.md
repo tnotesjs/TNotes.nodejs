@@ -6,7 +6,7 @@
 - [2. 💻 demos.1 - 体验 net 模块](#2--demos1---体验-net-模块)
 - [3. 💻 demos.2 - 模拟 http 请求](#3--demos2---模拟-http-请求)
 - [4. 💻 demos.3 - 实现一个简单的 web 服务 - 向浏览器响应图片](#4--demos3---实现一个简单的-web-服务---向浏览器响应图片)
-- [5. 🔗 References](#5--references)
+- [5. 🔗 引用](#5--引用)
 
 <!-- endregion:toc -->
 
@@ -307,7 +307,7 @@ Content-Type: image/jpeg
 
 :::
 
-## 5. 🔗 References
+## 5. 🔗 引用
 
 - https://nodejs.org/api/net.html#netcreateconnection
   - nodejs net 模块

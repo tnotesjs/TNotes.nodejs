@@ -2,7 +2,7 @@
 
 <!-- region:toc -->
 
-- [1. 🔗 links](#1--links)
+- [1. 🔗 引用](#1--引用)
 - [2. 📒 新版 nodejs](#2--新版-nodejs)
 - [3. 📒 旧版 nodejs](#3--旧版-nodejs)
 
@@ -11,7 +11,7 @@
 - 视频：✅
 - ⏰ 语雀知识库中存储的视频中演示流程是安装旧版 nodejs 的步骤。最新版的 nodejs 的页面发生了一些变化，可以结合着最新版的 nodejs 来重新录制一下基本的安装流程。
 
-## 1. 🔗 links
+## 1. 🔗 引用
 
 - https://nodejs.org/en - nodejs 官网文档。
 

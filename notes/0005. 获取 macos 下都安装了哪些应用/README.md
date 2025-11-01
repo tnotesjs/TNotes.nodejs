@@ -2,7 +2,7 @@
 
 <!-- region:toc -->
 
-- [1. 🔗 links](#1--links)
+- [1. 🔗 引用](#1--引用)
 - [2. 📒 macOS 中的 system_profiler 是什么？](#2--macos-中的-system_profiler-是什么)
 - [3. 📒 plist.js 是什么？有什么用？](#3--plistjs-是什么有什么用)
 - [4. 💻 demo](#4--demo)
@@ -11,7 +11,7 @@
 
 - 本文介绍了类似 rubick 这样的效率工具，是如何实现本地应用快速检索并启动的。
 
-## 1. 🔗 links
+## 1. 🔗 引用
 
 - https://github.com/rubickCenter/rubick - github - rubick。
 - https://rubick.vip/ - rubick 官网。

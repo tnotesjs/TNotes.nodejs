@@ -4,7 +4,7 @@
 
 - [1. 📝 概述](#1--概述)
 - [2. 📒 npm 官网](#2--npm-官网)
-- [3. 🔗 References](#3--references)
+- [3. 🔗 引用](#3--引用)
 
 <!-- endregion:toc -->
 
@@ -43,6 +43,6 @@
   - GitHub
     - https://github.com/npm/documentation
 
-## 3. 🔗 References
+## 3. 🔗 引用
 
 - https://www.npmjs.com/

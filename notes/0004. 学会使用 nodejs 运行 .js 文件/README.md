@@ -3,7 +3,7 @@
 <!-- region:toc -->
 
 - [1. 📝 概述](#1--概述)
-- [2. 🔗 links](#2--links)
+- [2. 🔗 引用](#2--引用)
 - [3. 📒 使用 nodejs 运行 .js 文件](#3--使用-nodejs-运行-js-文件)
 - [4. 📒 code runner 插件](#4--code-runner-插件)
 - [5. 💻 使用 code runner 插件运行 .js 文件](#5--使用-code-runner-插件运行-js-文件)
@@ -18,7 +18,7 @@
 - ⏰ 早期录制过视频说明，在录制新视频的时候可以到语雀上回看下旧版视频。
 - ⏰ 替换为 gif 动图 👉 💻 使用 code runner 插件运行 .js 文件
 
-## 2. 🔗 links
+## 2. 🔗 引用
 
 - https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner - vscode marketplace - code runner 插件。
 

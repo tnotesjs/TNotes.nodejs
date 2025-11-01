@@ -10,7 +10,7 @@
 - [6. 📒 `package.json` 的其他常用字段](#6--packagejson-的其他常用字段)
 - [7. 📒 有关浏览器版本的一些补充说明](#7--有关浏览器版本的一些补充说明)
 - [8. 🤔 在 `package.json` 文件中只能写官方指定的具有特殊含义的字段吗？可以添加自定义字段吗？](#8--在-packagejson-文件中只能写官方指定的具有特殊含义的字段吗可以添加自定义字段吗)
-- [9. 🔗 References](#9--references)
+- [9. 🔗 引用](#9--引用)
 
 <!-- endregion:toc -->
 
@@ -197,7 +197,7 @@ npm init -y
 - 答：可以。
 - 这玩意儿是非常灵活的，比如你想要添加字段 `abc`、`123`，直接写进去就完事儿了，只不过默认情况下它没啥用罢了，但你可以自行编写逻辑去读取这些字段的值，并进行处理，使其具备一定的功能。
 
-## 9. 🔗 References
+## 9. 🔗 引用
 
 - https://docs.npmjs.com/cli/v9/configuring-npm/package-json
 - npm docs package.json
