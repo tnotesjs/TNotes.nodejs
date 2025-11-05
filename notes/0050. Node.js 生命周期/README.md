@@ -2,6 +2,13 @@
 
 <!-- region:toc -->
 
+::: details 📚 相关资源
+
+- [📂 TNotes.yuque（笔记附件资源）](https://www.yuque.com/tdahuyou/tnotes.yuque/)
+  - [TNotes.yuque.nodejs.0050](https://www.yuque.com/tdahuyou/tnotes.yuque/nodejs.0050)
+
+:::
+
 - [1. 📝 概述](#1--概述)
 - [2. 📒 `timers、poll、check` 队列中分别存放哪些回调任务](#2--timerspollcheck-队列中分别存放哪些回调任务)
 - [3. 📒 宏队列、微队列](#3--宏队列微队列)
