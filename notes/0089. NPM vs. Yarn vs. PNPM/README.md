@@ -1,4 +1,4 @@
-# [0089. npm vs. yarn vs. pnpm](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0089.%20npm%20vs.%20yarn%20vs.%20pnpm)
+# [0089. NPM vs. Yarn vs. PNPM](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0089.%20NPM%20vs.%20Yarn%20vs.%20PNPM)
 
 <!-- region:toc -->
 

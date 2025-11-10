@@ -1,4 +1,4 @@
-# [0090. pnpm](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0090.%20pnpm)
+# [0090. PNPM](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0090.%20PNPM)
 
 <!-- region:toc -->
 
