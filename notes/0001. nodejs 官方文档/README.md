@@ -10,30 +10,32 @@
     - [右侧区域](#右侧区域)
   - [3.2. 首页代码示例区](#32-首页代码示例区)
 - [4. 🤔 Learn（学习模块）都有哪些内容？](#4--learn学习模块都有哪些内容)
-  - [4.1. Getting Started（快速上手）](#41-getting-started快速上手)
-  - [4.2. Command Line（命令行）](#42-command-line命令行)
-  - [4.3. HTTP](#43-http)
-  - [4.4. Manipulating Files（文件操作）](#44-manipulating-files文件操作)
-  - [4.5. Asynchronous Work（异步工作）](#45-asynchronous-work异步工作)
-  - [4.6. TypeScript](#46-typescript)
-  - [4.7. Modules（模块）](#47-modules模块)
-  - [4.8. Diagnostics（诊断）](#48-diagnostics诊断)
-  - [4.9. Test Runner（测试运行程序）](#49-test-runner测试运行程序)
+  - [4.1. 目录大纲](#41-目录大纲)
+  - [4.2. Getting Started（快速上手）](#42-getting-started快速上手)
+  - [4.3. Command Line（命令行）](#43-command-line命令行)
+  - [4.4. HTTP](#44-http)
+  - [4.5. Manipulating Files（文件操作）](#45-manipulating-files文件操作)
+  - [4.6. Asynchronous Work（异步工作）](#46-asynchronous-work异步工作)
+  - [4.7. TypeScript](#47-typescript)
+  - [4.8. Modules（模块）](#48-modules模块)
+  - [4.9. Diagnostics（诊断）](#49-diagnostics诊断)
+  - [4.10. Test Runner（测试运行程序）](#410-test-runner测试运行程序)
 - [5. 🤔 如何快速查找需要的 API 文档？](#5--如何快速查找需要的-api-文档)
-  - [5.1. 方法一：使用侧边栏导航](#51-方法一使用侧边栏导航)
-  - [5.2. 方法二：使用浏览器搜索](#52-方法二使用浏览器搜索)
-  - [5.3. 方法三：使用 Google 搜索](#53-方法三使用-google-搜索)
-  - [5.4. 方法四：版本特定 URL](#54-方法四版本特定-url)
+  - [5.1. 首选方案：“使用侧边栏导航 + 文档大纲”实现快速定位](#51-首选方案使用侧边栏导航--文档大纲实现快速定位)
+  - [5.2. 备选方案：直接在官方首页的搜索框中咨询 AI](#52-备选方案直接在官方首页的搜索框中咨询-ai)
 - [6. 🤔 官方文档的版本如何选择？](#6--官方文档的版本如何选择)
-  - [6.1. 版本分类](#61-版本分类)
-  - [6.2. 查看版本信息](#62-查看版本信息)
-  - [6.3. 选择建议](#63-选择建议)
-- [7. 🤔 如何理解官方文档中的稳定性指标？](#7--如何理解官方文档中的稳定性指标)
-  - [7.1. 稳定性级别](#71-稳定性级别)
-  - [7.2. 实际示例](#72-实际示例)
-  - [7.3. 查看稳定性标记](#73-查看稳定性标记)
-  - [7.4. 开发建议](#74-开发建议)
-- [8. 🔗 引用](#8--引用)
+- [7. 🤔 NodeJS 都有哪些版本，应该如何选择？](#7--nodejs-都有哪些版本应该如何选择)
+  - [7.1. 在关于面板中查看 Node.js 的版本信息](#71-在关于面板中查看-nodejs-的版本信息)
+  - [7.2. Node.js 的 3 类版本](#72-nodejs-的-3-类版本)
+  - [7.3. 查看版本信息](#73-查看版本信息)
+  - [7.4. 选择建议](#74-选择建议)
+- [8. 🤔 如何理解官方文档中的稳定性指标？](#8--如何理解官方文档中的稳定性指标)
+  - [8.1. 稳定性指标是什么？](#81-稳定性指标是什么)
+  - [8.2. 稳定性级别](#82-稳定性级别)
+  - [8.3. 实际示例](#83-实际示例)
+  - [8.4. 查看稳定性标记](#84-查看稳定性标记)
+  - [8.5. 开发建议](#85-开发建议)
+- [9. 🔗 引用](#9--引用)
 
 <!-- endregion:toc -->
 
@@ -96,7 +98,23 @@ nodejs 官方文档是学习 Node.js 最权威、最准确的资料来源。
 
 Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了从基础到进阶的各个主题。
 
-### 4.1. Getting Started（快速上手）
+### 4.1. 目录大纲
+
+::: tip 💡 备注
+
+下面记录的截图是 25.11 时的官方学习模块的目录内容。
+
+:::
+
+::: swiper
+
+![zh-cn](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-22-32-19.png)
+
+![en](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-22-33-02.png)
+
+:::
+
+### 4.2. Getting Started（快速上手）
 
 包含 Node.js 入门必备知识和基础概念。
 
@@ -117,7 +135,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | Security Best Practices | 安全最佳实践 | 安全防护建议 |
 | Introduction to Userland Migrations | Introduction to Userland Migrations | 版本升级指南 |
 
-### 4.2. Command Line（命令行）
+### 4.3. Command Line（命令行）
 
 涵盖命令行操作和脚本执行相关内容。
 
@@ -129,7 +147,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | Accept input from the command line in Node.js | 在 Node.js 中接受命令行输入 | 用户交互 |
 | How to read environment variables from Node.js | 如何从 Node.js 中读取环境变量 | 环境配置 |
 
-### 4.3. HTTP
+### 4.4. HTTP
 
 专注于 HTTP 协议和网络通信。
 
@@ -137,7 +155,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | --- | --- | --- |
 | Anatomy of an HTTP Transaction | Anatomy of an HTTP Transaction | HTTP 请求响应流程 |
 
-### 4.4. Manipulating Files（文件操作）
+### 4.5. Manipulating Files（文件操作）
 
 详细讲解文件系统操作的各个方面。
 
@@ -151,7 +169,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | Working with folders in Node.js | 在 Node.js 中处理文件夹 | 目录操作 |
 | How to work with Different Filesystems | 如何使用不同的文件系统 | 跨平台文件系统 |
 
-### 4.5. Asynchronous Work（异步工作）
+### 4.6. Asynchronous Work（异步工作）
 
 深入讲解 Node.js 的异步编程模型。
 
@@ -168,7 +186,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | Understanding setImmediate() | 掌握 setImmediate() | 宏任务队列 |
 | Don't Block the Event Loop | 请勿阻塞事件循环 | 性能优化建议 |
 
-### 4.6. TypeScript
+### 4.7. TypeScript
 
 介绍如何在 Node.js 中使用 TypeScript。
 
@@ -180,7 +198,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | Running TypeScript with a runner | 使用运行程序运行 TypeScript | 使用工具执行 |
 | Publishing a TypeScript package | 发布一个 TypeScript 包 | 包发布流程 |
 
-### 4.7. Modules（模块）
+### 4.8. Modules（模块）
 
 涵盖模块系统和包管理相关内容。
 
@@ -192,7 +210,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | How to publish a Node-API package | 如何发布一个 Node-API 包 | 原生模块发布 |
 | ABI Stability | ABI 稳定性 | 二进制接口兼容性 |
 
-### 4.8. Diagnostics（诊断）
+### 4.9. Diagnostics（诊断）
 
 帮助开发者诊断和解决各类问题。
 
@@ -204,7 +222,7 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 | Poor Performance | 性能分析 | 性能问题排查   |
 | Flame Graphs     | 火焰图   | 性能可视化分析 |
 
-### 4.9. Test Runner（测试运行程序）
+### 4.10. Test Runner（测试运行程序）
 
 介绍 Node.js 内置的测试工具。
 
@@ -217,58 +235,73 @@ Learn 模块是官方文档中最适合入门学习的部分，内容涵盖了�
 
 ## 5. 🤔 如何快速查找需要的 API 文档？
 
-### 5.1. 方法一：使用侧边栏导航
+### 5.1. 首选方案：“使用侧边栏导航 + 文档大纲”实现快速定位
 
 1. 进入 [API 文档页面][3]
 2. 左侧导航栏按字母顺序列出所有模块
 3. 点击对应模块名称跳转
 
-```javascript
+```js
 // 例如：查找 fs.readFile 的用法
-// 1. 点击左侧 "File system" 或 "fs"
-// 2. 页面内搜索 "readFile"
-// 3. 查看方法签名和示例代码
+// 1. 点击左侧 "File system"
+// 2. 在文档头部的 Table of contents 大纲区域中直接找 API 名称 "fs.readFile"
+// 3. 根据文档大纲快速导航的对应锚点位置 https://nodejs.org/docs/latest/api/fs.html#fsreadfilepath-options-callback
 ```
 
-### 5.2. 方法二：使用浏览器搜索
+这需要你对官方文档的大体结构较为熟悉，比如上述例子中的 `fs.readFile` 的用法，你起码需要知道这是文件系统模块的方法。
 
-在文档页面使用 `Ctrl + F`（Windows）或 `Cmd + F`（Mac）：
+### 5.2. 备选方案：直接在官方首页的搜索框中咨询 AI
 
-```javascript
-// 搜索关键词示例：
-// - "fs.readFile"
-// - "EventEmitter"
-// - "process.env"
-```
+1. 对于一些官方文档已索引的关键字，可以快速定位到相关的文档链接。（比如 `fs.readFile` 就是很多文档中都有提到的关键字）
+2. 如果想要知道你当前查询的模块在哪篇文档有介绍，也可以直接问询。
 
-### 5.3. 方法三：使用 Google 搜索
+::: swiper
 
-```text
-nodejs fs readFile
-nodejs EventEmitter
-nodejs process.argv
-```
+![1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-22-49-02.png)
 
-### 5.4. 方法四：版本特定 URL
+![2.1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-22-49-53.png)
 
-直接访问特定版本的 API 文档：
+![2.2](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-22-51-30.png)
 
-```text
-https://nodejs.org/docs/latest-v20.x/api/fs.html
-https://nodejs.org/docs/latest-v18.x/api/fs.html
-```
+:::
+
+需要注意的是 AI 返回的内容中，可能并非最新版 NodeJS 的内容，需要留意版本。
 
 ## 6. 🤔 官方文档的版本如何选择？
 
-### 6.1. 版本分类
+根据你的本地版本来选择即可。
 
-| 版本类型    | 说明         | 推荐场景               |
-| ----------- | ------------ | ---------------------- |
-| Current     | 最新功能版本 | 学习新特性、实验性项目 |
-| LTS         | 长期支持版本 | 生产环境、企业项目     |
-| Maintenance | 维护模式     | 遗留项目               |
+```js
+// 默认访问的 API 文档地址是：
+// https://nodejs.org/docs/latest/api
+// 这是最新版的 NodeJS 的 API 文档地址
+// 也是官方文档的 header 区域中提供的地址
 
-### 6.2. 查看版本信息
+// 比如你本地安装的版本是 v23.11.0
+// 这时候你只需要将 latest 替换为 v23.11.0 即可
+// https://nodejs.org/docs/v23.11.0/api
+// 这就是 v23.11.0 的 API 文档地址
+```
+
+## 7. 🤔 NodeJS 都有哪些版本，应该如何选择？
+
+### 7.1. 在关于面板中查看 Node.js 的版本信息
+
+你可以在“关于”面板中查看 [Node.js 版本][6] 的相关内容，在这里你可以看到 Node.js 历史上的一些主要版本的详情，比如各版本的发布和更新时间、各版本的安装包，以及其它更多的更新细节说明。
+
+![img](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-23-04-51.png)
+
+### 7.2. Node.js 的 3 类版本
+
+下面的分类时从版本的状态层面进行的分类，简单可以归为 3 类：
+
+| 版本类型 | 说明 | 备注 |
+| --- | --- | --- |
+| Current | 最新功能版本 | 最新状态的版本，适合学习新特性、实验性项目 |
+| LTS | 长期支持版本 | 可以将其理解为是稳定的 Node.js 版本，适合生产环境、企业项目 |
+| Maintenance | 维护模式 | 可以理解为是遗留的版本，可能出现在早期的旧项目中，条件允许建议升级到 LTS 版本 |
+
+### 7.3. 查看版本信息
 
 ```bash
 # 查看本地 Node.js 版本
@@ -277,7 +310,7 @@ node --version
 node -v
 ```
 
-### 6.3. 选择建议
+### 7.4. 选择建议
 
 生产环境：
 
@@ -305,11 +338,21 @@ const fs = require('fs').promises // Node.js 10+
 // 查看文档时注意 Stability 标记
 ```
 
-## 7. 🤔 如何理解官方文档中的稳定性指标？
+## 8. 🤔 如何理解官方文档中的稳定性指标？
+
+### 8.1. 稳定性指标是什么？
+
+你在阅读官方 API 文档的时候，会时不时看到类似这样的标记：
+
+![img](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-23-13-05.png)
+
+比如图片中的 Deprecated，这就是稳定性指标，官方术语叫 `Stability`。
 
 每个 API 都有稳定性级别标记，位于文档顶部：
 
-### 7.1. 稳定性级别
+![img](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-20-23-17-12.png)
+
+### 8.2. 稳定性级别
 
 | 级别 | 标识         | 说明   | 建议                   |
 | ---- | ------------ | ------ | ---------------------- |
@@ -318,7 +361,7 @@ const fs = require('fs').promises // Node.js 10+
 | 2    | Stable       | 稳定   | 可以安全使用           |
 | 3    | Legacy       | 遗留   | 保持兼容但不推荐       |
 
-### 7.2. 实际示例
+### 8.3. 实际示例
 
 ```javascript
 // ❌ Stability: 0 - Deprecated
@@ -334,7 +377,7 @@ const { Worker } = require('worker_threads') // 注意版本兼容性
 const fs = require('fs') // 可以放心使用
 ```
 
-### 7.3. 查看稳定性标记
+### 8.4. 查看稳定性标记
 
 1. 打开任意 API 文档页面
 2. 查看页面顶部的彩色标签
@@ -350,7 +393,7 @@ in a way modeled on standard POSIX functions.
 */
 ```
 
-### 7.4. 开发建议
+### 8.5. 开发建议
 
 ```javascript
 // ✅ 生产环境只使用 Stable API
@@ -375,16 +418,18 @@ try {
 // 3. 关注版本更新
 ```
 
-## 8. 🔗 引用
+## 9. 🔗 引用
 
 - [Node.js 官网][1]
 - [Node.js 官网（简体中文）][2]
 - [Node.js API 文档][3]
 - [Node.js Guides][4]
 - [Node.js 发布计划][5]
+- [Node.js 版本][6]
 
 [1]: https://nodejs.org/en
 [2]: https://nodejs.org/zh-cn
 [3]: https://nodejs.org/api/
 [4]: https://nodejs.org/en/docs/guides/
 [5]: https://github.com/nodejs/release#release-schedule
+[6]: https://nodejs.org/zh-cn/about/previous-releases

@@ -40,7 +40,7 @@
 ## 1. 学习资源
 
 - [x] [0030. 学习资源](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0030.%20%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90/README.md)
-- [ ] [0001. nodejs 官方文档](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0001.%20nodejs%20%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/README.md)
+- [x] [0001. nodejs 官方文档](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0001.%20nodejs%20%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3/README.md)
 - [x] [0032. 《Node.js 从入门到精通》](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0032.%20%E3%80%8ANode.js%20%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A%E3%80%8B/README.md)
 - [x] [0015. 《深入浅出 Node.js》](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0015.%20%E3%80%8A%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20Node.js%E3%80%8B/README.md)
 - [x] [0016. 《Node.js 来一打 C++ 扩展》](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0016.%20%E3%80%8ANode.js%20%E6%9D%A5%E4%B8%80%E6%89%93%20C%2B%2B%20%E6%89%A9%E5%B1%95%E3%80%8B/README.md)
