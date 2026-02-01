@@ -33,12 +33,13 @@
       "25.10": 60,
       "25.11": 62,
       "25.12": 62,
-      "26.01": 62
+      "26.01": 62,
+      "26.02": 62
     },
     "details": "NodeJS 笔记",
     "link": "https://tnotesjs.github.io/TNotes.nodejs/",
     "created_at": 1740924081000,
-    "updated_at": 1767227728047,
+    "updated_at": 1769948366807,
     "days_since_birth": 9379
   },
   "menuItems": [
