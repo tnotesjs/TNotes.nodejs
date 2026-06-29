@@ -2,9 +2,9 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 console 模块](#2--console-模块)
-- [3. 💻 demos.1 - console 对象](#3--demos1---console-对象)
+- [1. 概述](#1-概述)
+- [2. console 模块](#2-console-模块)
+- [3. demos.1 - console 对象](#3-demos1---console-对象)
   - [3.1. `console.log()`、`console.info()`、`console.error()`、`console.warn()`](#31-consolelogconsoleinfoconsoleerrorconsolewarn)
   - [3.2. `console.assert()`](#32-consoleassert)
   - [3.3. `console.count()`、`console.countReset()`](#33-consolecountconsolecountreset)
@@ -13,20 +13,20 @@
   - [3.6. `console.group()`、`console.groupEnd()`、`console.groupCollapsed()`](#36-consolegroupconsolegroupendconsolegroupcollapsed)
   - [3.7. `console.dir()`](#37-consoledir)
   - [3.8. 占位符 `%d`、`%s`、`%j`](#38-占位符-dsj)
-- [4. 🔗 引用](#4--引用)
+- [4. 引用](#4-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 console 模块的基本用法
 
-## 2. 📒 console 模块
+## 2. console 模块
 
 - console：用于提供控制台标准输出。
 - Node.js 中的 console 和传统 Web 中的 console 对象类似，可以参考 mdn docs console 文档了解详细用法：https://developer.mozilla.org/zh-CN/docs/Web/API/console
 
-## 3. 💻 demos.1 - console 对象
+## 3. demos.1 - console 对象
 
 ### 3.1. `console.log()`、`console.info()`、`console.error()`、`console.warn()`
 
@@ -160,6 +160,6 @@
 
 - 占位符还有很多，比如 `%o`、`%O`、`%c` 等等，不过日常开发基本用不到占位符。
 
-## 4. 🔗 引用
+## 4. 引用
 
 - https://developer.mozilla.org/zh-CN/docs/Web/API/console

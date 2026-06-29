@@ -2,10 +2,10 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 什么是 module 对象？](#3--什么是-module-对象)
-- [4. 🤔 module 对象有哪些重要属性？](#4--module-对象有哪些重要属性)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 什么是 module 对象？](#3-什么是-module-对象)
+- [4. module 对象有哪些重要属性？](#4-module-对象有哪些重要属性)
   - [4.1. 属性列表](#41-属性列表)
   - [4.2. module.id](#42-moduleid)
   - [4.3. module.path](#43-modulepath)
@@ -15,32 +15,32 @@
   - [4.7. module.parent](#47-moduleparent)
   - [4.8. module.children](#48-modulechildren)
   - [4.9. module.paths](#49-modulepaths)
-- [5. 🤔 如何使用 module.exports 导出模块？](#5--如何使用-moduleexports-导出模块)
+- [5. 如何使用 module.exports 导出模块？](#5-如何使用-moduleexports-导出模块)
   - [5.1. 导出对象](#51-导出对象)
   - [5.2. 导出函数](#52-导出函数)
   - [5.3. 导出类](#53-导出类)
   - [5.4. 导出单个值](#54-导出单个值)
   - [5.5. 动态导出](#55-动态导出)
   - [5.6. 逐步构建导出对象](#56-逐步构建导出对象)
-- [6. 🤔 module.require() 和 require() 有什么区别？](#6--modulerequire-和-require-有什么区别)
+- [6. module.require() 和 require() 有什么区别？](#6-modulerequire-和-require-有什么区别)
   - [6.1. 基本概念](#61-基本概念)
   - [6.2. 实际使用](#62-实际使用)
   - [6.3. 使用场景](#63-使用场景)
   - [6.4. 建议](#64-建议)
-- [7. 💻 demos.1 - 打印 module 对象](#7--demos1---打印-module-对象)
-- [8. 💻 demos.2 - 使用 module 对象实现模块化编程](#8--demos2---使用-module-对象实现模块化编程)
-- [9. 🔗 引用](#9--引用)
+- [7. demos.1 - 打印 module 对象](#7-demos1---打印-module-对象)
+- [8. demos.2 - 使用 module 对象实现模块化编程](#8-demos2---使用-module-对象实现模块化编程)
+- [9. 引用](#9-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - module 对象的定义和作用
 - module 对象的重要属性
 - module.exports 的使用方法
 - module 对象在模块系统中的作用
 
-## 2. 🫧 评价
+## 2. 评价
 
 module 对象是 CommonJS 模块系统的核心，代表当前模块本身。
 
@@ -49,7 +49,7 @@ module 对象是 CommonJS 模块系统的核心，代表当前模块本身。
 - 理解 module.exports 和 exports 的关系是掌握 CommonJS 模块系统的关键
 - module 对象在每个模块中都是独立的，不同模块的 module 对象互不影响
 
-## 3. 🤔 什么是 module 对象？
+## 3. 什么是 module 对象？
 
 module 对象是 Node.js 在 CommonJS 模块系统中为每个模块提供的一个对象，用于表示当前模块本身。
 
@@ -84,7 +84,7 @@ module.exports = {
 console.log(exports === module.exports) // ✅ true
 ```
 
-## 4. 🤔 module 对象有哪些重要属性？
+## 4. module 对象有哪些重要属性？
 
 ### 4.1. 属性列表
 
@@ -211,7 +211,7 @@ console.log(module.paths)
 // 4. C:\node_modules\lodash
 ```
 
-## 5. 🤔 如何使用 module.exports 导出模块？
+## 5. 如何使用 module.exports 导出模块？
 
 ### 5.1. 导出对象
 
@@ -328,7 +328,7 @@ module.exports.validate = function (data) {
 }
 ```
 
-## 6. 🤔 module.require() 和 require() 有什么区别？
+## 6. module.require() 和 require() 有什么区别？
 
 ### 6.1. 基本概念
 
@@ -380,7 +380,7 @@ const lodash = require('lodash')
 const lodash = module.require('lodash')
 ```
 
-## 7. 💻 demos.1 - 打印 module 对象
+## 7. demos.1 - 打印 module 对象
 
 ::: code-group
 
@@ -408,7 +408,7 @@ console.log('module:', module)
 
 :::
 
-## 8. 💻 demos.2 - 使用 module 对象实现模块化编程
+## 8. demos.2 - 使用 module 对象实现模块化编程
 
 ::: code-group
 
@@ -436,7 +436,7 @@ hello.sayHello()
 
 :::
 
-## 9. 🔗 引用
+## 9. 引用
 
 - [Node.js 官方文档 - The module object][1]
 - [Node.js 官方文档 - module.exports][2]

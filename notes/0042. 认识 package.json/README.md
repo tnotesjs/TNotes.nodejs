@@ -2,28 +2,28 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 🤔 `package.json` 是什么？](#2--packagejson-是什么)
-- [3. 🤔 `package.json` 的主要作用是？](#3--packagejson-的主要作用是)
-- [4. 💻 初始化 `package.json`](#4--初始化-packagejson)
-- [5. 📒 `package.json` 文件的基本结构](#5--packagejson-文件的基本结构)
-- [6. 📒 `package.json` 的其他常用字段](#6--packagejson-的其他常用字段)
-- [7. 📒 有关浏览器版本的一些补充说明](#7--有关浏览器版本的一些补充说明)
-- [8. 🤔 在 `package.json` 文件中只能写官方指定的具有特殊含义的字段吗？可以添加自定义字段吗？](#8--在-packagejson-文件中只能写官方指定的具有特殊含义的字段吗可以添加自定义字段吗)
-- [9. 🔗 引用](#9--引用)
+- [1. 概述](#1-概述)
+- [2. `package.json` 是什么？](#2-packagejson-是什么)
+- [3. `package.json` 的主要作用是？](#3-packagejson-的主要作用是)
+- [4. 初始化 `package.json`](#4-初始化-packagejson)
+- [5. `package.json` 文件的基本结构](#5-packagejson-文件的基本结构)
+- [6. `package.json` 的其他常用字段](#6-packagejson-的其他常用字段)
+- [7. 有关浏览器版本的一些补充说明](#7-有关浏览器版本的一些补充说明)
+- [8. 在 `package.json` 文件中只能写官方指定的具有特殊含义的字段吗？可以添加自定义字段吗？](#8-在-packagejson-文件中只能写官方指定的具有特殊含义的字段吗可以添加自定义字段吗)
+- [9. 引用](#9-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 认识 package.json 文件
 
-## 2. 🤔 `package.json` 是什么？
+## 2. `package.json` 是什么？
 
 - `package.json` 是 Node.js 项目的核心配置文件，采用 JSON 格式，用于定义项目的元数据、依赖项、脚本命令以及其他配置信息。
 - `package.json` 是 Node.js 和 npm（Node Package Manager）生态系统的重要组成部分。
 
-## 3. 🤔 `package.json` 的主要作用是？
+## 3. `package.json` 的主要作用是？
 
 | 作用 | 描述 |
 | --- | --- |
@@ -35,7 +35,7 @@
 
 - 通过合理配置 `package.json`，可以显著提升项目的可维护性、协作效率和一致性。
 
-## 4. 💻 初始化 `package.json`
+## 4. 初始化 `package.json`
 
 - 可以通过以下方式创建一个 `package.json` 文件：
   - **手动创建**：简单粗暴，直接创建一个符合 `package.json` 格式要求的文件。
@@ -53,7 +53,7 @@ npm init -y
 # -y 参数的作用：相关字段自动填写默认值。
 ```
 
-## 5. 📒 `package.json` 文件的基本结构
+## 5. `package.json` 文件的基本结构
 
 - `package.json` 文件的基本结构如下：
 
@@ -137,7 +137,7 @@ npm init -y
 // 因为 start 和 test 是 npm 自带的命令，所以不需要加 run 写成 npm run xxx，可以直接简写 npm xxx。
 ```
 
-## 6. 📒 `package.json` 的其他常用字段
+## 6. `package.json` 的其他常用字段
 
 - `keywords`: 关键词数组，用于描述项目的功能，方便在 npm 上搜索。
 - `contributors`：除作者外，该项目可以有一个或多个贡献者，此属性是列出他们的数组。
@@ -171,7 +171,7 @@ npm init -y
 ]
 ```
 
-## 7. 📒 有关浏览器版本的一些补充说明
+## 7. 有关浏览器版本的一些补充说明
 
 - **`> 1%`**
   - 表示支持全球使用率超过 1% 的浏览器。
@@ -192,12 +192,12 @@ npm init -y
     - Firefox 的最新两个版本。
   - 这种规则适合需要兼容较新浏览器的项目。
 
-## 8. 🤔 在 `package.json` 文件中只能写官方指定的具有特殊含义的字段吗？可以添加自定义字段吗？
+## 8. 在 `package.json` 文件中只能写官方指定的具有特殊含义的字段吗？可以添加自定义字段吗？
 
 - 答：可以。
 - 这玩意儿是非常灵活的，比如你想要添加字段 `abc`、`123`，直接写进去就完事儿了，只不过默认情况下它没啥用罢了，但你可以自行编写逻辑去读取这些字段的值，并进行处理，使其具备一定的功能。
 
-## 9. 🔗 引用
+## 9. 引用
 
 - https://docs.npmjs.com/cli/v9/configuring-npm/package-json
 - npm docs package.json

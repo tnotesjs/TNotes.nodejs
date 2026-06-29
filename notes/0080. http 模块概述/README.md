@@ -2,21 +2,21 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - `server` 对象](#2--demos1---server-对象)
-- [3. 💻 demos.2 - `response` 对象](#3--demos2---response-对象)
-- [4. 💻 demos.3 - 响应 html 文件](#4--demos3---响应-html-文件)
-- [5. 💻 demos.4 - 响应媒体资源](#5--demos4---响应媒体资源)
-- [6. 💻 demos.5 - 重定向](#6--demos5---重定向)
-- [7. 💻 demos.6 - `request` 对象](#7--demos6---request-对象)
+- [1. 概述](#1-概述)
+- [2. demos.1 - `server` 对象](#2-demos1---server-对象)
+- [3. demos.2 - `response` 对象](#3-demos2---response-对象)
+- [4. demos.3 - 响应 html 文件](#4-demos3---响应-html-文件)
+- [5. demos.4 - 响应媒体资源](#5-demos4---响应媒体资源)
+- [6. demos.5 - 重定向](#6-demos5---重定向)
+- [7. demos.6 - `request` 对象](#7-demos6---request-对象)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - http 模块中主要有 `server` 对象、`response` 对象和 `request` 对象，也是本节笔记主要介绍的内容。
 
-## 2. 💻 demos.1 - `server` 对象
+## 2. demos.1 - `server` 对象
 
 - `server` 对象用来创建一个服务。
 - 在 Node.js 中，使用 `http` 模块中的 `createServer()` 方法，可以创建一个 `server` 对象
@@ -50,7 +50,7 @@ const server = http.createServer((req, res) => {
 const PORT = 23523
 server.listen(PORT, () => {
   console.log(
-    `${getCurrentTime()} 服务器已启动，监听地址是 http://127.0.0.1:${PORT}`
+    `${getCurrentTime()} 服务器已启动，监听地址是 http://127.0.0.1:${PORT}`,
   )
   console.log(`${getCurrentTime()} 服务器将在10秒后关闭...`)
   // 定时关闭服务器
@@ -85,7 +85,7 @@ server.listen(PORT, () => {
   - 启动后 10 秒自动关闭服务器。
   - 关闭服务器后输出 "服务器已成功关闭"。
 
-## 3. 💻 demos.2 - `response` 对象
+## 3. demos.2 - `response` 对象
 
 - `response` 对象用于向客户端发送响应。
 - 主要方法：
@@ -116,7 +116,7 @@ require('http')
 
 - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-25-10-41-40.png)
 
-## 4. 💻 demos.3 - 响应 html 文件
+## 4. demos.3 - 响应 html 文件
 
 ::: code-group
 
@@ -178,7 +178,7 @@ http
 
 - ![图 1](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-25-11-00-09.png)
 
-## 5. 💻 demos.4 - 响应媒体资源
+## 5. demos.4 - 响应媒体资源
 
 ::: code-group
 
@@ -252,7 +252,7 @@ http
 - 备注：
   - 其中 `1.mp4` 是 `0032. 《Node.js 从入门到精通》` 中的视频 `11.3 http 模块.mp4` 的开头部分。
 
-## 6. 💻 demos.5 - 重定向
+## 6. demos.5 - 重定向
 
 ::: code-group
 
@@ -291,7 +291,7 @@ server.listen(PORT, () => {
 | `4**`  | 客户端错误   | 400 Bad Request           |
 | `5**`  | 服务器端错误 | 500 Internal Server Error |
 
-## 7. 💻 demos.6 - `request` 对象
+## 7. demos.6 - `request` 对象
 
 - `request` 对象用于处理客户端请求。
 - 主要属性：

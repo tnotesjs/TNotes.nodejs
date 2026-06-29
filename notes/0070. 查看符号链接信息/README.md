@@ -2,12 +2,12 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 对比：`fs.stat` 和 `fs.lstat`](#2--demos1---对比fsstat-和-fslstat)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 对比：`fs.stat` 和 `fs.lstat`](#2-demos1---对比fsstat-和-fslstat)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 要区分普通文件、目录和符号链接，可以使用 `fs.lstat()` 或 `fs.lstatSync()` 方法。
 - 这些方法 **不会解析符号链接，而是直接返回符号链接本身的信息**。
@@ -37,7 +37,7 @@
   - 如果你需要知道符号链接指向的目标是什么，可以使用 `fs.stat()` 或 `fs.statSync()`。
   - 如果你需要判断路径是否是符号链接本身，应该使用 `fs.lstat()` 或 `fs.lstatSync()`。
 
-## 2. 💻 demos.1 - 对比：`fs.stat` 和 `fs.lstat`
+## 2. demos.1 - 对比：`fs.stat` 和 `fs.lstat`
 
 ::: code-group
 

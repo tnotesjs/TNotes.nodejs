@@ -2,28 +2,28 @@
 
 <!-- region:toc -->
 
-- [1. 🔗 npm docs - npm-link](#1--npm-docs---npm-link)
-- [2. 📒 `npm link` 简介](#2--npm-link-简介)
-- [3. 💻 demo - `npm link` 基本使用](#3--demo---npm-link-基本使用)
-- [4. 📒 和 link 相关的命令](#4--和-link-相关的命令)
-- [5. 📒 `npm link` 的实际应用场景](#5--npm-link-的实际应用场景)
+- [1. npm docs - npm-link](#1-npm-docs---npm-link)
+- [2. `npm link` 简介](#2-npm-link-简介)
+- [3. demo - `npm link` 基本使用](#3-demo---npm-link-基本使用)
+- [4. 和 link 相关的命令](#4-和-link-相关的命令)
+- [5. `npm link` 的实际应用场景](#5-npm-link-的实际应用场景)
 
 <!-- endregion:toc -->
 
 - 本节介绍了 `npm link` 的基本使用。
 - 重点在于理解 `npm link` 的应用场景，主要用于解决什么问题。
 
-## 1. 🔗 npm docs - npm-link
+## 1. npm docs - npm-link
 
 - https://docs.npmjs.com/cli/v10/commands/npm-link
   - npm docs - npm-link
 
-## 2. 📒 `npm link` 简介
+## 2. `npm link` 简介
 
 - `npm link` 用于在开发过程中链接本地模块。
 - `npm link` 使得你可以在一个项目中测试另一个项目的更改，而不需要每次都重新发布和安装。
 
-## 3. 💻 demo - `npm link` 基本使用
+## 3. demo - `npm link` 基本使用
 
 - 目录结构：
 
@@ -82,7 +82,7 @@ module.exports = {
   - ![](./assets/1.gif)
   - 可以尝试先运行 1.js 看看打印结果，然后修改 `demo/my-module/index.js` 中的内容，比如在结尾加上一条打印语句 `console.log(123)` 然后再运行 1.js 看看打印结果，如果 `123` 输出了，这就意味着符号链接已经生效了。
 
-## 4. 📒 和 link 相关的命令
+## 4. 和 link 相关的命令
 
 - `npm link` - 创建符号链接
   - 假设你有一个本地模块 `my-module`，并且你想在一个项目 `my-project` 中使用它。
@@ -116,7 +116,7 @@ $ npm ls --global
   - **路径问题** - 确保你在正确的目录中运行 `npm link` 和 `npm unlink` 命令。
   - **全局路径** - `npm link` 创建的全局链接默认位于 `npm` 的全局安装目录中，可以通过 `npm config get prefix` 查看该目录。
 
-## 5. 📒 `npm link` 的实际应用场景
+## 5. `npm link` 的实际应用场景
 
 1. 场景 1：你是 vue、react 的开发者，你正在写一个新的功能或者修改某个 bug，当你写完之后，你需要在本地的一个项目 A 中测试新 vue、react 的功能是否正常，或者 bug 是否已经修复。
    1. 方式 1：不使用 npm link

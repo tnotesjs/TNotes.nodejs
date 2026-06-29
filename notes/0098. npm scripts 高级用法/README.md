@@ -2,59 +2,59 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 什么是 npm scripts？](#3--什么是-npm-scripts)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 什么是 npm scripts？](#3-什么是-npm-scripts)
   - [3.1. 基本使用](#31-基本使用)
   - [3.2. 特殊脚本](#32-特殊脚本)
-- [4. 🤔 如何传递参数给 npm scripts？](#4--如何传递参数给-npm-scripts)
+- [4. 如何传递参数给 npm scripts？](#4-如何传递参数给-npm-scripts)
   - [4.1. 传递单个参数](#41-传递单个参数)
   - [4.2. 传递多个参数](#42-传递多个参数)
   - [4.3. 在脚本内使用变量](#43-在脚本内使用变量)
-- [5. 🤔 如何在 npm scripts 中执行多个命令？](#5--如何在-npm-scripts-中执行多个命令)
+- [5. 如何在 npm scripts 中执行多个命令？](#5-如何在-npm-scripts-中执行多个命令)
   - [5.1. 串行执行（按顺序）](#51-串行执行按顺序)
   - [5.2. 并行执行（同时）](#52-并行执行同时)
   - [5.3. 使用 npm-run-all](#53-使用-npm-run-all)
-- [6. 🤔 如何在 npm scripts 中使用环境变量？](#6--如何在-npm-scripts-中使用环境变量)
+- [6. 如何在 npm scripts 中使用环境变量？](#6-如何在-npm-scripts-中使用环境变量)
   - [6.1. 使用 cross-env](#61-使用-cross-env)
   - [6.2. 使用 dotenv](#62-使用-dotenv)
   - [6.3. npm 内置环境变量](#63-npm-内置环境变量)
-- [7. 🤔 如何访问 package.json 中的字段？](#7--如何访问-packagejson-中的字段)
+- [7. 如何访问 package.json 中的字段？](#7-如何访问-packagejson-中的字段)
   - [7.1. 通过环境变量访问](#71-通过环境变量访问)
   - [7.2. 命名规则](#72-命名规则)
-- [8. 🤔 npm scripts 的生命周期钩子有哪些？](#8--npm-scripts-的生命周期钩子有哪些)
+- [8. npm scripts 的生命周期钩子有哪些？](#8-npm-scripts-的生命周期钩子有哪些)
   - [8.1. 基本钩子](#81-基本钩子)
   - [8.2. 常见生命周期](#82-常见生命周期)
   - [8.3. 实际应用场景](#83-实际应用场景)
   - [8.4. 钩子执行流程图](#84-钩子执行流程图)
-- [9. 🤔 如何让 npm scripts 支持跨平台？](#9--如何让-npm-scripts-支持跨平台)
+- [9. 如何让 npm scripts 支持跨平台？](#9-如何让-npm-scripts-支持跨平台)
   - [9.1. 常见跨平台问题](#91-常见跨平台问题)
   - [9.2. 解决方案](#92-解决方案)
     - [使用跨平台工具包](#使用跨平台工具包)
   - [9.3. 使用 shx](#93-使用-shx)
-- [10. 🤔 如何在 npm scripts 中使用通配符？](#10--如何在-npm-scripts-中使用通配符)
+- [10. 如何在 npm scripts 中使用通配符？](#10-如何在-npm-scripts-中使用通配符)
   - [10.1. 使用 glob 模式](#101-使用-glob-模式)
   - [10.2. 使用 glob 包](#102-使用-glob-包)
   - [10.3. 脚本名称通配符](#103-脚本名称通配符)
-- [11. 🤔 如何在 npm scripts 中使用本地安装的包？](#11--如何在-npm-scripts-中使用本地安装的包)
+- [11. 如何在 npm scripts 中使用本地安装的包？](#11-如何在-npm-scripts-中使用本地安装的包)
   - [11.1. npm 自动查找](#111-npm-自动查找)
   - [11.2. 使用 npx](#112-使用-npx)
   - [11.3. 手动指定路径](#113-手动指定路径)
-- [12. 🤔 如何简化长命令？](#12--如何简化长命令)
+- [12. 如何简化长命令？](#12-如何简化长命令)
   - [12.1. 拆分为多个脚本](#121-拆分为多个脚本)
   - [12.2. 提取到独立文件](#122-提取到独立文件)
   - [12.3. 使用配置文件](#123-使用配置文件)
-- [13. 🤔 如何调试 npm scripts？](#13--如何调试-npm-scripts)
+- [13. 如何调试 npm scripts？](#13-如何调试-npm-scripts)
   - [13.1. 查看实际执行的命令](#131-查看实际执行的命令)
   - [13.2. 添加调试输出](#132-添加调试输出)
   - [13.3. 使用 npm 调试模式](#133-使用-npm-调试模式)
   - [13.4. 查看执行的脚本](#134-查看执行的脚本)
   - [13.5. 使用环境变量调试](#135-使用环境变量调试)
-- [14. 🔗 引用](#14--引用)
+- [14. 引用](#14-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - npm scripts 参数传递
 - 多命令执行（串行、并行）
@@ -64,7 +64,7 @@
 - 通配符和变量访问
 - 调试技巧
 
-## 2. 🫧 评价
+## 2. 评价
 
 npm scripts 是 `package.json` 中的脚本系统，可以自动化项目中的各种任务。
 
@@ -73,7 +73,7 @@ npm scripts 是 `package.json` 中的脚本系统，可以自动化项目中的�
 - 跨平台脚本需要特别注意，推荐使用专门的工具包来处理
 - 对于复杂任务，建议将脚本逻辑提取到独立的 JS 文件中
 
-## 3. 🤔 什么是 npm scripts？
+## 3. 什么是 npm scripts？
 
 npm scripts 是定义在 `package.json` 文件中 `scripts` 字段的命令集合。
 
@@ -110,7 +110,7 @@ npm test
 - `npm test` = `npm run test`
 - `npm restart` = `npm run restart`
 
-## 4. 🤔 如何传递参数给 npm scripts？
+## 4. 如何传递参数给 npm scripts？
 
 使用 `--` 分隔符可以将参数传递给脚本命令。
 
@@ -175,7 +175,7 @@ npm run build -- --port=8080 --env=production
 
 :::
 
-## 5. 🤔 如何在 npm scripts 中执行多个命令？
+## 5. 如何在 npm scripts 中执行多个命令？
 
 ### 5.1. 串行执行（按顺序）
 
@@ -248,7 +248,7 @@ npm install npm-run-all --save-dev
 - `build:*` 匹配所有以 `build:` 开头的脚本
 - `test:unit` 和 `test:e2e` 可以通过 `test:*` 一起执行
 
-## 6. 🤔 如何在 npm scripts 中使用环境变量？
+## 6. 如何在 npm scripts 中使用环境变量？
 
 ### 6.1. 使用 cross-env
 
@@ -334,7 +334,7 @@ console.log(process.env.npm_package_version) // 版本号
 console.log(process.env.npm_lifecycle_event) // 当前执行的脚本名
 ```
 
-## 7. 🤔 如何访问 package.json 中的字段？
+## 7. 如何访问 package.json 中的字段？
 
 ### 7.1. 通过环境变量访问
 
@@ -391,7 +391,7 @@ process.env.npm_package_author_name // 张三
 process.env.npm_package_author_email // zhangsan@example.com
 ```
 
-## 8. 🤔 npm scripts 的生命周期钩子有哪些？
+## 8. npm scripts 的生命周期钩子有哪些？
 
 npm 为脚本提供了前置和后置钩子，命名规则为 `pre<script>` 和 `post<script>`。
 
@@ -472,7 +472,7 @@ graph TD
     F --> G
 ```
 
-## 9. 🤔 如何让 npm scripts 支持跨平台？
+## 9. 如何让 npm scripts 支持跨平台？
 
 ### 9.1. 常见跨平台问题
 
@@ -558,7 +558,7 @@ npm install shx --save-dev
 - `ls`、`mkdir`、`mv`、`pwd`、`rm`
 - `sed`、`test`、`touch` 等
 
-## 10. 🤔 如何在 npm scripts 中使用通配符？
+## 10. 如何在 npm scripts 中使用通配符？
 
 ### 10.1. 使用 glob 模式
 
@@ -628,7 +628,7 @@ files.forEach((file) => {
 
 执行 `npm run test` 会依次执行所有以 `test:` 开头的脚本。
 
-## 11. 🤔 如何在 npm scripts 中使用本地安装的包？
+## 11. 如何在 npm scripts 中使用本地安装的包？
 
 ### 11.1. npm 自动查找
 
@@ -682,7 +682,7 @@ npx eslint src
 
 ⚠️ 不推荐：路径分隔符在 Windows 上可能有问题。
 
-## 12. 🤔 如何简化长命令？
+## 12. 如何简化长命令？
 
 ### 12.1. 拆分为多个脚本
 
@@ -751,7 +751,7 @@ console.log('构建完成！')
 
 配置文件中可以使用 JS 逻辑处理复杂情况。
 
-## 13. 🤔 如何调试 npm scripts？
+## 13. 如何调试 npm scripts？
 
 ### 13.1. 查看实际执行的命令
 
@@ -812,7 +812,7 @@ const debug = require('debug')('app')
 debug('应用启动')
 ```
 
-## 14. 🔗 引用
+## 14. 引用
 
 - [npm Docs - scripts][1]
 - [npm Docs - run-script][2]

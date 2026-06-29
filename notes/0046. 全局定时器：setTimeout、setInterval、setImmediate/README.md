@@ -2,22 +2,22 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 定时器](#2--定时器)
-- [3. 💻 demos.1 - `setTimeout(cb, ms)`、`clearTimeout(t)`](#3--demos1---settimeoutcb-mscleartimeoutt)
-- [4. 💻 demos.2 - `setInterval(cb, ms)`、`clearInterval(t)`](#4--demos2---setintervalcb-msclearintervalt)
-- [5. 💻 demos.3 - `setImmediate(callback[, ...args])`、`clearImmediate(immediate)`](#5--demos3---setimmediatecallback-argsclearimmediateimmediate)
-- [6. 🤔 `setTimeout(fn, 0)` 和 `setImmediate(fn)` 之间的区别](#6--settimeoutfn-0-和-setimmediatefn-之间的区别)
+- [1. 概述](#1-概述)
+- [2. 定时器](#2-定时器)
+- [3. demos.1 - `setTimeout(cb, ms)`、`clearTimeout(t)`](#3-demos1---settimeoutcb-mscleartimeoutt)
+- [4. demos.2 - `setInterval(cb, ms)`、`clearInterval(t)`](#4-demos2---setintervalcb-msclearintervalt)
+- [5. demos.3 - `setImmediate(callback[, ...args])`、`clearImmediate(immediate)`](#5-demos3---setimmediatecallback-argsclearimmediateimmediate)
+- [6. `setTimeout(fn, 0)` 和 `setImmediate(fn)` 之间的区别](#6-settimeoutfn-0-和-setimmediatefn-之间的区别)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - `setTimeout`、`clearTimeout`
 - `setInterval`、`clearInterval`
 - `setImmediate`、`clearImmediate`
 
-## 2. 📒 定时器
+## 2. 定时器
 
 | 函数 | 说明 |
 | --- | --- |
@@ -37,7 +37,7 @@
   - `setTimeout` 和 `setInterval` 也存在于浏览器中
   - `setImmediate` 是 Node.js 特有的
 
-## 3. 💻 demos.1 - `setTimeout(cb, ms)`、`clearTimeout(t)`
+## 3. demos.1 - `setTimeout(cb, ms)`、`clearTimeout(t)`
 
 ::: code-group
 
@@ -51,7 +51,7 @@
 - **注意事项**：
   - 定时器的实际触发时间可能会受到事件循环负载的影响，因此不能保证完全精确。
 
-## 4. 💻 demos.2 - `setInterval(cb, ms)`、`clearInterval(t)`
+## 4. demos.2 - `setInterval(cb, ms)`、`clearInterval(t)`
 
 ::: code-group
 
@@ -68,7 +68,7 @@
   - 如果未正确调用 `clearInterval()`，定时器会一直运行，可能导致内存泄漏。
   - 定时器的实际触发时间可能会受到事件循环负载的影响，因此不能保证完全精确。
 
-## 5. 💻 demos.3 - `setImmediate(callback[, ...args])`、`clearImmediate(immediate)`
+## 5. demos.3 - `setImmediate(callback[, ...args])`、`clearImmediate(immediate)`
 
 ::: code-group
 
@@ -134,7 +134,7 @@ console.log('正常执行2')
   - 不要滥用 `setImmediate`，因为它可能会导致回调堆积，影响性能。
   - 如果需要取消，请及时调用 `clearImmediate()`。
 
-## 6. 🤔 `setTimeout(fn, 0)` 和 `setImmediate(fn)` 之间的区别
+## 6. `setTimeout(fn, 0)` 和 `setImmediate(fn)` 之间的区别
 
 ::: tip 备注
 

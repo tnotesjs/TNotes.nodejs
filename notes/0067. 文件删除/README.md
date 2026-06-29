@@ -2,16 +2,16 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 删除文件 - `unlink()`](#2--demos1---删除文件---unlink)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 删除文件 - `unlink()`](#2-demos1---删除文件---unlink)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 要删除一个文件，可以使用 `fs.unlink()` 或其同步版本 `fs.unlinkSync()`。
 
-## 2. 💻 demos.1 - 删除文件 - `unlink()`
+## 2. demos.1 - 删除文件 - `unlink()`
 
 ::: code-group
 

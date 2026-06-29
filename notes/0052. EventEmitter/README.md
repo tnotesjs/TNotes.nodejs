@@ -2,30 +2,30 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 EventEmitter](#2--eventemitter)
-- [3. 💻 demos.1 - `on`、`addListener`、`emit` 绑定事件和触发事件](#3--demos1---onaddlisteneremit-绑定事件和触发事件)
-- [4. 💻 demos.2 - 多次 `emit` 触发多次事件](#4--demos2---多次-emit-触发多次事件)
-- [5. 💻 demos.3 - 触发事件的时候可携带参数](#5--demos3---触发事件的时候可携带参数)
-- [6. 💻 demos.4 - `once` 绑定的事件只会触发一次](#6--demos4---once-绑定的事件只会触发一次)
-- [7. 💻 demos.5 - `off`、`removeListener` 解绑](#7--demos5---offremovelistener-解绑)
-- [8. 💻 demos.6 - 多次 `on` 可绑定多个事件](#8--demos6---多次-on-可绑定多个事件)
-- [9. 💻 demos.7 - `listenerCount` 获取监听器数量](#9--demos7---listenercount-获取监听器数量)
-- [10. 💻 demos.8 - `removeAllListeners` 移除所有的监听器](#10--demos8---removealllisteners-移除所有的监听器)
-- [11. 💻 demos.9 - `emit` 是同步的](#11--demos9---emit-是同步的)
-- [12. 💻 demos.10 - `emit` 一个不存在的事件](#12--demos10---emit-一个不存在的事件)
-- [13. 💻 demos.11 - 特殊的 `error` 事件](#13--demos11---特殊的-error-事件)
-- [14. 💻 demos.12 - `setMaxListeners(limit)` 设置可以监听的最大回调函数数量](#14--demos12---setmaxlistenerslimit-设置可以监听的最大回调函数数量)
-- [15. 🔗 引用](#15--引用)
+- [1. 概述](#1-概述)
+- [2. EventEmitter](#2-eventemitter)
+- [3. demos.1 - `on`、`addListener`、`emit` 绑定事件和触发事件](#3-demos1---onaddlisteneremit-绑定事件和触发事件)
+- [4. demos.2 - 多次 `emit` 触发多次事件](#4-demos2---多次-emit-触发多次事件)
+- [5. demos.3 - 触发事件的时候可携带参数](#5-demos3---触发事件的时候可携带参数)
+- [6. demos.4 - `once` 绑定的事件只会触发一次](#6-demos4---once-绑定的事件只会触发一次)
+- [7. demos.5 - `off`、`removeListener` 解绑](#7-demos5---offremovelistener-解绑)
+- [8. demos.6 - 多次 `on` 可绑定多个事件](#8-demos6---多次-on-可绑定多个事件)
+- [9. demos.7 - `listenerCount` 获取监听器数量](#9-demos7---listenercount-获取监听器数量)
+- [10. demos.8 - `removeAllListeners` 移除所有的监听器](#10-demos8---removealllisteners-移除所有的监听器)
+- [11. demos.9 - `emit` 是同步的](#11-demos9---emit-是同步的)
+- [12. demos.10 - `emit` 一个不存在的事件](#12-demos10---emit-一个不存在的事件)
+- [13. demos.11 - 特殊的 `error` 事件](#13-demos11---特殊的-error-事件)
+- [14. demos.12 - `setMaxListeners(limit)` 设置可以监听的最大回调函数数量](#14-demos12---setmaxlistenerslimit-设置可以监听的最大回调函数数量)
+- [15. 引用](#15-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 掌握 EventEmitter 模块的基本使用
 - 认识事件驱动架构
 
-## 2. 📒 EventEmitter
+## 2. EventEmitter
 
 - **事件 `events`**
   - Node.js 是一个事件驱动的运行时环境，所有的任务都可以视为事件处理。
@@ -67,7 +67,7 @@ const eventEmitter = new EventEmitter()
 | `emitter.removeListener(eventName, listener)` | 移除指定事件的某个监听器。 |
 | `emitter.removeAllListeners([eventName])` | 移除所有事件的所有监听器，如果指定了 `eventName`，则仅移除该事件的所有监听器。 |
 
-## 3. 💻 demos.1 - `on`、`addListener`、`emit` 绑定事件和触发事件
+## 3. demos.1 - `on`、`addListener`、`emit` 绑定事件和触发事件
 
 ::: code-group
 
@@ -75,7 +75,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 4. 💻 demos.2 - 多次 `emit` 触发多次事件
+## 4. demos.2 - 多次 `emit` 触发多次事件
 
 ::: code-group
 
@@ -83,7 +83,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 5. 💻 demos.3 - 触发事件的时候可携带参数
+## 5. demos.3 - 触发事件的时候可携带参数
 
 ::: code-group
 
@@ -91,7 +91,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 6. 💻 demos.4 - `once` 绑定的事件只会触发一次
+## 6. demos.4 - `once` 绑定的事件只会触发一次
 
 ::: code-group
 
@@ -99,7 +99,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 7. 💻 demos.5 - `off`、`removeListener` 解绑
+## 7. demos.5 - `off`、`removeListener` 解绑
 
 ::: code-group
 
@@ -107,7 +107,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 8. 💻 demos.6 - 多次 `on` 可绑定多个事件
+## 8. demos.6 - 多次 `on` 可绑定多个事件
 
 ::: code-group
 
@@ -119,7 +119,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 9. 💻 demos.7 - `listenerCount` 获取监听器数量
+## 9. demos.7 - `listenerCount` 获取监听器数量
 
 ::: code-group
 
@@ -127,7 +127,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 10. 💻 demos.8 - `removeAllListeners` 移除所有的监听器
+## 10. demos.8 - `removeAllListeners` 移除所有的监听器
 
 ::: code-group
 
@@ -137,7 +137,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 11. 💻 demos.9 - `emit` 是同步的
+## 11. demos.9 - `emit` 是同步的
 
 ::: code-group
 
@@ -145,7 +145,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 12. 💻 demos.10 - `emit` 一个不存在的事件
+## 12. demos.10 - `emit` 一个不存在的事件
 
 ::: code-group
 
@@ -153,7 +153,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 13. 💻 demos.11 - 特殊的 `error` 事件
+## 13. demos.11 - 特殊的 `error` 事件
 
 ::: code-group
 
@@ -175,7 +175,7 @@ const eventEmitter = new EventEmitter()
 - **如果不想使用 try-catch，同时又要避免程序崩溃，建议在使用 EventEmitter 的时候，始终为 error 事件注册一个监听器，以便能够捕获和处理错误。**
 - 在 Node.js 中，很多模块的错误处理都是监听 `error` 事件的原因就在于它们都是继承自 `EventEmitter` 的，因此，当错误发生的时候，如果你想要定义相关的错误处理逻辑，也应该监听 `error` 事件才对。
 
-## 14. 💻 demos.12 - `setMaxListeners(limit)` 设置可以监听的最大回调函数数量
+## 14. demos.12 - `setMaxListeners(limit)` 设置可以监听的最大回调函数数量
 
 ::: code-group
 
@@ -187,7 +187,7 @@ const eventEmitter = new EventEmitter()
 
 :::
 
-## 15. 🔗 引用
+## 15. 引用
 
 - https://www.runoob.com/nodejs/nodejs-event.html
   - 菜鸟教程 - Node.js EventEmitter

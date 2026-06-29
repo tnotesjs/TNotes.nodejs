@@ -2,20 +2,20 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 创建目录 `mkdir`](#2--demos1---创建目录-mkdir)
-- [3. 💻 demos.2 - 递归创建目录 `mkdir`](#3--demos2---递归创建目录-mkdir)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 创建目录 `mkdir`](#2-demos1---创建目录-mkdir)
+- [3. demos.2 - 递归创建目录 `mkdir`](#3-demos2---递归创建目录-mkdir)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 | 方法名        | 功能描述     |
 | ------------- | ------------ |
 | `mkdir()`     | 异步创建目录 |
 | `mkdirSync()` | 同步创建目录 |
 
-## 2. 💻 demos.1 - 创建目录 `mkdir`
+## 2. demos.1 - 创建目录 `mkdir`
 
 ::: code-group
 
@@ -48,7 +48,7 @@ try {
 
 :::
 
-## 3. 💻 demos.2 - 递归创建目录 `mkdir`
+## 3. demos.2 - 递归创建目录 `mkdir`
 
 ::: code-group
 

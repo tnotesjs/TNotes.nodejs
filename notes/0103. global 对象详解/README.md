@@ -2,36 +2,36 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 什么是 global 对象？](#3--什么是-global-对象)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 什么是 global 对象？](#3-什么是-global-对象)
   - [3.1. 定义](#31-定义)
   - [3.2. 特点](#32-特点)
   - [3.3. 作用](#33-作用)
-- [4. 🤔 global 对象有哪些常用属性和方法？](#4--global-对象有哪些常用属性和方法)
+- [4. global 对象有哪些常用属性和方法？](#4-global-对象有哪些常用属性和方法)
   - [4.1. 进程相关](#41-进程相关)
   - [4.2. 定时器相关](#42-定时器相关)
   - [4.3. 控制台和 Buffer](#43-控制台和-buffer)
   - [4.4. 模块相关（非 global 属性）](#44-模块相关非-global-属性)
-- [5. 🤔 如何在 global 对象上添加全局变量？](#5--如何在-global-对象上添加全局变量)
+- [5. 如何在 global 对象上添加全局变量？](#5-如何在-global-对象上添加全局变量)
   - [5.1. 添加方式](#51-添加方式)
   - [5.2. 访问方式](#52-访问方式)
-- [6. 🤔 global 对象与浏览器中的 window 对象有什么区别？](#6--global-对象与浏览器中的-window-对象有什么区别)
+- [6. global 对象与浏览器中的 window 对象有什么区别？](#6-global-对象与浏览器中的-window-对象有什么区别)
   - [6.1. 环境差异](#61-环境差异)
   - [6.2. this 指向差异](#62-this-指向差异)
   - [6.3. 统一的 globalThis](#63-统一的-globalthis)
-- [7. 🤔 为什么不推荐在 global 上添加属性？](#7--为什么不推荐在-global-上添加属性)
+- [7. 为什么不推荐在 global 上添加属性？](#7-为什么不推荐在-global-上添加属性)
   - [7.1. 主要问题](#71-主要问题)
   - [7.2. 推荐的替代方案](#72-推荐的替代方案)
   - [7.3. 少数合理的使用场景](#73-少数合理的使用场景)
-- [8. 💻 demos.1 - global 常用属性](#8--demos1---global-常用属性)
-- [9. 💻 demos.2 - 在 global 上添加全局变量](#9--demos2---在-global-上添加全局变量)
-- [10. 💻 demos.3 - globalThis 统一全局对象](#10--demos3---globalthis-统一全局对象)
-- [11. 🔗 引用](#11--引用)
+- [8. demos.1 - global 常用属性](#8-demos1---global-常用属性)
+- [9. demos.2 - 在 global 上添加全局变量](#9-demos2---在-global-上添加全局变量)
+- [10. demos.3 - globalThis 统一全局对象](#10-demos3---globalthis-统一全局对象)
+- [11. 引用](#11-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - global 对象的定义和作用
 - global 对象的常用属性和方法
@@ -39,7 +39,7 @@
 - globalThis 的使用
 - 全局变量的注意事项
 
-## 2. 🫧 评价
+## 2. 评价
 
 global 是 Node.js 中的全局对象，类似于浏览器中的 window 对象。
 
@@ -48,7 +48,7 @@ global 是 Node.js 中的全局对象，类似于浏览器中的 window 对象�
 - 使用 globalThis 可以编写跨平台的代码，同时兼容 Node.js 和浏览器
 - 实际开发中应该尽量使用模块化的方式组织代码，避免依赖全局变量
 
-## 3. 🤔 什么是 global 对象？
+## 3. 什么是 global 对象？
 
 `global` 是 Node.js 中的全局对象，它在所有模块中都可以访问。
 
@@ -73,7 +73,7 @@ console.log(global.Buffer === Buffer) // true
 - 存储进程相关信息
 - 提供定时器、控制台等基础功能
 
-## 4. 🤔 global 对象有哪些常用属性和方法？
+## 4. global 对象有哪些常用属性和方法？
 
 ### 4.1. 进程相关
 
@@ -117,7 +117,7 @@ console.log(typeof require) // 'function'
 console.log(typeof module) // 'object'
 ```
 
-## 5. 🤔 如何在 global 对象上添加全局变量？
+## 5. 如何在 global 对象上添加全局变量？
 
 可以直接在 `global` 对象上添加属性，使其在所有模块中可访问。
 
@@ -146,7 +146,7 @@ console.log(APP_CONFIG) // { port: 3000 }
 
 ⚠️ 警告：不推荐这样做，原因见后文。
 
-## 6. 🤔 global 对象与浏览器中的 window 对象有什么区别？
+## 6. global 对象与浏览器中的 window 对象有什么区别？
 
 ### 6.1. 环境差异
 
@@ -205,7 +205,7 @@ const root = globalThis
 root.myVar = 'works everywhere'
 ```
 
-## 7. 🤔 为什么不推荐在 global 上添加属性？
+## 7. 为什么不推荐在 global 上添加属性？
 
 ### 7.1. 主要问题
 
@@ -327,7 +327,7 @@ global.performanceMonitor = {
 }
 ```
 
-## 8. 💻 demos.1 - global 常用属性
+## 8. demos.1 - global 常用属性
 
 ::: code-group
 
@@ -339,7 +339,7 @@ global.performanceMonitor = {
 
 :::
 
-## 9. 💻 demos.2 - 在 global 上添加全局变量
+## 9. demos.2 - 在 global 上添加全局变量
 
 ::: code-group
 
@@ -392,7 +392,7 @@ module.exports = config
 
 :::
 
-## 10. 💻 demos.3 - globalThis 统一全局对象
+## 10. demos.3 - globalThis 统一全局对象
 
 ::: code-group
 
@@ -448,7 +448,7 @@ console.log(globalThis)
 
 :::
 
-## 11. 🔗 引用
+## 11. 引用
 
 - [Node.js 官方文档 - Global Objects][1]
 - [MDN - globalThis][2]

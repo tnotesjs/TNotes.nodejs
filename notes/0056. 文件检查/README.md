@@ -2,17 +2,17 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 文件访问常量 `File access constants`](#2--文件访问常量-file-access-constants)
-- [3. 📒 常见的 Error 对象](#3--常见的-error-对象)
+- [1. 概述](#1-概述)
+- [2. 文件访问常量 `File access constants`](#2-文件访问常量-file-access-constants)
+- [3. 常见的 Error 对象](#3-常见的-error-对象)
   - [3.1. `POSIX` 标准](#31-posix-标准)
-- [4. 💻 demos.1 - 检查文件（文件夹）是否存在](#4--demos1---检查文件文件夹是否存在)
-- [5. 💻 demos.2 - 同时设置多个 `mode` 参数](#5--demos2---同时设置多个-mode-参数)
-- [6. 🔗 引用](#6--引用)
+- [4. demos.1 - 检查文件（文件夹）是否存在](#4-demos1---检查文件文件夹是否存在)
+- [5. demos.2 - 同时设置多个 `mode` 参数](#5-demos2---同时设置多个-mode-参数)
+- [6. 引用](#6-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **`fs.access()` 使用背景**：
   - `fs` 模块内置许多方法，用以对文件进行相关操作。
@@ -38,7 +38,7 @@ fs.access(path[, mode], callback)
 // 如果检查可访问性失败，则错误参数将是 Error 对象。
 ```
 
-## 2. 📒 文件访问常量 `File access constants`
+## 2. 文件访问常量 `File access constants`
 
 | **常量** | **说明** |
 | --- | --- |
@@ -47,7 +47,7 @@ fs.access(path[, mode], callback)
 | `W_OK` | 指示文件可以被调用进程写入的标志。 |
 | `X_OK` | 指示文件可以被调用进程执行的标志，在 Windows 系统中等效于 `fs.constants.F_OK`。 |
 
-## 3. 📒 常见的 Error 对象
+## 3. 常见的 Error 对象
 
 | **值**      | **说明**           | **全称**                           |
 | ----------- | ------------------ | ---------------------------------- |
@@ -85,7 +85,7 @@ fs.access(path[, mode], callback)
 - 它们通常用于描述系统调用或操作失败的原因，帮助开发者调试程序或处理异常情况。
 - 部分错误代码在不同操作系统中可能有不同的实现细节，但其含义基本一致。
 
-## 4. 💻 demos.1 - 检查文件（文件夹）是否存在
+## 4. demos.1 - 检查文件（文件夹）是否存在
 
 ::: code-group
 
@@ -137,7 +137,7 @@ $ tree
 
 :::
 
-## 5. 💻 demos.2 - 同时设置多个 `mode` 参数
+## 5. demos.2 - 同时设置多个 `mode` 参数
 
 ::: code-group
 
@@ -153,7 +153,7 @@ async function checkFile(filename) {
   try {
     await fs.access(
       path.join(__dirname, filename),
-      fs.constants.F_OK | fs.constants.W_OK
+      fs.constants.F_OK | fs.constants.W_OK,
     )
     console.log(`${filename} 存在，并且可写`)
   } catch (err) {
@@ -256,7 +256,7 @@ console.log((fs.constants.F_OK | fs.constants.W_OK).toString(2)) // 10（相当�
 
 :::
 
-## 6. 🔗 引用
+## 6. 引用
 
 - https://zh.wikipedia.org/zh-hans/%E5%8F%AF%E7%A7%BB%E6%A4%8D%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%8E%A5%E5%8F%A3
   - wiki - 可移植操作系统接口 - POSIX - Portable Operating System Interface

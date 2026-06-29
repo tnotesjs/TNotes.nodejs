@@ -2,18 +2,18 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 Node.js 和 JavaScript](#2--nodejs-和-javascript)
-- [3. 📒 Node.js 是什么？](#3--nodejs-是什么)
+- [1. 概述](#1-概述)
+- [2. Node.js 和 JavaScript](#2-nodejs-和-javascript)
+- [3. Node.js 是什么？](#3-nodejs-是什么)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 了解 NodeJS 是什么
 - 了解 NodeJS 和 JS 之间的区别
 
-## 2. 📒 Node.js 和 JavaScript
+## 2. Node.js 和 JavaScript
 
 - **学习 Node.js 的前提是掌握扎实的 JavaScript 基础知识**
 - JavaScript
@@ -29,7 +29,7 @@
   - 因为他们可以利用熟悉的 JavaScript 语法进行全栈开发。
   - 同时提升开发效率和代码可维护性。
 
-## 3. 📒 Node.js 是什么？
+## 3. Node.js 是什么？
 
 - **Node.js 简介**
   - Node.js 是一个开源的服务器端 JavaScript 运行时环境，基于 Google 的 Chrome V8 引擎开发。

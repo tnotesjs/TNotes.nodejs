@@ -2,18 +2,18 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - `util.format(format, [...])` - 格式化输出字符串](#2--demos1---utilformatformat----格式化输出字符串)
-- [3. 💻 demos.2 - `util.inspect(object[, showHidden[, depth[, colors]]])` - 将对象转换为字符串](#3--demos2---utilinspectobject-showhidden-depth-colors---将对象转换为字符串)
-- [4. 💻 demos.3 - `util.inherits(constructor, superConstructor)` - 实现对象间的原型继承](#4--demos3---utilinheritsconstructor-superconstructor---实现对象间的原型继承)
-- [5. 💻 demos.4 - `util.callbackify(async_function)` - 转换异步函数的风格](#5--demos4---utilcallbackifyasync_function---转换异步函数的风格)
-- [6. 💻 demos.5 - `util.promisify(original)` - 转换异步函数的风格](#6--demos5---utilpromisifyoriginal---转换异步函数的风格)
-- [7. 💻 demos.6 - `util.types` - 判断是否为指定类型的内置对象](#7--demos6---utiltypes---判断是否为指定类型的内置对象)
-- [8. 🔗 参考资料](#8--参考资料)
+- [1. 概述](#1-概述)
+- [2. demos.1 - `util.format(format, [...])` - 格式化输出字符串](#2-demos1---utilformatformat----格式化输出字符串)
+- [3. demos.2 - `util.inspect(object[, showHidden[, depth[, colors]]])` - 将对象转换为字符串](#3-demos2---utilinspectobject-showhidden-depth-colors---将对象转换为字符串)
+- [4. demos.3 - `util.inherits(constructor, superConstructor)` - 实现对象间的原型继承](#4-demos3---utilinheritsconstructor-superconstructor---实现对象间的原型继承)
+- [5. demos.4 - `util.callbackify(async_function)` - 转换异步函数的风格](#5-demos4---utilcallbackifyasync_function---转换异步函数的风格)
+- [6. demos.5 - `util.promisify(original)` - 转换异步函数的风格](#6-demos5---utilpromisifyoriginal---转换异步函数的风格)
+- [7. demos.6 - `util.types` - 判断是否为指定类型的内置对象](#7-demos6---utiltypes---判断是否为指定类型的内置对象)
+- [8. 参考资料](#8-参考资料)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - `util` 是 Node.js 的内置工具模块，提供了一系列常用方法，主要用于格式化字符串、对象转换、原型继承、异步函数转换等，弥补核心 JavaScript 功能的不足。
 - **常见用法**：
@@ -35,7 +35,7 @@
 | `util.types.isRegExp(value)` | 判断是否为正则表达式 |
 | `util.types.isStringObject(value)` | 判断是否为 `String` 对象 |
 
-## 2. 💻 demos.1 - `util.format(format, [...])` - 格式化输出字符串
+## 2. demos.1 - `util.format(format, [...])` - 格式化输出字符串
 
 ::: code-group
 
@@ -74,7 +74,7 @@ console.log(util.format('对象格式化为JSON：%j', author))
   - `%o`：转换为具有通用 JavaScript 对象格式的字符串表示形式（类似于 `util.inspect()`）。
   - `%%`：输出 `%`。
 
-## 3. 💻 demos.2 - `util.inspect(object[, showHidden[, depth[, colors]]])` - 将对象转换为字符串
+## 3. demos.2 - `util.inspect(object[, showHidden[, depth[, colors]]])` - 将对象转换为字符串
 
 ::: code-group
 
@@ -158,7 +158,7 @@ console.log(util.inspect(complexObject, { colors: true, depth: null }))
 - `2.cjs` 运行结果：
   - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-13-21-29-48.png)
 
-## 4. 💻 demos.3 - `util.inherits(constructor, superConstructor)` - 实现对象间的原型继承
+## 4. demos.3 - `util.inherits(constructor, superConstructor)` - 实现对象间的原型继承
 
 ::: code-group
 
@@ -197,7 +197,7 @@ objSub.say()
   - `constructor`：从原型继承的对象。
   - `superConstructor`：要继承的原型对象。
 
-## 5. 💻 demos.4 - `util.callbackify(async_function)` - 转换异步函数的风格
+## 5. demos.4 - `util.callbackify(async_function)` - 转换异步函数的风格
 
 ::: code-group
 
@@ -222,7 +222,7 @@ callbackFunction(function (err, ret) {
 - **参数说明**：
   - `async_function`：原始的异步函数。
 
-## 6. 💻 demos.5 - `util.promisify(original)` - 转换异步函数的风格
+## 6. demos.5 - `util.promisify(original)` - 转换异步函数的风格
 
 ::: code-group
 
@@ -265,7 +265,7 @@ test
 
 - 传入一个遵循常见的 **错误优先回调风格** 的函数，然后返回一个返回值为 Promise 的函数。
 
-## 7. 💻 demos.6 - `util.types` - 判断是否为指定类型的内置对象
+## 7. demos.6 - `util.types` - 判断是否为指定类型的内置对象
 
 ::: code-group
 
@@ -274,36 +274,36 @@ const util = require('util')
 
 console.log(
   `util.types.isBoxedPrimitive(new String('string')) =>`,
-  util.types.isBoxedPrimitive(new String('string'))
+  util.types.isBoxedPrimitive(new String('string')),
 )
 
 console.log(
   `util.types.isBoxedPrimitive('string') =>`,
-  util.types.isBoxedPrimitive('string')
+  util.types.isBoxedPrimitive('string'),
 )
 
 console.log(
   `util.types.isAsyncFunction(async function () {}) =>`,
-  util.types.isAsyncFunction(async function () {})
+  util.types.isAsyncFunction(async function () {}),
 )
 
 console.log(
   `util.types.isBooleanObject(new Boolean(false)) =>`,
-  util.types.isBooleanObject(new Boolean(false))
+  util.types.isBooleanObject(new Boolean(false)),
 )
 
 console.log(`util.types.isDate(new Date()) =>`, util.types.isDate(new Date()))
 
 console.log(
   `util.types.isNumberObject(new Number(8)) =>`,
-  util.types.isNumberObject(new Number(8))
+  util.types.isNumberObject(new Number(8)),
 )
 
 console.log(`util.types.isRegExp(/^w+$/) =>`, util.types.isRegExp(/^w+$/))
 
 console.log(
   `util.types.isStringObject(new String('string')) =>`,
-  util.types.isStringObject(new String('string'))
+  util.types.isStringObject(new String('string')),
 )
 
 // 输出：
@@ -321,7 +321,7 @@ console.log(
 
 - 通过 `util.types` 提供的方法，检查值是否为特定类型的内置对象。
 
-## 8. 🔗 参考资料
+## 8. 参考资料
 
 ::: details
 

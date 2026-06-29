@@ -2,36 +2,36 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 什么是 exports 对象？](#3--什么是-exports-对象)
-- [4. 🤔 exports 和 module.exports 有什么区别？](#4--exports-和-moduleexports-有什么区别)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 什么是 exports 对象？](#3-什么是-exports-对象)
+- [4. exports 和 module.exports 有什么区别？](#4-exports-和-moduleexports-有什么区别)
   - [4.1. 关系说明](#41-关系说明)
   - [4.2. 关键区别](#42-关键区别)
   - [4.3. 直接赋值的区别](#43-直接赋值的区别)
   - [4.4. 混用的陷阱](#44-混用的陷阱)
-- [5. 🤔 如何使用 exports 导出模块内容？](#5--如何使用-exports-导出模块内容)
+- [5. 如何使用 exports 导出模块内容？](#5-如何使用-exports-导出模块内容)
   - [5.1. 导出多个属性和方法](#51-导出多个属性和方法)
   - [5.2. 导出对象](#52-导出对象)
   - [5.3. 简化写法](#53-简化写法)
-- [6. 🤔 什么情况下不能使用 exports？](#6--什么情况下不能使用-exports)
+- [6. 什么情况下不能使用 exports？](#6-什么情况下不能使用-exports)
   - [6.1. 场景一：导出单个函数](#61-场景一导出单个函数)
   - [6.2. 场景二：导出类](#62-场景二导出类)
   - [6.3. 场景三：导出单个值](#63-场景三导出单个值)
   - [6.4. 场景四：完全替换导出对象](#64-场景四完全替换导出对象)
   - [6.5. 记忆口诀](#65-记忆口诀)
-- [7. 💻 demos.1 - 使用 exports 对象实现模块化编程](#7--demos1---使用-exports-对象实现模块化编程)
-- [8. 🔗 引用](#8--引用)
+- [7. demos.1 - 使用 exports 对象实现模块化编程](#7-demos1---使用-exports-对象实现模块化编程)
+- [8. 引用](#8-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - exports 对象的定义和作用
 - exports 与 module.exports 的区别
 - exports 的使用方法和注意事项
 
-## 2. 🫧 评价
+## 2. 评价
 
 exports 是 CommonJS 模块系统中用于导出模块内容的便捷方式。
 
@@ -40,7 +40,7 @@ exports 是 CommonJS 模块系统中用于导出模块内容的便捷方式。
 - 需要导出单个值（如类、函数）时，必须使用 module.exports
 - 在 ESM 模块中应使用 export 语法，exports 仅用于 CommonJS
 
-## 3. 🤔 什么是 exports 对象？
+## 3. 什么是 exports 对象？
 
 exports 是 Node.js 在 CommonJS 模块系统中提供的一个全局对象，用于导出模块中的变量、函数、对象等内容。
 
@@ -68,7 +68,7 @@ const exports = module.exports // exports 是 module.exports 的引用
 return module.exports
 ```
 
-## 4. 🤔 exports 和 module.exports 有什么区别？
+## 4. exports 和 module.exports 有什么区别？
 
 ### 4.1. 关系说明
 
@@ -125,7 +125,7 @@ module.exports = {
 // 最终导出的只有 method3
 ```
 
-## 5. 🤔 如何使用 exports 导出模块内容？
+## 5. 如何使用 exports 导出模块内容？
 
 ### 5.1. 导出多个属性和方法
 
@@ -199,7 +199,7 @@ Object.assign(exports, {
 })
 ```
 
-## 6. 🤔 什么情况下不能使用 exports？
+## 6. 什么情况下不能使用 exports？
 
 ### 6.1. 场景一：导出单个函数
 
@@ -288,7 +288,7 @@ exports.prop2 = value2
 module.exports = value
 ```
 
-## 7. 💻 demos.1 - 使用 exports 对象实现模块化编程
+## 7. demos.1 - 使用 exports 对象实现模块化编程
 
 ::: code-group
 
@@ -321,7 +321,7 @@ console.log('circleArea(3) = %d', module.circleArea(3))
 
 :::
 
-## 8. 🔗 引用
+## 8. 引用
 
 - [Node.js 官方文档 - module.exports][1]
 - [Node.js 官方文档 - exports][2]

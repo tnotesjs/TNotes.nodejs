@@ -2,20 +2,20 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - process 常见字段](#2--demos1---process-常见字段)
-- [3. 💻 demos.2 - 根据 `process.platform` 判断当前系统环境](#3--demos2---根据-processplatform-判断当前系统环境)
-- [4. 🤔 如何通过 process.platform 中记录的当前平台信息来区分不同的操作系统？](#4--如何通过-processplatform-中记录的当前平台信息来区分不同的操作系统)
-- [5. 🤖 `node 1.js args` 如何在 1.js 中获取到 args？](#5--node-1js-args-如何在-1js-中获取到-args)
-- [6. 🔗 引用](#6--引用)
+- [1. 概述](#1-概述)
+- [2. demos.1 - process 常见字段](#2-demos1---process-常见字段)
+- [3. demos.2 - 根据 `process.platform` 判断当前系统环境](#3-demos2---根据-processplatform-判断当前系统环境)
+- [4. 如何通过 process.platform 中记录的当前平台信息来区分不同的操作系统？](#4-如何通过-processplatform-中记录的当前平台信息来区分不同的操作系统)
+- [5. `node 1.js args` 如何在 1.js 中获取到 args？](#5-node-1js-args-如何在-1js-中获取到-args)
+- [6. 引用](#6-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - process 用于获取当前 Node.js 程序状态。
 
-## 2. 💻 demos.1 - process 常见字段
+## 2. demos.1 - process 常见字段
 
 ::: code-group
 
@@ -41,7 +41,7 @@
 | `arch` | 当前 CPU 的架构：arm、ia32 或者 x64 |
 | `platform` | 运行程序所在的平台系统：darwin、freebsd、linux、sunos 或 win32 |
 
-## 3. 💻 demos.2 - 根据 `process.platform` 判断当前系统环境
+## 3. demos.2 - 根据 `process.platform` 判断当前系统环境
 
 ::: code-group
 
@@ -49,7 +49,7 @@
 
 :::
 
-## 4. 🤔 如何通过 process.platform 中记录的当前平台信息来区分不同的操作系统？
+## 4. 如何通过 process.platform 中记录的当前平台信息来区分不同的操作系统？
 
 ```js
 // 很简单也很常用的操作
@@ -67,7 +67,7 @@ printPlatform()
 
 ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-01-16-15-49.png)
 
-## 5. 🤖 `node 1.js args` 如何在 1.js 中获取到 args？
+## 5. `node 1.js args` 如何在 1.js 中获取到 args？
 
 在 Node.js 中，你可以通过 `process.argv` 数组来获取传递给脚本的命令行参数。`process.argv` 是一个数组，包含了当 Node.js 启动时的命令行参数。数组的第一个元素是运行 Node.js 的可执行文件的路径，第二个元素通常是正在执行的 JavaScript 文件的路径。从第三个元素开始，才是你实际传入的参数。
 
@@ -129,7 +129,7 @@ node 1.js arg1 arg2 arg3 --name "John Doe" --age 30
 
 上述代码将能够正确解析出各个参数。
 
-## 6. 🔗 引用
+## 6. 引用
 
 - https://nodejs.org/api/process.html
   - 🔗 Node.js docs process

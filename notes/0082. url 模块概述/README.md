@@ -2,14 +2,14 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - `url` 模块核心方法 `url.parse`、`url.format`、`url.resolve`](#2--demos1---url-模块核心方法-urlparseurlformaturlresolve)
-- [3. 💻 demos.2 - 新版 URL API](#3--demos2---新版-url-api)
-- [4. 🔗 引用](#4--引用)
+- [1. 概述](#1-概述)
+- [2. demos.1 - `url` 模块核心方法 `url.parse`、`url.format`、`url.resolve`](#2-demos1---url-模块核心方法-urlparseurlformaturlresolve)
+- [3. demos.2 - 新版 URL API](#3-demos2---新版-url-api)
+- [4. 引用](#4-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **`url` 模块**：
   - Node.js 的 `url` 模块是内置的核心模块之一，用于解析和处理 URL 字符串，适用于各种 URL 操作场景。
@@ -28,7 +28,7 @@
   - **安全性**：在处理用户输入的 URL 时，请注意验证和清理数据，避免潜在的安全问题（如 XSS 攻击）。
   - **编码问题**：`URL` 类会自动处理 URL 编码和解码，因此比手动处理更安全。
 
-## 2. 💻 demos.1 - `url` 模块核心方法 `url.parse`、`url.format`、`url.resolve`
+## 2. demos.1 - `url` 模块核心方法 `url.parse`、`url.format`、`url.resolve`
 
 | 方法名        | 作用                             |
 | ------------- | -------------------------------- |
@@ -119,7 +119,7 @@ console.log(resolvedUrl)
 | `search` | 查询字符串（包括 `?`，如 `?name=John&age=30`）。 |
 | `slashes` | 是否包含 `//`（通常为 `true`）。 |
 
-## 3. 💻 demos.2 - 新版 URL API
+## 3. demos.2 - 新版 URL API
 
 ::: code-group
 
@@ -189,6 +189,6 @@ for (const [key, value] of params) {
 
 :::
 
-## 4. 🔗 引用
+## 4. 引用
 
 - https://nodejs.org/api/url.html

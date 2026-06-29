@@ -2,16 +2,16 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 异步读取 - `fs.readFile`](#2--demos1---异步读取---fsreadfile)
-- [3. 💻 demos.2 - 同步读取 - `fs.readFileSync`](#3--demos2---同步读取---fsreadfilesync)
-- [4. 💻 demos.3 - 流式读取 - `fs.createReadStream`](#4--demos3---流式读取---fscreatereadstream)
-- [5. 💻 demos.4 - 模拟听歌时显示歌词的效果](#5--demos4---模拟听歌时显示歌词的效果)
-- [6. 🔗 引用](#6--引用)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 异步读取 - `fs.readFile`](#2-demos1---异步读取---fsreadfile)
+- [3. demos.2 - 同步读取 - `fs.readFileSync`](#3-demos2---同步读取---fsreadfilesync)
+- [4. demos.3 - 流式读取 - `fs.createReadStream`](#4-demos3---流式读取---fscreatereadstream)
+- [5. demos.4 - 模拟听歌时显示歌词的效果](#5-demos4---模拟听歌时显示歌词的效果)
+- [6. 引用](#6-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **读取文件**
   - 在 Node.js 中，文件读取是一个常见的操作，通常用于处理本地文件系统中的数据。
@@ -30,7 +30,7 @@
   - **实时性要求高**：优先选择异步方法，避免阻塞主线程。
   - **简单脚本**：可以使用同步方法，但需注意性能问题。
 
-## 2. 💻 demos.1 - 异步读取 - `fs.readFile`
+## 2. demos.1 - 异步读取 - `fs.readFile`
 
 ::: code-group
 
@@ -66,7 +66,7 @@ test
 
 :::
 
-## 3. 💻 demos.2 - 同步读取 - `fs.readFileSync`
+## 3. demos.2 - 同步读取 - `fs.readFileSync`
 
 ::: code-group
 
@@ -104,7 +104,7 @@ test
 
 :::
 
-## 4. 💻 demos.3 - 流式读取 - `fs.createReadStream`
+## 4. demos.3 - 流式读取 - `fs.createReadStream`
 
 ::: code-group
 
@@ -151,7 +151,7 @@ test
 
 :::
 
-## 5. 💻 demos.4 - 模拟听歌时显示歌词的效果
+## 5. demos.4 - 模拟听歌时显示歌词的效果
 
 ::: code-group
 
@@ -298,7 +298,7 @@ main()
 
 > demo from：`《Node.js 从入门到精通》 例7.1`
 
-## 6. 🔗 引用
+## 6. 引用
 
 - https://nodejs.org/api/fs.html
   - Node.js 官方文档 - File system

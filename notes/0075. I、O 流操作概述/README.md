@@ -2,15 +2,15 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 可读流（Readable Stream）](#2--可读流readable-stream)
-- [3. 📒 可写流（Writable Stream）](#3--可写流writable-stream)
-- [4. 📒 双工流（Duplex Stream）](#4--双工流duplex-stream)
-- [5. 📒 转换流（Transform Stream）](#5--转换流transform-stream)
+- [1. 概述](#1-概述)
+- [2. 可读流（Readable Stream）](#2-可读流readable-stream)
+- [3. 可写流（Writable Stream）](#3-可写流writable-stream)
+- [4. 双工流（Duplex Stream）](#4-双工流duplex-stream)
+- [5. 转换流（Transform Stream）](#5-转换流transform-stream)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **流**：
   - 流指的是数据的流动。
@@ -34,7 +34,7 @@
   - Buffer 是 Node.js 中用于处理二进制数据的工具。
   - 流通常以 Buffer 的形式传递数据，因此理解 Buffer 对于流的操作至关重要。
 
-## 2. 📒 可读流（Readable Stream）
+## 2. 可读流（Readable Stream）
 
 - **可读流的读取模式**：
   - **流动模式（Flowing Mode）**：数据自动流向事件监听器。
@@ -128,7 +128,7 @@ readable.on('end', () => {
 // 设置编码格式
 const readable = fs.createReadStream(
   'example.txt',
-  { encoding: 'utf8' } // 如果希望将 Buffer 数据解析为字符串，可以设置编码格式。
+  { encoding: 'utf8' }, // 如果希望将 Buffer 数据解析为字符串，可以设置编码格式。
 )
 ```
 
@@ -163,7 +163,7 @@ readable.unpipe(writable)
 // 相当于将连接切换。
 ```
 
-## 3. 📒 可写流（Writable Stream）
+## 3. 可写流（Writable Stream）
 
 - 可写流可以通过多种方式创建，例如：
   - 使用 `fs.createWriteStream()` 创建文件流。
@@ -195,7 +195,7 @@ writable.write('World!')
 // 设置编码方式
 const writable = fs.createWriteStream(
   'output.txt',
-  { encoding: 'utf8' } // 如果写入的是字符串，可以指定编码格式为 utf8。
+  { encoding: 'utf8' }, // 如果写入的是字符串，可以指定编码格式为 utf8。
 )
 ```
 
@@ -219,7 +219,7 @@ const buffer = Buffer.from('Hello, World!')
 writable.write(buffer)
 ```
 
-## 4. 📒 双工流（Duplex Stream）
+## 4. 双工流（Duplex Stream）
 
 - 双工流同时支持读取和写入操作，例如 `net.Socket` 就是一个典型的双工流。
 - 它允许在同一个流上进行双向通信。
@@ -283,7 +283,7 @@ duplexStream.on('data', (chunk) => {
   - 双工流的读取和写入操作是独立的，因此需要分别实现 `_read()` 和 `_write()` 方法。
   - 在自定义双工流时，确保正确处理缓冲区和流的状态，以避免内存泄漏或数据丢失。
 
-## 5. 📒 转换流（Transform Stream）
+## 5. 转换流（Transform Stream）
 
 - 转换流是一种特殊的双工流，可以在读取和写入过程中对数据进行转换。
 - 例如，`zlib.createGzip()` 返回的就是一个转换流，用于压缩数据。

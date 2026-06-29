@@ -2,16 +2,16 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 异步写入 - `fs.writeFile`](#2--demos1---异步写入---fswritefile)
-- [3. 💻 demos.2 - 同步写入 - `fs.writeFileSync`](#3--demos2---同步写入---fswritefilesync)
-- [4. 💻 demos.3 - 追加写入 - `fs.appendFile`、`fs.appendFileSync`](#4--demos3---追加写入---fsappendfilefsappendfilesync)
-- [5. 💻 demos.4 - 流式写入 - `fs.createWriteStream`](#5--demos4---流式写入---fscreatewritestream)
-- [6. 💻 demos.5 - 使用自定义 `Transform` 流](#6--demos5---使用自定义-transform-流)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 异步写入 - `fs.writeFile`](#2-demos1---异步写入---fswritefile)
+- [3. demos.2 - 同步写入 - `fs.writeFileSync`](#3-demos2---同步写入---fswritefilesync)
+- [4. demos.3 - 追加写入 - `fs.appendFile`、`fs.appendFileSync`](#4-demos3---追加写入---fsappendfilefsappendfilesync)
+- [5. demos.4 - 流式写入 - `fs.createWriteStream`](#5-demos4---流式写入---fscreatewritestream)
+- [6. demos.5 - 使用自定义 `Transform` 流](#6-demos5---使用自定义-transform-流)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **文件写入**
   - `fs` 模块提供了同步和异步两种方式来进行文件写入操作。
@@ -48,7 +48,7 @@
     - 如果缓冲区已满，`write()` 返回 `false`，需要等待 `'drain'` 事件触发后才能继续写入。
     - 在实际开发中，遇到写入大量数据的场景时，建议始终检查 `write()` 的返回值，并正确处理 `'drain'` 事件。
 
-## 2. 💻 demos.1 - 异步写入 - `fs.writeFile`
+## 2. demos.1 - 异步写入 - `fs.writeFile`
 
 ::: code-group
 
@@ -87,7 +87,7 @@ Hello, Node.js!
 
 :::
 
-## 3. 💻 demos.2 - 同步写入 - `fs.writeFileSync`
+## 3. demos.2 - 同步写入 - `fs.writeFileSync`
 
 ::: code-group
 
@@ -123,7 +123,7 @@ Hello, Node.js!
 
 :::
 
-## 4. 💻 demos.3 - 追加写入 - `fs.appendFile`、`fs.appendFileSync`
+## 4. demos.3 - 追加写入 - `fs.appendFile`、`fs.appendFileSync`
 
 ::: code-group
 
@@ -186,7 +186,7 @@ Hello, Node.js!
 
 :::
 
-## 5. 💻 demos.4 - 流式写入 - `fs.createWriteStream`
+## 5. demos.4 - 流式写入 - `fs.createWriteStream`
 
 ::: code-group
 
@@ -202,14 +202,14 @@ const res1 = writeStream.write('第一部分数据\n')
 console.log(
   res1
     ? '1 - 同步写入'
-    : '1 - 一部写入 - 缓冲区已满，暂停写入，等待 drain 事件触发再继续'
+    : '1 - 一部写入 - 缓冲区已满，暂停写入，等待 drain 事件触发再继续',
 )
 
 const res2 = writeStream.write('第二部分数据\n')
 console.log(
   res2
     ? '2 - 同步写入'
-    : '2 - 一部写入 - 缓冲区已满，暂停写入，等待 drain 事件触发再继续'
+    : '2 - 一部写入 - 缓冲区已满，暂停写入，等待 drain 事件触发再继续',
 )
 
 // 结束写入
@@ -241,7 +241,7 @@ fs.createWriteStream(path, options)
 
 :::
 
-## 6. 💻 demos.5 - 使用自定义 `Transform` 流
+## 6. demos.5 - 使用自定义 `Transform` 流
 
 ::: code-group
 

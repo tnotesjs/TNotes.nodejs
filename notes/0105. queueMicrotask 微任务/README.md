@@ -2,38 +2,38 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 什么是微任务？](#3--什么是微任务)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 什么是微任务？](#3-什么是微任务)
   - [3.1. 定义](#31-定义)
   - [3.2. 常见的微任务](#32-常见的微任务)
   - [3.3. 事件循环中的位置](#33-事件循环中的位置)
-- [4. 🤔 queueMicrotask 是什么？](#4--queuemicrotask-是什么)
+- [4. queueMicrotask 是什么？](#4-queuemicrotask-是什么)
   - [4.1. 语法](#41-语法)
   - [4.2. 特点](#42-特点)
   - [4.3. 兼容性](#43-兼容性)
-- [5. 🤔 微任务和宏任务有什么区别？](#5--微任务和宏任务有什么区别)
+- [5. 微任务和宏任务有什么区别？](#5-微任务和宏任务有什么区别)
   - [5.1. 对比表格](#51-对比表格)
   - [5.2. 常见的宏任务](#52-常见的宏任务)
   - [5.3. 执行顺序示例](#53-执行顺序示例)
-- [6. 🤔 queueMicrotask 与 Promise.then 有什么区别？](#6--queuemicrotask-与-promisethen-有什么区别)
+- [6. queueMicrotask 与 Promise.then 有什么区别？](#6-queuemicrotask-与-promisethen-有什么区别)
   - [6.1. 功能对比](#61-功能对比)
   - [6.2. 代码对比](#62-代码对比)
   - [6.3. 执行顺序完全相同](#63-执行顺序完全相同)
   - [6.4. 何时使用哪个？](#64-何时使用哪个)
-- [7. 🤔 什么时候应该使用 queueMicrotask？](#7--什么时候应该使用-queuemicrotask)
+- [7. 什么时候应该使用 queueMicrotask？](#7-什么时候应该使用-queuemicrotask)
   - [7.1. 适用场景](#71-适用场景)
   - [7.2. 不适用场景](#72-不适用场景)
-- [8. 💻 demos.1 - queueMicrotask 基本使用](#8--demos1---queuemicrotask-基本使用)
-- [9. 💻 demos.2 - 微任务与宏任务的执行顺序](#9--demos2---微任务与宏任务的执行顺序)
-- [10. 💻 demos.3 - queueMicrotask vs Promise](#10--demos3---queuemicrotask-vs-promise)
-- [11. 💻 demos.4 - 微任务的实际应用](#11--demos4---微任务的实际应用)
-- [12. 💻 demos.5 - 微任务队列阻塞问题](#12--demos5---微任务队列阻塞问题)
-- [13. 🔗 引用](#13--引用)
+- [8. demos.1 - queueMicrotask 基本使用](#8-demos1---queuemicrotask-基本使用)
+- [9. demos.2 - 微任务与宏任务的执行顺序](#9-demos2---微任务与宏任务的执行顺序)
+- [10. demos.3 - queueMicrotask vs Promise](#10-demos3---queuemicrotask-vs-promise)
+- [11. demos.4 - 微任务的实际应用](#11-demos4---微任务的实际应用)
+- [12. demos.5 - 微任务队列阻塞问题](#12-demos5---微任务队列阻塞问题)
+- [13. 引用](#13-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - 微任务的概念
 - queueMicrotask 的定义和使用
@@ -42,7 +42,7 @@
 - 微任务的应用场景
 - 微任务队列阻塞问题
 
-## 2. 🫧 评价
+## 2. 评价
 
 queueMicrotask 是用于将回调函数加入微任务队列的全局函数，在事件循环中具有高优先级。
 
@@ -52,7 +52,7 @@ queueMicrotask 是用于将回调函数加入微任务队列的全局函数，�
 - 过多的微任务会阻塞事件循环，导致宏任务无法执行
 - 适合用于需要在当前执行栈清空后立即执行的操作
 
-## 3. 🤔 什么是微任务？
+## 3. 什么是微任务？
 
 微任务（Microtask）是 JavaScript 事件循环机制中的一个概念。
 
@@ -88,7 +88,7 @@ graph TD
     H -->|否| I[结束]
 ```
 
-## 4. 🤔 queueMicrotask 是什么？
+## 4. queueMicrotask 是什么？
 
 `queueMicrotask` 是一个全局函数，用于将回调函数添加到微任务队列。
 
@@ -131,7 +131,7 @@ console.log('同步代码')
 - 所有现代浏览器支持
 - 是标准的 Web API
 
-## 5. 🤔 微任务和宏任务有什么区别？
+## 5. 微任务和宏任务有什么区别？
 
 ### 5.1. 对比表格
 
@@ -174,7 +174,7 @@ console.log('2. 同步代码结束')
 // 4. setTimeout（宏任务）
 ```
 
-## 6. 🤔 queueMicrotask 与 Promise.then 有什么区别？
+## 6. queueMicrotask 与 Promise.then 有什么区别？
 
 ### 6.1. 功能对比
 
@@ -250,7 +250,7 @@ Promise.resolve()
   })
 ```
 
-## 7. 🤔 什么时候应该使用 queueMicrotask？
+## 7. 什么时候应该使用 queueMicrotask？
 
 ### 7.1. 适用场景
 
@@ -374,7 +374,7 @@ const timer = setTimeout(() => {
 clearTimeout(timer) // 取消执行
 ```
 
-## 8. 💻 demos.1 - queueMicrotask 基本使用
+## 8. demos.1 - queueMicrotask 基本使用
 
 ::: code-group
 
@@ -451,7 +451,7 @@ console.log('2. 结束')
 
 :::
 
-## 9. 💻 demos.2 - 微任务与宏任务的执行顺序
+## 9. demos.2 - 微任务与宏任务的执行顺序
 
 ::: code-group
 
@@ -552,7 +552,7 @@ console.log('2. 结束')
 
 :::
 
-## 10. 💻 demos.3 - queueMicrotask vs Promise
+## 10. demos.3 - queueMicrotask vs Promise
 
 ::: code-group
 
@@ -636,7 +636,7 @@ withReturnValue()
 
 :::
 
-## 11. 💻 demos.4 - 微任务的实际应用
+## 11. demos.4 - 微任务的实际应用
 
 ::: code-group
 
@@ -783,7 +783,7 @@ console.log('3. 结束')
 
 :::
 
-## 12. 💻 demos.5 - 微任务队列阻塞问题
+## 12. demos.5 - 微任务队列阻塞问题
 
 ::: code-group
 
@@ -889,7 +889,7 @@ processBatch(items)
 
 :::
 
-## 13. 🔗 引用
+## 13. 引用
 
 - [Node.js 官方文档 - queueMicrotask][1]
 - [MDN - queueMicrotask][2]

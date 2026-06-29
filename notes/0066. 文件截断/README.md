@@ -2,12 +2,12 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 截断文件 - `truncate()`](#2--demos1---截断文件---truncate)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 截断文件 - `truncate()`](#2-demos1---截断文件---truncate)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 截断文件意味着改变文件的大小。
 - 使用 `fs.truncate()` 或其同步版本 `fs.truncateSync()` 可以实现这一功能。
@@ -15,7 +15,7 @@
   - 如果指定的新长度小于文件当前的长度，则文件会被裁剪；
   - 如果新长度大于当前长度，文件会扩展并在末尾填充空字节；
 
-## 2. 💻 demos.1 - 截断文件 - `truncate()`
+## 2. demos.1 - 截断文件 - `truncate()`
 
 ::: code-group
 

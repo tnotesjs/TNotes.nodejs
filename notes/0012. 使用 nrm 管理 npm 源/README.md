@@ -1,23 +1,24 @@
 # [0012. 使用 nrm 管理 npm 源](https://github.com/tnotesjs/TNotes.nodejs/tree/main/notes/0012.%20%E4%BD%BF%E7%94%A8%20nrm%20%E7%AE%A1%E7%90%86%20npm%20%E6%BA%90)
 
-
 <!-- region:toc -->
 
-- [1. 📒 使用 nrm 管理 npm 源](#1--使用-nrm-管理-npm-源)
-- [2. 🤖 npm 都有哪些常用的镜像源？](#2--npm-都有哪些常用的镜像源)
+- [1. 使用 nrm 管理 npm 源](#1-使用-nrm-管理-npm-源)
+- [2. npm 都有哪些常用的镜像源？](#2-npm-都有哪些常用的镜像源)
 
 <!-- endregion:toc -->
 
-## 1. 📒 使用 nrm 管理 npm 源
+## 1. 使用 nrm 管理 npm 源
 
 为了更方便地切换不同的 npm 源，你可以使用 `nrm` 工具。`nrm` 是一个 npm 源管理工具，可以让你快速切换 npm 的镜像源。
 
 - **安装 nrm**:
+
 ```bash
 npm install -g nrm
 ```
 
 - **列出所有可用的源**:
+
 ```bash
 nrm ls
 # 输出内容：
@@ -31,6 +32,7 @@ nrm ls
 ```
 
 - **切换到某个源**:
+
 ```bash
 nrm use taobao  # 切换到淘宝镜像
 nrm use tencent  # 切换到腾讯镜像
@@ -38,11 +40,13 @@ nrm use npm  # 切换回官方源
 ```
 
 - **添加自定义源**:
+
 ```bash
 nrm add <name> <url>
 ```
 
 - **测试源的速度**:
+
 ```bash
 nrm test <name>
 # 示例
@@ -65,7 +69,7 @@ nrm test <name>
 
 通过使用这些镜像源或 `nrm` 工具，你可以根据需要选择最快的 npm 源，从而提高开发效率。如果你遇到某个镜像源的问题，比如证书过期，可以尝试切换到其他镜像源。
 
-## 2. 🤖 npm 都有哪些常用的镜像源？
+## 2. npm 都有哪些常用的镜像源？
 
 在中国，由于网络环境的特殊性，访问官方 npm 源（`https://registry.npmjs.org/`）可能会比较慢。因此，很多开发者会选择使用国内的 npm 镜像源来加速包的下载速度。以下是一些常用的 npm 镜像源：
 

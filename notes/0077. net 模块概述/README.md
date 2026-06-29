@@ -2,15 +2,15 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 体验 net 模块](#2--demos1---体验-net-模块)
-- [3. 💻 demos.2 - 模拟 http 请求](#3--demos2---模拟-http-请求)
-- [4. 💻 demos.3 - 实现一个简单的 web 服务 - 向浏览器响应图片](#4--demos3---实现一个简单的-web-服务---向浏览器响应图片)
-- [5. 🔗 引用](#5--引用)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 体验 net 模块](#2-demos1---体验-net-模块)
+- [3. demos.2 - 模拟 http 请求](#3-demos2---模拟-http-请求)
+- [4. demos.3 - 实现一个简单的 web 服务 - 向浏览器响应图片](#4-demos3---实现一个简单的-web-服务---向浏览器响应图片)
+- [5. 引用](#5-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 创建一个 TCP 服务器：`net.createServer()`
 - 服务端监听 xxx 端口：`server.listen(xxx, <接收到客户端请求时触发的回调>)`
@@ -32,7 +32,7 @@
   - demo2：写一个 TCP 客户端来模拟 http 请求，向 `www.baidu.com` 发起请求，并将接收到的响应体内容原样输出，接收完毕后，关闭连接。
   - demo3：写一个 TCP 服务端来模拟 web 服务器，作用是返回一张图片。要求可以使用浏览器成功请求到该服务，并将请求到的 **图片** 给渲染出来。
 
-## 2. 💻 demos.1 - 体验 net 模块
+## 2. demos.1 - 体验 net 模块
 
 - 使用 Node.js 的 net 模块，搭建一个简单的本地服务，分别定义 TCP 客户端、服务端，并实现简单的本地通信。
 
@@ -49,7 +49,7 @@ const client = net.createConnection(
   },
   () => {
     console.log('成功连接服务端')
-  }
+  },
 )
 
 // 监听来自服务端的消息
@@ -84,7 +84,7 @@ server.on('connection', (socket) => {
 
     socket.write(
       `你好，我是服务端，我已经收到了你发送来的数据 => ${chunk.toString()}`,
-      'utf-8'
+      'utf-8',
     )
   })
 
@@ -102,7 +102,7 @@ server.on('connection', (socket) => {
 - 最终效果：
   - ![](./assets/0.gif)
 
-## 3. 💻 demos.2 - 模拟 http 请求
+## 3. demos.2 - 模拟 http 请求
 
 - 写一个 TCP 客户端来模拟 http 请求，向 `www.baidu.com` 发起请求，并将接收到的响应体内容原样输出，接收完毕后，关闭连接。
 - 先来看看最终效果：
@@ -131,7 +131,7 @@ const client = net.createConnection(
   () => {
     // 连接成功之后的回调
     console.log('连接成功~')
-  }
+  },
 )
 
 // 发送请求
@@ -236,7 +236,7 @@ function isOver() {
   - 响应消息中，有些字段是重复的，暂时还不理解这些重复的 key 是干啥的，使用上述逻辑处理的最终结果是，后者覆盖前者。
   - ![图 2](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-21-20-11-51.png)
 
-## 4. 💻 demos.3 - 实现一个简单的 web 服务 - 向浏览器响应图片
+## 4. demos.3 - 实现一个简单的 web 服务 - 向浏览器响应图片
 
 - 写一个 TCP 服务端来模拟 web 服务器，作用是返回一张图片。要求可以使用浏览器成功请求到该服务，并将请求到的 **图片** 给渲染出来。
 - 模拟 HTTP 服务器，使用浏览器访问该服务，得到一个静态资源，`http://localhost:2155/` 使用浏览器访问本地搭建的一个服务，可以获取到我们返回的静态资源。
@@ -260,7 +260,7 @@ const headBuffer = Buffer.from(
 Content-Type: image/jpeg
 
 `,
-  'utf-8'
+  'utf-8',
 )
 ```
 
@@ -287,7 +287,7 @@ localServer.on('connection', (socket) => {
 Content-Type: image/jpeg
 
 `,
-      'utf-8'
+      'utf-8',
     )
 
     // 读取本地头像文件 avatar.jpeg
@@ -307,7 +307,7 @@ Content-Type: image/jpeg
 
 :::
 
-## 5. 🔗 引用
+## 5. 引用
 
 - https://nodejs.org/api/net.html#netcreateconnection
   - nodejs net 模块

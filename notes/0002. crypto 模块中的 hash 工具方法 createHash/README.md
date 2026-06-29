@@ -2,11 +2,11 @@
 
 <!-- region:toc -->
 
-- [1. ⏰ 待整理](#1--待整理)
+- [1. 待整理](#1-待整理)
 
 <!-- endregion:toc -->
 
-## 1. ⏰ 待整理
+## 1. 待整理
 
 - 生成唯一标识符：
 - 在需要生成唯一标识符的场景下，使用字符串的十六进制表示形式可以确保唯一性。
@@ -29,6 +29,8 @@
 
 ```js
 const getVariableName = (title) => {
-  return `__PRODUCTION__${strToHex(title) || '__APP'}__CONF__`.toUpperCase().replace(/\s/g, '');
-};
+  return `__PRODUCTION__${strToHex(title) || '__APP'}__CONF__`
+    .toUpperCase()
+    .replace(/\s/g, '')
+}
 ```

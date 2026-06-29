@@ -2,18 +2,18 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 创建符号链接 `symlink`](#2--demos1---创建符号链接-symlink)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 创建符号链接 `symlink`](#2-demos1---创建符号链接-symlink)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 在 Node.js 中，可以使用 `fs.symlink()` 或 `fs.symlinkSync()` 方法创建符号链接。
 - **注意**：
   - 重复创建同一个符号链接会报错。
 
-## 2. 💻 demos.1 - 创建符号链接 `symlink`
+## 2. demos.1 - 创建符号链接 `symlink`
 
 ::: code-group
 

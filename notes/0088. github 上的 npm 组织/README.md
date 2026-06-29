@@ -2,9 +2,9 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 npm GitHub 组织下都包含哪些主要内容？](#3--npm-github-组织下都包含哪些主要内容)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. npm GitHub 组织下都包含哪些主要内容？](#3-npm-github-组织下都包含哪些主要内容)
   - [3.1. Pinned Repositories（置顶仓库）](#31-pinned-repositories置顶仓库)
     - [cli](#cli)
     - [node-semver](#node-semver)
@@ -16,17 +16,17 @@
   - [3.5. npm/npm-registry-fetch（registry 请求）](#35-npmnpm-registry-fetchregistry-请求)
   - [3.6. npm/pacote（包获取工具）](#36-npmpacote包获取工具)
   - [3.7. 其他仓库](#37-其他仓库)
-- [4. 🤔 如何使用 npm GitHub 仓库？](#4--如何使用-npm-github-仓库)
+- [4. 如何使用 npm GitHub 仓库？](#4-如何使用-npm-github-仓库)
   - [4.1. 查找问题解决方案](#41-查找问题解决方案)
   - [4.2. 报告问题](#42-报告问题)
   - [4.3. 参与贡献](#43-参与贡献)
   - [4.4. 阅读源码](#44-阅读源码)
   - [4.5. 关注更新动态](#45-关注更新动态)
-- [5. 🔗 引用](#5--引用)
+- [5. 引用](#5-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - GitHub 上的 npm 官方组织
 - npm 组织下的核心仓库简介
@@ -37,7 +37,7 @@
   - 学习源码
   - ……
 
-## 2. 🫧 评价
+## 2. 评价
 
 npm 在 GitHub 上维护了多个开源仓库，是深入了解 npm 实现原理和参与社区贡献的重要途径。
 
@@ -46,7 +46,7 @@ npm 在 GitHub 上维护了多个开源仓库，是深入了解 npm 实现原理
 - 发现 bug 或有功能建议时，可以提交 Issue 或 Pull Request
 - 关注仓库动态可以第一时间了解 npm 的更新和变化
 
-## 3. 🤔 npm GitHub 组织下都包含哪些主要内容？
+## 3. npm GitHub 组织下都包含哪些主要内容？
 
 npm 官方 GitHub 组织地址：https://github.com/npm
 
@@ -182,7 +182,7 @@ npm 用于获取和解析包的核心工具：
 | libnpmpublish     | 包发布功能           |
 | ……                | ……                   |
 
-## 4. 🤔 如何使用 npm GitHub 仓库？
+## 4. 如何使用 npm GitHub 仓库？
 
 ### 4.1. 查找问题解决方案
 
@@ -282,7 +282,7 @@ ls -la workspaces/
   - 参与功能讨论
   - 了解未来规划
 
-## 5. 🔗 引用
+## 5. 引用
 
 - [npm GitHub 组织][1]
 - [npm/cli 仓库][2]

@@ -2,12 +2,12 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 获取解析后的绝对路径 `realpathSync`](#2--demos1---获取解析后的绝对路径-realpathsync)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 获取解析后的绝对路径 `realpathSync`](#2-demos1---获取解析后的绝对路径-realpathsync)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 | 方法名           | 功能描述                         |
 | ---------------- | -------------------------------- |
@@ -35,7 +35,7 @@
   - **性能问题**：
     - 如果需要批量解析多个路径，建议使用异步方法（如 `fs.promises.realpath`）以避免阻塞事件循环。
 
-## 2. 💻 demos.1 - 获取解析后的绝对路径 `realpathSync`
+## 2. demos.1 - 获取解析后的绝对路径 `realpathSync`
 
 ::: code-group
 

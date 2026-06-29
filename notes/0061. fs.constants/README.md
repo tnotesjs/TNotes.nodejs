@@ -2,25 +2,25 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 打印 `fs.constants`](#2--demos1---打印-fsconstants)
-- [3. 📒 文件打开模式 (File Open Modes)](#3--文件打开模式-file-open-modes)
-- [4. 📒 文件类型 (File Types)](#4--文件类型-file-types)
-- [5. 📒 文件权限 (File Permissions)](#5--文件权限-file-permissions)
-- [6. 📒 权限检查 (Access Constants)](#6--权限检查-access-constants)
-- [7. 📒 复制文件选项 (Copy File Options)](#7--复制文件选项-copy-file-options)
-- [8. 📒 目录条目类型 (Directory Entry Types)](#8--目录条目类型-directory-entry-types)
-- [9. 📒 符号链接类型 (Symbolic Link Types)](#9--符号链接类型-symbolic-link-types)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 打印 `fs.constants`](#2-demos1---打印-fsconstants)
+- [3. 文件打开模式 (File Open Modes)](#3-文件打开模式-file-open-modes)
+- [4. 文件类型 (File Types)](#4-文件类型-file-types)
+- [5. 文件权限 (File Permissions)](#5-文件权限-file-permissions)
+- [6. 权限检查 (Access Constants)](#6-权限检查-access-constants)
+- [7. 复制文件选项 (Copy File Options)](#7-复制文件选项-copy-file-options)
+- [8. 目录条目类型 (Directory Entry Types)](#8-目录条目类型-directory-entry-types)
+- [9. 符号链接类型 (Symbolic Link Types)](#9-符号链接类型-symbolic-link-types)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - `fs.constants` 是 Node.js 中的一个对象，提供了一组底层常量，这些常量与文件系统操作相关，用于控制文件系统的操作行为。
 - 这些常量涵盖了文件打开模式、文件类型、权限检查、创建符号链接、复制选项等多个方面，开发者可以根据需要选择合适的常量来实现特定的功能。
 - 它们通常作为参数传递给 `fs` 模块中的方法（如 `fs.open()`、`fs.access()` 等），以控制行为或指定选项。
 
-## 2. 💻 demos.1 - 打印 `fs.constants`
+## 2. demos.1 - 打印 `fs.constants`
 
 ::: code-group
 
@@ -172,7 +172,7 @@ console.log(fs.constants)
 
 :::
 
-## 3. 📒 文件打开模式 (File Open Modes)
+## 3. 文件打开模式 (File Open Modes)
 
 这些常量用于 `fs.open()` 方法，指定文件的打开模式。
 
@@ -193,7 +193,7 @@ console.log(fs.constants)
 | `O_SYMLINK` | `2097152` | 打开符号链接本身，而不是其指向的目标文件。 |
 | `O_NONBLOCK` | `4` | 非阻塞模式打开文件。 |
 
-## 4. 📒 文件类型 (File Types)
+## 4. 文件类型 (File Types)
 
 这些常量用于标识文件的类型，通常与 `fs.stat()` 返回的 `mode` 值结合使用。
 
@@ -208,7 +208,7 @@ console.log(fs.constants)
 | `S_IFLNK`  | `40960` | 符号链接。                       |
 | `S_IFSOCK` | `49152` | 套接字文件。                     |
 
-## 5. 📒 文件权限 (File Permissions)
+## 5. 文件权限 (File Permissions)
 
 这些常量用于设置或检查文件的权限。
 
@@ -227,7 +227,7 @@ console.log(fs.constants)
 | `S_IWOTH` | `2`    | 其他用户拥有写权限（`--------w-`）。           |
 | `S_IXOTH` | `1`    | 其他用户拥有执行权限（`---------x`）。         |
 
-## 6. 📒 权限检查 (Access Constants)
+## 6. 权限检查 (Access Constants)
 
 这些常量用于 `fs.access()` 方法，检查文件或目录的访问权限。
 
@@ -238,7 +238,7 @@ console.log(fs.constants)
 | `W_OK`   | `2`    | 检查文件是否可写。                                   |
 | `X_OK`   | `1`    | 检查文件是否可执行（在 Windows 上始终返回 `true`）。 |
 
-## 7. 📒 复制文件选项 (Copy File Options)
+## 7. 复制文件选项 (Copy File Options)
 
 这些常量用于 `fs.copyFile()` 方法，指定复制文件的行为。
 
@@ -251,7 +251,7 @@ console.log(fs.constants)
 | `UV_FS_COPYFILE_FICLONE_FORCE` | `4` | 强制使用“克隆”操作复制文件（即使不支持也会尝试）。 |
 | `COPYFILE_FICLONE_FORCE` | `4` | 同上（`UV_FS_COPYFILE_FICLONE_FORCE` 的别名）。 |
 
-## 8. 📒 目录条目类型 (Directory Entry Types)
+## 8. 目录条目类型 (Directory Entry Types)
 
 这些常量用于标识目录条目的类型，通常与 `fs.Dirent` 对象结合使用。
 
@@ -266,7 +266,7 @@ console.log(fs.constants)
 | `UV_DIRENT_CHAR`    | `6`    | 字符设备文件。     |
 | `UV_DIRENT_BLOCK`   | `7`    | 块设备文件。       |
 
-## 9. 📒 符号链接类型 (Symbolic Link Types)
+## 9. 符号链接类型 (Symbolic Link Types)
 
 这些常量用于创建符号链接时指定类型。
 

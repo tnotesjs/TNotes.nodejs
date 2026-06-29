@@ -2,12 +2,12 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 nodebestpractices 项目是什么？](#3--nodebestpractices-项目是什么)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. nodebestpractices 项目是什么？](#3-nodebestpractices-项目是什么)
   - [3.1. 项目特点](#31-项目特点)
   - [3.2. 项目目标](#32-项目目标)
-- [4. 🤔 项目包含哪些核心内容？](#4--项目包含哪些核心内容)
+- [4. 项目包含哪些核心内容？](#4-项目包含哪些核心内容)
   - [4.1. 项目结构实践（Project Structure Practices）](#41-项目结构实践project-structure-practices)
   - [4.2. 错误处理实践（Error Handling Practices）](#42-错误处理实践error-handling-practices)
   - [4.3. 代码风格实践（Code Style Practices）](#43-代码风格实践code-style-practices)
@@ -17,23 +17,23 @@
   - [4.7. 性能实践（Performance Practices）](#47-性能实践performance-practices)
   - [4.8. Docker 实践（Docker Practices）](#48-docker-实践docker-practices)
   - [4.9. TypeScript 实践（TypeScript Practices）](#49-typescript-实践typescript-practices)
-- [5. 🤔 如何使用这个项目？](#5--如何使用这个项目)
+- [5. 如何使用这个项目？](#5-如何使用这个项目)
   - [5.1. 可以系统性学习该项目](#51-可以系统性学习该项目)
   - [5.2. 可以把该项目作为一个参考手册](#52-可以把该项目作为一个参考手册)
   - [5.3. 可以参与贡献](#53-可以参与贡献)
   - [5.4. 可以参考该项目来制定团队开发规范](#54-可以参考该项目来制定团队开发规范)
-- [6. 🔗 引用](#6--引用)
+- [6. 引用](#6-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - nodebestpractices 项目简介
 - 项目的核心内容分类
 - 如何使用该项目提升 Node.js 开发技能
 - 推荐的学习路径
 
-## 2. 🫧 评价
+## 2. 评价
 
 nodebestpractices 是 GitHub 上最受欢迎的 Node.js 最佳实践指南，拥有超过 100k star。
 
@@ -43,7 +43,7 @@ nodebestpractices 是 GitHub 上最受欢迎的 Node.js 最佳实践指南，拥
 - 提供了 80+ 条最佳实践建议，每条都有详细的代码示例和解释
 - 支持多语言版本，包括中文，便于非英语母语开发者学习
 
-## 3. 🤔 nodebestpractices 项目是什么？
+## 3. nodebestpractices 项目是什么？
 
 ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-11-01-14-58-57.png)
 
@@ -67,7 +67,7 @@ nodebestpractices 是一个全面的 Node.js 最佳实践指南集合，由全�
 - 了解行业标准和最佳实践
 - 构建安全、高性能的应用
 
-## 4. 🤔 项目包含哪些核心内容？
+## 4. 项目包含哪些核心内容？
 
 项目内容分为 9 个主要部分，每个部分包含多条具体建议。
 
@@ -316,7 +316,7 @@ async function getUser(id: string): Promise<User> {
 }
 ```
 
-## 5. 🤔 如何使用这个项目？
+## 5. 如何使用这个项目？
 
 ### 5.1. 可以系统性学习该项目
 
@@ -370,7 +370,7 @@ git checkout -b add-new-practice
 3. 编写团队代码规范文档
 4. 在代码审查中执行规范
 
-## 6. 🔗 引用
+## 6. 引用
 
 - [nodebestpractices GitHub 仓库][1]
 - [nodebestpractices 中文版][5]

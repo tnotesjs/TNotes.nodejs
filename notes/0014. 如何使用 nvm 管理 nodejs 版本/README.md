@@ -2,12 +2,12 @@
 
 <!-- region:toc -->
 
-- [1. 🔗 nvm](#1--nvm)
-- [2. 📒 notes](#2--notes)
-- [3. 💻 demo - `nvm ls` 查看本地安装的所有 nodejs 版本](#3--demo---nvm-ls-查看本地安装的所有-nodejs-版本)
-- [4. 💻 demo - `nvm install <version>` 安装指定版本的 nodejs](#4--demo---nvm-install-version-安装指定版本的-nodejs)
+- [1. nvm](#1-nvm)
+- [2. notes](#2-notes)
+- [3. demo - `nvm ls` 查看本地安装的所有 nodejs 版本](#3-demo---nvm-ls-查看本地安装的所有-nodejs-版本)
+- [4. demo - `nvm install <version>` 安装指定版本的 nodejs](#4-demo---nvm-install-version-安装指定版本的-nodejs)
 - [5. `nvm use <version>` 使用指定版本的 nodejs](#5-nvm-use-version-使用指定版本的-nodejs)
-- [6. 🤖 如何下载 nvm 管理 nodejs 版本](#6--如何下载-nvm-管理-nodejs-版本)
+- [6. 如何下载 nvm 管理 nodejs 版本](#6-如何下载-nvm-管理-nodejs-版本)
   - [6.1. 安装 NVM](#61-安装-nvm)
   - [6.2. 设置 NVM](#62-设置-nvm)
   - [6.3. 使用 NVM 安装 Node.js](#63-使用-nvm-安装-nodejs)
@@ -23,14 +23,14 @@
   - 也可以通过 `nvm ls` 来查看，前面带有星号 \* 的版本为当前使用的版本。
 - 官方文档的 README.md 内容很全，详细介绍可以参考官方文档。
 
-## 1. 🔗 nvm
+## 1. nvm
 
 - https://github.com/nvm-sh/nvm
   - github nvm
 
-## 2. 📒 notes
+## 2. notes
 
-## 3. 💻 demo - `nvm ls` 查看本地安装的所有 nodejs 版本
+## 3. demo - `nvm ls` 查看本地安装的所有 nodejs 版本
 
 ```bash
 nvm ls
@@ -38,7 +38,7 @@ nvm ls
 
 ![](./assets/2024-10-16-11-38-15.png)
 
-## 4. 💻 demo - `nvm install <version>` 安装指定版本的 nodejs
+## 4. demo - `nvm install <version>` 安装指定版本的 nodejs
 
 ```bash
 nvm install 14
@@ -56,7 +56,7 @@ node -v
 
 ![](./assets/2024-10-16-13-08-41.png)
 
-## 6. 🤖 如何下载 nvm 管理 nodejs 版本
+## 6. 如何下载 nvm 管理 nodejs 版本
 
 要使用 NVM（Node Version Manager）来管理 Node.js 的不同版本，首先你需要安装 NVM。以下是安装 NVM 并使用它来管理 Node.js 版本的步骤：
 

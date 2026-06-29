@@ -2,44 +2,44 @@
 
 <!-- region:toc -->
 
-- [1. 🎯 本节内容](#1--本节内容)
-- [2. 🫧 评价](#2--评价)
-- [3. 🤔 什么是 Buffer？](#3--什么是-buffer)
+- [1. 本节内容](#1-本节内容)
+- [2. 评价](#2-评价)
+- [3. 什么是 Buffer？](#3-什么是-buffer)
   - [3.1. 定义](#31-定义)
   - [3.2. 特点](#32-特点)
   - [3.3. 内存结构](#33-内存结构)
-- [4. 🤔 为什么需要 Buffer？](#4--为什么需要-buffer)
+- [4. 为什么需要 Buffer？](#4-为什么需要-buffer)
   - [4.1. JavaScript 字符串的局限](#41-javascript-字符串的局限)
   - [4.2. Buffer 的应用场景](#42-buffer-的应用场景)
   - [4.3. 对比示例](#43-对比示例)
-- [5. 🤔 如何创建 Buffer？](#5--如何创建-buffer)
+- [5. 如何创建 Buffer？](#5-如何创建-buffer)
   - [5.1. Buffer.from() - 从现有数据创建](#51-bufferfrom---从现有数据创建)
   - [5.2. Buffer.alloc() - 分配指定大小](#52-bufferalloc---分配指定大小)
   - [5.3. Buffer.allocUnsafe() - 快速分配（不清零）](#53-bufferallocunsafe---快速分配不清零)
   - [5.4. 废弃的方式（不推荐）](#54-废弃的方式不推荐)
-- [6. 🤔 如何读写 Buffer 中的数据？](#6--如何读写-buffer-中的数据)
+- [6. 如何读写 Buffer 中的数据？](#6-如何读写-buffer-中的数据)
   - [6.1. 通过索引读写](#61-通过索引读写)
   - [6.2. write() 方法](#62-write-方法)
   - [6.3. 读取数值类型](#63-读取数值类型)
-- [7. 🤔 Buffer 有哪些常用方法？](#7--buffer-有哪些常用方法)
+- [7. Buffer 有哪些常用方法？](#7-buffer-有哪些常用方法)
   - [7.1. 信息查询](#71-信息查询)
   - [7.2. 操作方法](#72-操作方法)
   - [7.3. 编码转换](#73-编码转换)
-- [8. 🤔 Buffer 与字符串如何相互转换？](#8--buffer-与字符串如何相互转换)
+- [8. Buffer 与字符串如何相互转换？](#8-buffer-与字符串如何相互转换)
   - [8.1. Buffer 转字符串](#81-buffer-转字符串)
   - [8.2. 字符串转 Buffer](#82-字符串转-buffer)
   - [8.3. 中文处理](#83-中文处理)
   - [8.4. 字节长度计算](#84-字节长度计算)
-- [9. 💻 demos.1 - 创建 Buffer](#9--demos1---创建-buffer)
-- [10. 💻 demos.2 - 读写 Buffer 数据](#10--demos2---读写-buffer-数据)
-- [11. 💻 demos.3 - Buffer 与字符串转换](#11--demos3---buffer-与字符串转换)
-- [12. 💻 demos.4 - Buffer 拼接与切片](#12--demos4---buffer-拼接与切片)
-- [13. 💻 demos.5 - Buffer 在文件操作中的应用](#13--demos5---buffer-在文件操作中的应用)
-- [14. 🔗 引用](#14--引用)
+- [9. demos.1 - 创建 Buffer](#9-demos1---创建-buffer)
+- [10. demos.2 - 读写 Buffer 数据](#10-demos2---读写-buffer-数据)
+- [11. demos.3 - Buffer 与字符串转换](#11-demos3---buffer-与字符串转换)
+- [12. demos.4 - Buffer 拼接与切片](#12-demos4---buffer-拼接与切片)
+- [13. demos.5 - Buffer 在文件操作中的应用](#13-demos5---buffer-在文件操作中的应用)
+- [14. 引用](#14-引用)
 
 <!-- endregion:toc -->
 
-## 1. 🎯 本节内容
+## 1. 本节内容
 
 - Buffer 的定义和作用
 - Buffer 的创建方式
@@ -48,7 +48,7 @@
 - Buffer 的常用方法
 - Buffer 在实际开发中的应用
 
-## 2. 🫧 评价
+## 2. 评价
 
 Buffer 是 Node.js 中用于处理二进制数据的全局类，在文件操作、网络通信等场景中广泛使用。
 
@@ -58,7 +58,7 @@ Buffer 是 Node.js 中用于处理二进制数据的全局类，在文件操作�
 - 处理非 UTF-8 编码或二进制数据时，Buffer 是必备工具
 - 在处理大文件时，使用 Stream 配合 Buffer 可以避免内存溢出
 
-## 3. 🤔 什么是 Buffer？
+## 3. 什么是 Buffer？
 
 Buffer 是 Node.js 提供的用于处理二进制数据的全局类。
 
@@ -95,7 +95,7 @@ graph LR
     A --> F[字节4: 0x6f]
 ```
 
-## 4. 🤔 为什么需要 Buffer？
+## 4. 为什么需要 Buffer？
 
 ### 4.1. JavaScript 字符串的局限
 
@@ -131,7 +131,7 @@ console.log(buf[0]) // 255
 console.log(buf[1]) // 254
 ```
 
-## 5. 🤔 如何创建 Buffer？
+## 5. 如何创建 Buffer？
 
 ### 5.1. Buffer.from() - 从现有数据创建
 
@@ -206,7 +206,7 @@ const buf12 = new Buffer('Hello')
 const buf13 = new Buffer([1, 2, 3])
 ```
 
-## 6. 🤔 如何读写 Buffer 中的数据？
+## 6. 如何读写 Buffer 中的数据？
 
 ### 6.1. 通过索引读写
 
@@ -262,7 +262,7 @@ console.log(buf.readInt16LE(1)) // 1000
 console.log(buf.readInt32LE(3)) // 100000
 ```
 
-## 7. 🤔 Buffer 有哪些常用方法？
+## 7. Buffer 有哪些常用方法？
 
 ### 7.1. 信息查询
 
@@ -296,7 +296,7 @@ console.log(buf.readInt32LE(3)) // 100000
 - `hex`：十六进制编码
 - `ascii`：ASCII 编码
 
-## 8. 🤔 Buffer 与字符串如何相互转换？
+## 8. Buffer 与字符串如何相互转换？
 
 ### 8.1. Buffer 转字符串
 
@@ -350,7 +350,7 @@ console.log('你好'.length) // 2（字符）
 console.log(Buffer.byteLength('你好')) // 6（字节，UTF-8）
 ```
 
-## 9. 💻 demos.1 - 创建 Buffer
+## 9. demos.1 - 创建 Buffer
 
 ::: code-group
 
@@ -402,7 +402,7 @@ console.log('清零后：', buf4)
 
 :::
 
-## 10. 💻 demos.2 - 读写 Buffer 数据
+## 10. demos.2 - 读写 Buffer 数据
 
 ::: code-group
 
@@ -466,7 +466,7 @@ console.log('FloatLE：', buf.readFloatLE(7).toFixed(2))
 
 :::
 
-## 11. 💻 demos.3 - Buffer 与字符串转换
+## 11. demos.3 - Buffer 与字符串转换
 
 ::: code-group
 
@@ -526,7 +526,7 @@ console.log('前5字节Hex：', buf.toString('hex', 0, 5))
 
 :::
 
-## 12. 💻 demos.4 - Buffer 拼接与切片
+## 12. demos.4 - Buffer 拼接与切片
 
 ::: code-group
 
@@ -599,7 +599,7 @@ console.log('buf1.compare(buf3)：', buf1.compare(buf3)) // 0 (相等)
 
 :::
 
-## 13. 💻 demos.5 - Buffer 在文件操作中的应用
+## 13. demos.5 - Buffer 在文件操作中的应用
 
 ::: code-group
 
@@ -663,7 +663,7 @@ readStream.on('error', (err) => {
 
 :::
 
-## 14. 🔗 引用
+## 14. 引用
 
 - [Node.js 官方文档 - Buffer][1]
 - [Node.js Buffer 教程][2]

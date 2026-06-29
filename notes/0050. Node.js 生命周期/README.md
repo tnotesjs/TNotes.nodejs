@@ -9,20 +9,20 @@
 
 :::
 
-- [1. 📝 概述](#1--概述)
-- [2. 📒 `timers、poll、check` 队列中分别存放哪些回调任务](#2--timerspollcheck-队列中分别存放哪些回调任务)
-- [3. 📒 宏队列、微队列](#3--宏队列微队列)
-- [4. 📒 `poll` 队列的特殊性](#4--poll-队列的特殊性)
-- [5. 💻 demos.1 - 阻塞操作对计时器的影响](#5--demos1---阻塞操作对计时器的影响)
-- [6. 💻 demos.2 - `setImmediate` 和 `setTimeout` 的性能对比](#6--demos2---setimmediate-和-settimeout-的性能对比)
-- [7. 💻 demos.3 - `setTimeout(fn1, 0)` 和 `setImmediate(fm2)` 中的 `fn1`、`fn2` 哪个先执行？](#7--demos3---settimeoutfn1-0-和-setimmediatefm2-中的-fn1fn2-哪个先执行)
-- [8. 💼 demos.4 - 练手面试题 - 1](#8--demos4---练手面试题---1)
-- [9. 💼 demos.5 - 练手面试题 - 2](#9--demos5---练手面试题---2)
-- [10. 🔗 参考资料](#10--参考资料)
+- [1. 概述](#1-概述)
+- [2. `timers、poll、check` 队列中分别存放哪些回调任务](#2-timerspollcheck-队列中分别存放哪些回调任务)
+- [3. 宏队列、微队列](#3-宏队列微队列)
+- [4. `poll` 队列的特殊性](#4-poll-队列的特殊性)
+- [5. demos.1 - 阻塞操作对计时器的影响](#5-demos1---阻塞操作对计时器的影响)
+- [6. demos.2 - `setImmediate` 和 `setTimeout` 的性能对比](#6-demos2---setimmediate-和-settimeout-的性能对比)
+- [7. demos.3 - `setTimeout(fn1, 0)` 和 `setImmediate(fm2)` 中的 `fn1`、`fn2` 哪个先执行？](#7-demos3---settimeoutfn1-0-和-setimmediatefm2-中的-fn1fn2-哪个先执行)
+- [8. demos.4 - 练手面试题 - 1](#8-demos4---练手面试题---1)
+- [9. demos.5 - 练手面试题 - 2](#9-demos5---练手面试题---2)
+- [10. 参考资料](#10-参考资料)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **Node.js 生命周期简图**：
   - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-06-15-47-48.png)
@@ -50,13 +50,13 @@
 - **目标**：
   - 理解 demos。
 
-## 2. 📒 `timers、poll、check` 队列中分别存放哪些回调任务
+## 2. `timers、poll、check` 队列中分别存放哪些回调任务
 
 - `timers`：和计时器相关的都会被丢到该队列中，比如 `setTimeout`、`setInterval`。
 - `poll`：除了进入 `timers`、`check` 之外的几乎所有回调，都会被丢到 `poll` 队列中。比如读文件的回调、监听网络请求的回调。
 - `check`：`setImmediate` 的回调会被丢到该队列中。
 
-## 3. 📒 宏队列、微队列
+## 3. 宏队列、微队列
 
 - 宏队列：
   - timers
@@ -68,7 +68,7 @@
 - **Node.js 会先清空微队列中的回调才会去看宏队列**。
 - 如果两个微队列中都有回调任务待处理，那么会 **优先取 nextTick 中的回调来执行**。
 
-## 4. 📒 `poll` 队列的特殊性
+## 4. `poll` 队列的特殊性
 
 - 由于几乎所有回调都在 poll 中，所以 Node.js 的事件循环机制，对于 poll 队列的处理也是比较特殊的。
 - 如果 poll 中有回调，那么和 timers、check 一样，挨个取出回调来执行。
@@ -77,7 +77,7 @@
     - 因为如果出现了回调，那么最大可能是出现在 poll 阶段，一旦出现，就能尽快取出来执行。
   - 如果其它阶段出现了回调，那么程序才会离开 poll 阶段，继续轮询。
 
-## 5. 💻 demos.1 - 阻塞操作对计时器的影响
+## 5. demos.1 - 阻塞操作对计时器的影响
 
 ::: code-group
 
@@ -153,7 +153,7 @@ hello world
 
 :::
 
-## 6. 💻 demos.2 - `setImmediate` 和 `setTimeout` 的性能对比
+## 6. demos.2 - `setImmediate` 和 `setTimeout` 的性能对比
 
 ::: code-group
 
@@ -225,7 +225,7 @@ test()
     - `setImmediate` 的回调会在当前事件循环周期的 poll 阶段完成后立即执行，而不需要像 `setTimeout` 那样等待整个事件循环周期结束。
     - 因此，`setImmediate` 的执行效率更高，尤其是在高频调用场景下。
 
-## 7. 💻 demos.3 - `setTimeout(fn1, 0)` 和 `setImmediate(fm2)` 中的 `fn1`、`fn2` 哪个先执行？
+## 7. demos.3 - `setTimeout(fn1, 0)` 和 `setImmediate(fm2)` 中的 `fn1`、`fn2` 哪个先执行？
 
 - 在 Node.js 中，`setTimeout(fn1, 0)` 和 `setImmediate(fn2)` 的执行顺序是一个经典的事件循环问题。
 - 两者的行为取决于代码运行的上下文和事件循环的具体阶段。
@@ -296,7 +296,7 @@ fs.readFile('1.txt', () => {
   - 根据事件循环的顺序，`poll` 阶段完成后会先进入 `check` 阶段，转完一圈儿，然后再进入 `timers` 阶段。
   - 因此，`setImmediate` 的回调一定会先于 `setTimeout` 的回调执行。
 
-## 8. 💼 demos.4 - 练手面试题 - 1
+## 8. demos.4 - 练手面试题 - 1
 
 ```js
 setImmediate(() => {
@@ -344,7 +344,7 @@ Promise.resolve().then(() => {
 
 :::
 
-## 9. 💼 demos.5 - 练手面试题 - 2
+## 9. demos.5 - 练手面试题 - 2
 
 ```js
 async function async1() {
@@ -409,7 +409,7 @@ console.log('12')
 
 :::
 
-## 10. 🔗 参考资料
+## 10. 参考资料
 
 - https://nodejs.org/zh-cn/docs/guides/event-loop-timers-and-nexttick/
   - ![图 3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-07-15-29-52.png)

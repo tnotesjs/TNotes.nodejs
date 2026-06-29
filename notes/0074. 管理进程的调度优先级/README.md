@@ -2,16 +2,16 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 查看 PID](#2--查看-pid)
-- [3. 💻 demos.1 - 获取当前进程的调度优先级](#3--demos1---获取当前进程的调度优先级)
-- [4. 💻 demos.2 - 修改进程的调度优先级](#4--demos2---修改进程的调度优先级)
-- [5. 💻 demos.3 - 查看电脑的优先级常量](#5--demos3---查看电脑的优先级常量)
-- [6. 🔗 引用](#6--引用)
+- [1. 概述](#1-概述)
+- [2. 查看 PID](#2-查看-pid)
+- [3. demos.1 - 获取当前进程的调度优先级](#3-demos1---获取当前进程的调度优先级)
+- [4. demos.2 - 修改进程的调度优先级](#4-demos2---修改进程的调度优先级)
+- [5. demos.3 - 查看电脑的优先级常量](#5-demos3---查看电脑的优先级常量)
+- [6. 引用](#6-引用)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - 从 Node.js v12.16.0 开始，`os` 模块引入了 `getPriority()` 和 `setPriority()` 方法，用于获取和设置进程或线程的调度优先级。
 - `os.getPriority([pid])`
@@ -66,7 +66,7 @@
   - **后台任务**：对于非关键任务（如日志记录、数据备份），可以降低其优先级以避免抢占重要资源。
   - **多进程优化**：在使用 `child_process` 或其他多进程编程场景中，通过动态调整进程优先级来平衡性能。
 
-## 2. 💻 查看 PID
+## 2. 查看 PID
 
 - 如果你是 macOS 用户，可以直接在【活动监视器】面板中查看进程的 PID。
   - ![图 0](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-20-07-37-48.png)
@@ -86,7 +86,7 @@ os.setPriority(10904, 10) // [!code highlight]
 - 修改之后的新优先级：
   - ![图 3](https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/2025-04-20-08-11-55.png)
 
-## 3. 💻 demos.1 - 获取当前进程的调度优先级
+## 3. demos.1 - 获取当前进程的调度优先级
 
 ::: code-group
 
@@ -107,7 +107,7 @@ console.log(os.getPriority(process.pid))
 
 :::
 
-## 4. 💻 demos.2 - 修改进程的调度优先级
+## 4. demos.2 - 修改进程的调度优先级
 
 ::: code-group
 
@@ -210,7 +210,7 @@ setProcessPriority(process.pid, 5) // 使用正数优先级
 
 :::
 
-## 5. 💻 demos.3 - 查看电脑的优先级常量
+## 5. demos.3 - 查看电脑的优先级常量
 
 ::: code-group
 
@@ -242,7 +242,7 @@ console.log(os.constants.priority)
 
 - 在使用 `os` 模块的 `setPriority()` 方法设置进程优先级时，我们可以直接将其 `priority` 参数设置为以上 6 个值之一。
 
-## 6. 🔗 引用
+## 6. 引用
 
 - [priority](https://github.com/Tdahuyou/TNotes.en-words/blob/main/priority.md)
   - 优先级

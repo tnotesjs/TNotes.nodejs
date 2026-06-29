@@ -2,14 +2,14 @@
 
 <!-- region:toc -->
 
-- [1. 💻 demos.1 - npm 生命周期 prepublish 的基本使用](#1--demos1---npm-生命周期-prepublish-的基本使用)
-- [2. 🤖 请介绍一下 package.json 中的 scripts 字段下的 prepublish](#2--请介绍一下-packagejson-中的-scripts-字段下的-prepublish)
+- [1. demos.1 - npm 生命周期 prepublish 的基本使用](#1-demos1---npm-生命周期-prepublish-的基本使用)
+- [2. 请介绍一下 package.json 中的 scripts 字段下的 prepublish](#2-请介绍一下-packagejson-中的-scripts-字段下的-prepublish)
   - [2.1. 使用 `prepublishOnly`](#21-使用-prepublishonly)
   - [2.2. 注意事项](#22-注意事项)
 
 <!-- endregion:toc -->
 
-## 1. 💻 demos.1 - npm 生命周期 prepublish 的基本使用
+## 1. demos.1 - npm 生命周期 prepublish 的基本使用
 
 新建一个 [1.js](./1.js) 模块，内容如下：
 
@@ -34,7 +34,7 @@ console.log('call 1.js')
 
 执行 `npm i` 安装依赖。（如果存在 node_modules，将其删除后再执行 npm i）会发现 prepublish 中配置的命令 `node 1.js` 自动执行了，`1.js` 执行后输出了 `call 1.js`。 ![](./assets/2024-09-20-15-19-24.png)
 
-## 2. 🤖 请介绍一下 package.json 中的 scripts 字段下的 prepublish
+## 2. 请介绍一下 package.json 中的 scripts 字段下的 prepublish
 
 在 `package.json` 文件中，`scripts` 字段允许你定义可以在命令行中通过 `npm run <script-name>` 执行的脚本。这些脚本可以是任何 shell 命令，通常用于自动化构建、测试、部署等任务。
 

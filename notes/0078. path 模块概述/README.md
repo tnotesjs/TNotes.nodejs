@@ -2,21 +2,21 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - `path.join([...paths])`](#2--demos1---pathjoinpaths)
-- [3. 💻 demos.2 - `path.resolve([...paths])`](#3--demos2---pathresolvepaths)
-- [4. 💻 demos.3 - `path.basename(path[, ext])`](#4--demos3---pathbasenamepath-ext)
-- [5. 💻 demos.4 - `path.dirname(path)`](#5--demos4---pathdirnamepath)
-- [6. 💻 demos.5 - `path.extname(path)`](#6--demos5---pathextnamepath)
-- [7. 💻 demos.6 - `path.isAbsolute(path)`](#7--demos6---pathisabsolutepath)
-- [8. 💻 demos.7 - `path.parse(path)` 和 `path.format(pathObject)`](#8--demos7---pathparsepath-和-pathformatpathobject)
-- [9. 💻 demos.8 - `path.normalize(path)`](#9--demos8---pathnormalizepath)
-- [10. 💻 demos.9 - `path.posix` 和 `path.win32`](#10--demos9---pathposix-和-pathwin32)
-- [11. 💻 demos.10 - `path.relative(from, to)`](#11--demos10---pathrelativefrom-to)
+- [1. 概述](#1-概述)
+- [2. demos.1 - `path.join([...paths])`](#2-demos1---pathjoinpaths)
+- [3. demos.2 - `path.resolve([...paths])`](#3-demos2---pathresolvepaths)
+- [4. demos.3 - `path.basename(path[, ext])`](#4-demos3---pathbasenamepath-ext)
+- [5. demos.4 - `path.dirname(path)`](#5-demos4---pathdirnamepath)
+- [6. demos.5 - `path.extname(path)`](#6-demos5---pathextnamepath)
+- [7. demos.6 - `path.isAbsolute(path)`](#7-demos6---pathisabsolutepath)
+- [8. demos.7 - `path.parse(path)` 和 `path.format(pathObject)`](#8-demos7---pathparsepath-和-pathformatpathobject)
+- [9. demos.8 - `path.normalize(path)`](#9-demos8---pathnormalizepath)
+- [10. demos.9 - `path.posix` 和 `path.win32`](#10-demos9---pathposix-和-pathwin32)
+- [11. demos.10 - `path.relative(from, to)`](#11-demos10---pathrelativefrom-to)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **`path` 模块**：
   - `path` 模块在 Node.js 中主要是用来处理 **文件路径** 的。
@@ -58,7 +58,7 @@
 | `path.posix` | 提供对 POSIX 风格路径方法和属性的访问，确保跨平台一致性。 |
 | `path.win32` | 提供对 Windows 风格路径方法和属性的访问，确保跨平台一致性。 |
 
-## 2. 💻 demos.1 - `path.join([...paths])`
+## 2. demos.1 - `path.join([...paths])`
 
 ::: code-group
 
@@ -85,7 +85,7 @@ console.log(path.win32.join('/foo', '../bar')) // => \bar
 - path 模块中的 `join()` 方法连接路径（使用平台特定的路径分隔符，POSIX 系统是 `/`，Windows 系统是 `\`）​。
 - 语法格式：`path.join([ ...paths ])`
 
-## 3. 💻 demos.2 - `path.resolve([...paths])`
+## 3. demos.2 - `path.resolve([...paths])`
 
 ::: code-group
 
@@ -112,7 +112,7 @@ console.log(path.resolve(__dirname))
 - 如果参数值为空，则返回当前工作路径。
   - 因此，如果你想要知道用户当前的 node 命令的运行位置，可以通过 `path.resolve()` 来获取。
 
-## 4. 💻 demos.3 - `path.basename(path[, ext])`
+## 4. demos.3 - `path.basename(path[, ext])`
 
 ::: code-group
 
@@ -131,7 +131,7 @@ console.log(path.basename('/foo/bar/baz/file.txt', '.txt')) // => file
 
 :::
 
-## 5. 💻 demos.4 - `path.dirname(path)`
+## 5. demos.4 - `path.dirname(path)`
 
 ::: code-group
 
@@ -144,7 +144,7 @@ console.log(path.dirname('/foo/bar/baz/file.txt'))
 
 :::
 
-## 6. 💻 demos.5 - `path.extname(path)`
+## 6. demos.5 - `path.extname(path)`
 
 ::: code-group
 
@@ -168,8 +168,8 @@ const filePath = '/foo/bar/baz/file.txt'
 console.log(
   `获取路径 ${filePath} 中的文件名（不带后缀）：${path.basename(
     filePath,
-    path.extname(filePath) // 将结尾的扩展名去除
-  )}`
+    path.extname(filePath), // 将结尾的扩展名去除
+  )}`,
 )
 
 // 输出：
@@ -178,7 +178,7 @@ console.log(
 
 :::
 
-## 7. 💻 demos.6 - `path.isAbsolute(path)`
+## 7. demos.6 - `path.isAbsolute(path)`
 
 ::: code-group
 
@@ -231,7 +231,7 @@ console.log('----------------------------------------')
     - 在 `path.win32.isAbsolute` 下返回 `true`，因为它正确解析了 Windows 绝对路径。
   - **第四部分**：测试相对路径 `..\\Demo\\js.js`，在所有规则下均返回 `false`，因为它始终是相对路径。
 
-## 8. 💻 demos.7 - `path.parse(path)` 和 `path.format(pathObject)`
+## 8. demos.7 - `path.parse(path)` 和 `path.format(pathObject)`
 
 ::: code-group
 
@@ -280,8 +280,8 @@ console.log(
       base: 'a.png',
       name: 'b',
       ext: '.jpg',
-    })
-  )
+    }),
+  ),
 ) // => D:\demo\images\a.png
 
 console.log(
@@ -289,8 +289,8 @@ console.log(
     path.format({
       dir: 'D:\\demo\\images',
       base: 'a.png',
-    })
-  )
+    }),
+  ),
 ) // => D:\demo\images\a.png
 
 console.log(
@@ -298,7 +298,7 @@ console.log(
     root: 'C:\\',
     name: 'a',
     ext: '.png',
-  })
+  }),
 ) // => C:\a.png
 
 // 优先级：
@@ -367,7 +367,7 @@ interface FormatInputPathObject {
 
 :::
 
-## 9. 💻 demos.8 - `path.normalize(path)`
+## 9. demos.8 - `path.normalize(path)`
 
 ::: code-group
 
@@ -430,7 +430,7 @@ console.log(p8, '👉', path.win32.normalize(p8))
 - path 模块中的 normalize() 方法可用于解析和规范化路径，当路径中包含 `.` ​`..`​ `\` `/` 之类的相对说明符时，该方法会尝试分析实际的路径。
 - 路径规范化的最终效果跟你当前的系统环境有关。
 
-## 10. 💻 demos.9 - `path.posix` 和 `path.win32`
+## 10. demos.9 - `path.posix` 和 `path.win32`
 
 ::: code-group
 
@@ -443,7 +443,7 @@ console.log(path.win32.join('foo', 'bar')) // => foo\bar
 
 :::
 
-## 11. 💻 demos.10 - `path.relative(from, to)`
+## 11. demos.10 - `path.relative(from, to)`
 
 ::: code-group
 

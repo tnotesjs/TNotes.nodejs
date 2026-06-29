@@ -2,13 +2,13 @@
 
 <!-- region:toc -->
 
-- [1. 📝 概述](#1--概述)
-- [2. 💻 demos.1 - 复制文件 - 使用流 `stream` 的方式](#2--demos1---复制文件---使用流-stream-的方式)
-- [3. 💻 demos.2 - 复制文件 - `copyFile()`](#3--demos2---复制文件---copyfile)
+- [1. 概述](#1-概述)
+- [2. demos.1 - 复制文件 - 使用流 `stream` 的方式](#2-demos1---复制文件---使用流-stream-的方式)
+- [3. demos.2 - 复制文件 - `copyFile()`](#3-demos2---复制文件---copyfile)
 
 <!-- endregion:toc -->
 
-## 1. 📝 概述
+## 1. 概述
 
 - **复制文件的两种常见做法**：
   - 做法 1：将文件从一个位置复制到另外一个位置；
@@ -17,7 +17,7 @@
     - 可以通过流（streams）或结合 `fs.read()` 和 `fs.write()` 方法来实现。
     - 使用流是更常见的方式。
 
-## 2. 💻 demos.1 - 复制文件 - 使用流 `stream` 的方式
+## 2. demos.1 - 复制文件 - 使用流 `stream` 的方式
 
 ::: code-group
 
@@ -56,7 +56,7 @@ Hello Node.js!
 
 :::
 
-## 3. 💻 demos.2 - 复制文件 - `copyFile()`
+## 3. demos.2 - 复制文件 - `copyFile()`
 
 ::: code-group
 
