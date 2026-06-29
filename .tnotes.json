@@ -33,22 +33,19 @@
       "26.02": 62,
       "26.03": 62,
       "26.04": 62,
+      "26.05": 62,
       "26.06": 62
     },
     "details": "NodeJS 笔记",
     "link": "https://tnotesjs.github.io/TNotes.nodejs/",
     "created_at": 1740924081000,
-    "updated_at": 1780377127000,
-    "days_since_birth": 9836
+    "updated_at": 1782717341000,
+    "days_since_birth": 9863
   },
   "menuItems": [
     {
       "text": "🏠 Home",
       "link": "/"
-    },
-    {
-      "text": "⚙️ Settings",
-      "link": "/Settings"
     },
     {
       "text": "📒 TNotes",
