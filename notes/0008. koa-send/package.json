@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "koa": "^2.15.3",
-    "koa-send": "^5.0.1"
-  }
-}
