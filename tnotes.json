@@ -3,7 +3,7 @@
   "name": "TNotes.nodejs",
   "description": "NodeJS 笔记",
   "icon": {
-    "src": "https://cdn.jsdelivr.net/gh/tnotesjs/imgs@main/assets/icon--nodejs.svg"
+    "src": "../assets/kb-icon.svg"
   },
   "repositoryUrl": "https://github.com/tnotesjs/TNotes.nodejs",
   "port": 9379,
